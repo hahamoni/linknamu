@@ -1,0 +1,21 @@
+{
+ "title": "P01 v2 — 발명자 칸의 여배우 (헤디 라머)",
+ "cover_ko": "발명자 칸의 이름은 여배우였다",
+ "cover_en": "THE INVENTOR WAS A MOVIE STAR",
+ "beats": [
+  {"ko": "가장 아름답다던 이 배우는, 배우만이 아니었습니다.", "en": "The world's most beautiful actress was not just an actress.", "visual": "인물"},
+  {"ko": "천구백사십이 년, 특허청에 서류 한 장이 접수됩니다.", "en": "In 1942, a document reached the Patent Office.", "visual": "인물"},
+  {"ko": "발명자 칸의 이름은 헐리우드 배우였습니다.", "en": "The inventor line carried a movie star's name.", "visual": "인물"},
+  {"ko": "장치의 목적은 무선 신호를 도청에서 지키는 것.", "en": "Its goal: keep radio signals safe from eavesdroppers.", "visual": "클립"},
+  {"ko": "송신기와 수신기가 주파수를 함께 뜁니다.", "en": "Transmitter and receiver hop frequencies together.", "visual": "클립"},
+  {"ko": "주파수는 모두 여든여덟 개였습니다.", "en": "Eighty-eight frequencies in all.", "visual": "그래픽"},
+  {"ko": "두 장치를 맞물리게 한 부품은 자동피아노의 종이 롤.", "en": "The part keeping them in step: a player piano roll.", "visual": "클립"},
+  {"ko": "여든여덟은 피아노 건반의 수입니다.", "en": "Eighty-eight is the number of piano keys.", "visual": "클립"},
+  {"ko": "미 해군은 이 장치를 채택하지 않았습니다.", "en": "The Navy never adopted the device.", "visual": "인물"},
+  {"ko": "서류는 서랍으로 들어갔습니다.", "en": "The papers went into a drawer.", "visual": "문서"},
+  {"ko": "특허는 천구백오십구 년에 만료됐습니다.", "en": "It expired in 1959.", "visual": "인물"},
+  {"ko": "그녀는 아무 보상도 받지 못했습니다.", "en": "She was never paid a single dollar.", "visual": "인물"},
+  {"ko": "상이 온 것은 55년 뒤였습니다.", "en": "The award came 55 years later.", "visual": "인물"},
+  {"ko": "수상 소감은 한마디, \"이제야 왔군요.\"", "en": "Her whole speech: 'Well, it's about time.'", "visual": "인물"}
+ ]
+}
