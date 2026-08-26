@@ -21,8 +21,19 @@ PROMPT = {
 }
 
 
+NUM_CANON = [  # 대본은 숫자를 풀어 쓰고 STT는 아라비아로 받아쓰므로 같은 토큰으로 통일
+    ("천구백사십이", "1942"), ("천구백오십구", "1959"),
+    ("여든여덟", "88"), ("팔십팔", "88"), ("오십오", "55"), ("쉰다섯", "55"),
+    ("nineteenfortytwo", "1942"), ("nineteenfiftynine", "1959"),
+    ("eightyeight", "88"), ("fiftyfive", "55"),
+]
+
+
 def norm(s):
-    return re.sub(r"[^0-9a-z가-힣]", "", s.lower())
+    s = re.sub(r"[^0-9a-z가-힣]", "", s.lower())
+    for spelled, digits in NUM_CANON:
+        s = s.replace(spelled, digits)
+    return s
 
 
 def transcribe(key, model, wav_path, lang):
