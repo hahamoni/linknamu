@@ -45,7 +45,7 @@ def load_key():
         sys.exit("GEMINI_API_KEY가 없습니다. export 하거나 .env.local에 넣으세요 (커밋 금지).")
     return k
 
-def http_json(url, payload=None, tries=4):
+def http_json(url, payload=None, tries=6):
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers={"Content-Type": "application/json"},
@@ -53,10 +53,14 @@ def http_json(url, payload=None, tries=4):
             with urllib.request.urlopen(req, timeout=120) as r:
                 return json.load(r)
         except urllib.error.HTTPError as e:
-            body = e.read().decode()[:300]
+            body = e.read().decode()[:2000]
             if e.code in (429, 500, 503) and i < tries - 1:
-                time.sleep(2 ** (i + 1)); continue
-            sys.exit(f"API 오류 {e.code}: {body}")
+                delay = 2 ** (i + 1)
+                m = re.search(r'"retryDelay":\s*"(\d+)', body)  # 무료 티어 RPM 제한은 서버가 대기시간을 알려줌
+                if m:
+                    delay = max(delay, int(m.group(1)) + 2)
+                time.sleep(delay); continue
+            sys.exit(f"API 오류 {e.code}: {body[:300]}")
         except Exception as e:
             if i < tries - 1:
                 time.sleep(2 ** (i + 1)); continue
@@ -135,6 +139,8 @@ def main():
     for lang in langs:
         for i, b in enumerate(ep["beats"], 1):
             if only and i not in only:
+                continue
+            if "--resume" in args and (out / f"beat{i:02d}_{lang}.wav").exists():
                 continue
             text = b[lang]
             pcm, rate = tts(key, model, voice, style[lang] + text)
