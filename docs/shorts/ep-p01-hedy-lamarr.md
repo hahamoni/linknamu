@@ -51,10 +51,10 @@ v1(4컷×8초)은 20편 실측 분석에 따라 폐기 — 근거: `docs/shorts/
 | Hedy Lamarr - Screenland (October 1942).png | 2 | 1942 잡지, PD-US not renewed | 생성 전 태그 최종 확인 |
 | **Signature of Hedy Kiesler Markey (1941) (cropped).jpg** | 3·14 | 연방 특허기록 일부, PD | ✓ |
 | Patent Case File No. 2,292,387 … (page 7).jpg 외 42p | 10 (도면 크롭) | NARA 연방 기록물, PD | ✓ |
-| Hedy Kiesler 1933.jpg | 9 | 유럽 출처 — 라이선스 상이 가능 | ⚠ 필수 확인, 불가 시 Heavenly Body 크롭 대체 |
-| Hedi Lamarr in "Samson and Delilah" (1949).png | 11 | 트레일러 스틸 추정 | ⚠ 필수 확인, 불가 시 Screenland 재사용 |
+| Hedy Kiesler 1933.jpg | 9 | **PD-anon-70-EU, 미국 PD ✓** (파일 페이지 확인 완료) | ✓ |
+| Hedi Lamarr in "Samson and Delilah" (1949).png | 11 | **CC0 1.0 ✓** (파일 페이지 확인 완료) | ✓ |
 
-⚠ 2건은 확인 실패 시 확정 PD 이미지 재사용으로 대체 — 편 구조에 영향 없음.
+전 6종 라이선스 확정 — 대체안 불필요. 스틸 다운로드는 편집 단계에서 로컬로 (이 세션 프록시는 upload.wikimedia.org 차단).
 
 ## 생성 클립 프롬프트 (2개 → 4비트, 24크레딧)
 
@@ -76,6 +76,7 @@ Vertical 9:16 diagram. A minimal technical illustration on near-black navy backg
 ## 오디오
 
 - 음악: 드라마틱 미드템포 피아노, 단일 트랙 45초 (38.5만 편의 검증 무드), 클립 앰비언트는 -18dB 아래.
+  **소스: 유튜브 오디오 라이브러리** (Higgsfield는 단독 음악 생성 미지원 — 실측 확인. 무료·라이선스 안전이라 정책상으로도 우세).
 - TTS 검수: params.prompt 대조 / durationSec÷음절 <4.5 재생성 / 51.1535625초 폐기. 깨짐 감시: 맞물리게 · 도청 · 뜁니다.
 
 ## §7 사람 체크리스트
@@ -89,9 +90,16 @@ Vertical 9:16 diagram. A minimal technical illustration on near-black navy backg
 - [x] 숫자 의미 — 88은 8비트에서 회수, 55년은 문맥 명시
 - [x] 허구 필터 — 와이파이·최초 주장 배제 / PD ⚠ 2건 대체안 확보
 
-## 예상 단가
+## 단가 (2026-08-26 프리플라이트 실측)
 
-클립 2×12 + 그래픽 1×2 + 나레이션 28줄(한·영 14비트)×0.15 + 음악 1 ≈ **31크레딧** (v1 대비 -44%, 커버·스틸 0크레딧)
+클립 2×8 + 그래픽 1×1.5 + 나레이션 28줄(한·영 14비트)×0.15 = **21.7크레딧** (v1 예상 56 대비 -61%. 커버·스틸·음악 0크레딧)
+
+## 생성 대기열 (크레딧 충전 시 즉시 실행)
+
+1. `generate_video_batch` — 클립 A(무전 장비)·B(피아노 롤), veo3_1_lite 8s 720p 9:16 audio on (16cr)
+2. `generate_image` — 88채널 다이어그램, nano_banana 9:16 (1.5cr)
+3. `generate_audio_batch` — 한 14줄 + 영 14줄, text2speech_v2/minimax (4.2cr) → §5 검수(원문 대조·durationSec÷음절≥4.5·51.1535625초 폐기)
+4. 스틸 6종 로컬 다운로드(URL 표) + 커버 합성 + 유튜브 오디오 라이브러리 트랙 선정 — 0크레딧, 편집 단계
 
 ## 업로드 체크
 
