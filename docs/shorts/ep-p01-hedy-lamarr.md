@@ -1,106 +1,100 @@
-# P01 — 발명자 칸의 배우 (헤디 라머 / US2292387)
+# P01 v2 — 발명자 칸의 여배우 (헤디 라머 / US2292387)
 
-특허 트랙 파일럿 1편. 게이트 통과 2026-08-26. **⑤ 승인 대기 — 승인 전 생성 금지.**
+`patent-story-short` 포맷(14비트, 43.1초/35.0초). 게이트 통과 2026-08-26. **⑤ 승인 대기 — 승인 전 생성 금지.**
+v1(4컷×8초)은 20편 실측 분석에 따라 폐기 — 근거: `docs/shorts/winning-pattern-analysis.md`.
 
-## 사실 검증 요약
+## 사실 검증 요약 (v1에서 계승)
 
 | 항목 | 판정 | 출처 |
 |---|---|---|
-| 발명자란 "Markey Hedy Kiesler" | ● | [특허 원문](https://patents.google.com/patent/US2292387A/en) |
-| 88개 반송 주파수 = 피아노 롤 | ● | 특허 원문 "would permit the use of 88 different carrier frequencies" |
-| 미 해군 미채택, 서류 방치 | ● 통설 일치 | 다수 출처 일치 |
-| 1959년 만료, 보상 없음 | ◐ | 다수 2차 자료 일치 |
-| 1997 EFF Pioneer Award + "Well, it's about time" | ◐ (엔드카드 전용 — 크레딧 0) | womenshistory.org 등 |
-| **걸러낸 허구**: "와이파이를 발명했다" | ✗ 거짓 — Wi-Fi는 주파수 도약 미사용 | American Scientist |
-| **걸러낸 허구**: "주파수 도약 최초 발명" | ✗ 거짓 — 핵심 청구항(claim 7) 선행기술로 거절 | American Scientist "The Seventh Claim" |
+| 발명자란 "Markey Hedy Kiesler" / 서명 실물 | ● | [특허 원문](https://patents.google.com/patent/US2292387A/en) + Commons 서명 크롭 |
+| 88개 반송 주파수 = 피아노 롤 | ● | 원문 "would permit the use of 88 different carrier frequencies" |
+| 미 해군 미채택 / 1959 만료 / 보상 없음 | ● / ◐ | 다수 출처 일치 |
+| 1997 EFF Pioneer Award, "Well, it's about time" | ◐ | womenshistory.org 등 |
+| 걸러낸 허구: "와이파이 발명" (Wi-Fi는 주파수 도약 미사용), "최초 발명" (claim 7 선행기술 거절) | ✗ | American Scientist |
 
-→ 대본은 과장을 세우지도 반박하지도 않는다(규칙 3). 문서 사실만으로 한 줄기: 이름 → 장치 → 피아노 → 서류의 운명.
+## 커버 (프레이밍 법칙: "특허" 간판 금지 — 인물·반전 중심)
 
-## 커버
+- 한: **발명자 칸의 이름은 여배우였다** (16자, 2줄: "발명자 칸의 이름은 / 여배우였다")
+- 영: **THE INVENTOR WAS A MOVIE STAR**
+- 커버 이미지: The Heavenly Body(1944) 초상 + 서명 오버레이 — **아카이브 합성, 생성 0크레딧.** 텍스트는 편집 오버레이.
+- 회수 지점: 3비트(10.9초) — 1비트가 절반("배우만이 아니었다"), 3비트가 완결.
 
-- 한: **이 특허의 발명자는 배우였다** (15자, 2줄: "이 특허의 / 발명자는 배우였다")
-- 영: **THE INVENTOR WAS A MOVIE STAR** (2줄: "THE INVENTOR / WAS A MOVIE STAR")
+## 비트 대본 — 14비트, 한 237음절(43.1s) / 영 98단어(35.0s)
 
-## 대본 — 한국어 (나레이션 버전, 게이트 통과 원문)
+| # | 유형 | 나레이션 (한) | 나레이션 (영) | 비주얼 |
+|---|---|---|---|---|
+| 1 | 인물 | 가장 아름답다던 이 배우는, 배우만이 아니었습니다. | The world's most beautiful actress was not just an actress. | 글램 초상 푸시인 (Heavenly Body 1944) |
+| 2 | 인물 | 1942년, 특허청에 서류 한 장이 접수됩니다. | In 1942, a document reached the Patent Office. | 1942년 잡지 초상 (Screenland Oct 1942) + 서류 실루엣 오버레이 |
+| 3 | 인물 | 발명자 칸의 이름은 헐리우드 배우였습니다. | The inventor line carried a movie star's name. | **실제 서명 크롭** "Hedy Kiesler Markey" 매크로 + 초상 |
+| 4 | 클립A-1 | 장치의 목적은 무선 신호를 도청에서 지키는 것. | Its goal: keep radio signals safe from eavesdroppers. | 1940년대 무전 장비 랙 (생성 클립 전반부) |
+| 5 | 클립A-2 | 송신기와 수신기가 주파수를 함께 뜁니다. | Transmitter and receiver hop frequencies together. | 같은 클립 후반부 (다이얼·진공관) |
+| 6 | 그래픽 | 주파수는 모두 88개였습니다. | Eighty-eight frequencies in all. | 88채널 도약 다이어그램 (남색·청록) |
+| 7 | 클립B-1 | 두 장치를 맞물리게 한 부품은 자동피아노의 종이 롤. | The part keeping them in step: a player piano roll. | 천공 종이 롤 풀리는 오버헤드 (생성 클립 전반부) |
+| 8 | 클립B-2 | 88은 피아노 건반의 수입니다. | Eighty-eight is the number of piano keys. | 같은 클립 후반부 (천공 매크로) |
+| 9 | 인물 | 미 해군은 이 장치를 채택하지 않았습니다. | The Navy never adopted the device. | 진지한 표정 초상 (Hedy Kiesler 1933 ⚠) |
+| 10 | 문서 | 서류는 서랍으로 들어갔습니다. | The papers went into a drawer. | **특허 케이스 파일 도면 크롭** (NARA/DPLA p.7) — 2.4초 |
+| 11 | 인물 | 특허는 1959년에 만료됐습니다. | It expired in 1959. | 후기 필모 스틸 (Samson and Delilah 1949 ⚠) |
+| 12 | 인물 | 그녀는 아무 보상도 받지 못했습니다. | She was never paid a single dollar. | 초상 어두운 크롭 재사용 |
+| 13 | 인물 | 상이 온 것은 55년 뒤였습니다. | The award came 55 years later. | 초상 + 빛 연출 (밝아지는 그레이드) |
+| 14 | 인물 | 수상 소감은 한마디, "이제야 왔군요." | Her whole speech: 'Well, it's about time.' | 미소 초상 크롭 → 서명으로 디졸브 |
 
-| 컷 | 나레이션 | 음절 | 배속 |
+**나레이션 텍스트(TTS용, 숫자 풀어쓰기)**: 1942년→천구백사십이 년 · 88개→여든여덟 개 · 88은→여든여덟은 · 1959년→천구백오십구 년 · 55년→오십오 년. 자막은 표의 아라비아 표기 그대로.
+
+게이트 결과: 14비트 전부 OK, 인물 8/14(57%), 문서 1비트·69% 지점·2.4초, 훅 통념+반박, 페이오프 인용 — 통과.
+
+## 아카이브 스틸 목록 (전부 Wikimedia Commons)
+
+| 파일 | 용도 (비트) | PD 근거 | 상태 |
 |---|---|---|---|
-| 1 | 세계에서 가장 아름다운 여자로 불리던 헐리우드 배우의 이름은, 천구백사십이 년 미국 특허 서류의 발명자 칸에 또렷이 적혀 있습니다. | 54 | 0.91 |
-| 2 | 이 특허가 제안한 것은 무선 신호가 도청되거나 방해받지 않도록 송신기와 수신기가 여든여덟 개의 주파수를 함께 뛰어다니게 만드는 장치였습니다. | 60 | 0.82 |
-| 3 | 두 장치를 같은 순서로 움직이게 한 부품은 자동피아노의 종이 롤이었습니다. 여든여덟이라는 숫자는 피아노 건반의 수였습니다. | 52 | 0.95 |
-| 4 | 이 장치는 미 해군에 제안됐지만 채택되지 않은 채 서류함에 남았습니다. 특허는 천구백오십구 년에 만료됐고 그녀는 아무 보상도 받지 못했습니다. | 59 | 0.84 |
-| E | (나레이션 없음) 자막: 55년 뒤, 이 서류는 상을 받았습니다. 수상 소감은 한마디 — "이제야 왔군요." | — | — |
+| Hedy Lamarr in The Heavenly Body 1944.jpg | 1·12·13·14, 커버 | 스튜디오 홍보사진, PD-US no notice | 생성 전 태그 최종 확인 |
+| Hedy Lamarr - Screenland (October 1942).png | 2 | 1942 잡지, PD-US not renewed | 생성 전 태그 최종 확인 |
+| **Signature of Hedy Kiesler Markey (1941) (cropped).jpg** | 3·14 | 연방 특허기록 일부, PD | ✓ |
+| Patent Case File No. 2,292,387 … (page 7).jpg 외 42p | 10 (도면 크롭) | NARA 연방 기록물, PD | ✓ |
+| Hedy Kiesler 1933.jpg | 9 | 유럽 출처 — 라이선스 상이 가능 | ⚠ 필수 확인, 불가 시 Heavenly Body 크롭 대체 |
+| Hedi Lamarr in "Samson and Delilah" (1949).png | 11 | 트레일러 스틸 추정 | ⚠ 필수 확인, 불가 시 Screenland 재사용 |
 
-합계 36.5s + 3.5s = **40.0s**
+⚠ 2건은 확인 실패 시 확정 PD 이미지 재사용으로 대체 — 편 구조에 영향 없음.
 
-**자막 버전 (숫자는 아라비아로 표기)**: 1942년 / 88개 / 1959년 / 55년.
+## 생성 클립 프롬프트 (2개 → 4비트, 24크레딧)
 
-## 대본 — 영어
-
-| Cut | Narration | 단어 | 배속 |
-|---|---|---|---|
-| 1 | The Hollywood actress once called the most beautiful woman in the world is also listed, in clear letters, as the inventor on a 1942 United States patent. | 27 | 0.83 |
-| 2 | Her patent describes a device that keeps radio signals from being intercepted or jammed by making transmitter and receiver hop together across eighty-eight different frequencies. | 25 | 0.90 |
-| 3 | The part that kept both machines hopping in step was a paper roll taken from a player piano. Eighty-eight is the number of piano keys. | 25 | 0.90 |
-| 4 | The Navy never adopted the device, and the papers stayed in a drawer. The patent expired in 1959, and she was never paid a single dollar. | 26 | 0.86 |
-| E | (자막만) 55 years later, the patent finally won an award. Her speech: 'Well, it's about time.' | — | — |
-
-합계 36.8s + 3.5s = **40.3s**
-
-## 클립 프롬프트 4개 (언어 공용)
-
-무브: 푸시인 / 측면 달리 / 오버헤드 회전 / 풀백 — 거리: 근접 / 중 / 매크로 / 원경
-
-**Cut 1 (근접, 문서 — 글자 금지 이중)**
-```
-Vertical 9:16 shot. Slow push-in on an aged typewritten patent document lying on a dark wooden desk, lit by a single desk lamp. Cold paper texture, deep shadows. Desaturated navy and cyan, heavy film grain. Cinematic, moody, shallow depth of field, no people, no text on screen, no legible writing, no readable characters. Ambient sound: quiet room tone, faint paper rustle.
-```
-
-**Cut 2 (중경, 무전 장비)**
+**클립 A (비트 4·5) — 무전 장비**
 ```
 Vertical 9:16 shot. Slow lateral dolly across a 1940s radio transmitter rack with glowing vacuum tubes and dials in a dark room. Single cold light source, dust in the air. Desaturated navy and cyan, heavy film grain. Cinematic, moody, shallow depth of field, no people, no text on screen. Ambient sound: soft electrical hum, faint radio static.
 ```
 
-**Cut 3 (매크로, 피아노 롤 — 글자 금지 이중)**
+**클립 B (비트 7·8) — 피아노 롤**
 ```
 Vertical 9:16 shot. Slow overhead rotation above a perforated player-piano paper roll unspooling across a dark surface, punched holes catching a single beam of light. Desaturated navy and cyan, heavy film grain. Cinematic, moody, shallow depth of field, no people, no text on screen, no legible writing, no readable characters. Ambient sound: slow mechanical clicking, room tone.
 ```
 
-**Cut 4 (원경, 서류고)**
+**그래픽 (비트 6) — 88채널 다이어그램** (nano_banana 1장, 2크레딧)
 ```
-Vertical 9:16 shot. Slow pull-back from a slightly open metal filing drawer in a dark archive room, rows of cabinets receding into shadow, dust motes in a single shaft of cold light. Desaturated navy and cyan, heavy film grain. Cinematic, moody, shallow depth of field, no people, no text on screen. Ambient sound: deep room tone, distant creak.
-```
-
-## 커버 프롬프트
-
-**한국어**
-```
-Vertical YouTube Shorts cover image. Large bold Korean headline text reading exactly: 이 특허의
-발명자는 배우였다 — set in a heavy geometric sans-serif, pure white with a thick black outline, positioned in the upper third, centered, broken across exactly 2 lines, very large and legible on a phone. Below it, an aged patent-style line drawing of a radio device connected to a perforated player-piano roll, blueprint linework on dark paper, lit by a single cold light source. Desaturated navy and cyan palette, single light source, heavy film grain. High contrast, punchy, cinematic. No people. No other text anywhere in the image.
+Vertical 9:16 diagram. A minimal technical illustration on near-black navy background: two small radio towers left and right, between them 88 thin horizontal cyan frequency lines stacked like piano strings, one line glowing as a signal dot jumps between lines. Desaturated navy and cyan, heavy film grain, blueprint linework. No people, no text, no legible characters.
 ```
 
-**영어**
-```
-Vertical YouTube Shorts cover image. Large bold headline text reading exactly: THE INVENTOR
-WAS A MOVIE STAR — set in a heavy geometric sans-serif, pure white with a thick black outline, positioned in the upper third, centered, broken across exactly 2 lines, very large and legible on a phone. Below it, an aged patent-style line drawing of a radio device connected to a perforated player-piano roll, blueprint linework on dark paper, lit by a single cold light source. Desaturated navy and cyan palette, single light source, heavy film grain. High contrast, punchy, cinematic. No people. No other text anywhere in the image.
-```
+## 오디오
+
+- 음악: 드라마틱 미드템포 피아노, 단일 트랙 45초 (38.5만 편의 검증 무드), 클립 앰비언트는 -18dB 아래.
+- TTS 검수: params.prompt 대조 / durationSec÷음절 <4.5 재생성 / 51.1535625초 폐기. 깨짐 감시: 맞물리게 · 도청 · 뜁니다.
 
 ## §7 사람 체크리스트
 
-- [x] 커버 약속을 1컷 안에 회수 — 1컷 첫 문장이 "배우 = 발명자"를 직접 말함
-- [x] 소개 안 한 것을 "그 X"로 지칭 없음 — "이 특허"(1컷 도입 후), "그녀"(1컷 배우), "두 장치"(2컷 송신기·수신기)
-- [x] 통념 먼저 — 1컷 한 문장에 통념(배우)과 반박(발명자) 동시
-- [x] 4컷 한 줄기 — 서류의 일생: 이름 → 내용 → 심장 부품 → 운명
-- [x] 엔드카드 착지 — 본문이 세운 "보상 없이 만료된 서류" 위에 "55년 뒤의 상" (1942→1997)
-- [x] 던진 숫자의 의미 — 88은 3컷에서 회수(건반 수), 55년은 의미 명시
-- [x] 허구 디테일 제거 — 와이파이·최초 주장 배제, 출처 1차 자료
-
-## 생성 시 주의 (§5)
-
-- 한글 깨짐 감시 단어: 뛰어다니게 · 도청되거나 · 또렷이 · 서류함 — 깨지면 재생성이 아니라 단어 교체
-- 생성 직후: params.prompt 원문 대조 → durationSec ÷ 음절 4.5 미만이면 재생성 → 51.1535625초는 무조건 폐기
-- 업로드 시 Studio "altered or synthetic content" 라벨 체크
+- [x] 커버 회수 — 1비트 절반 + 3비트(10.9초) 완결
+- [x] 미소개 "그 X" 없음 — "이 배우"는 화면 위 인물 지시, "그녀"는 1비트 이후
+- [x] 통념 먼저 — 1비트 한 문장에 통념(배우)+반박
+- [x] 한 줄기 — 서류의 일생: 이름→장치→피아노→서랍→55년 뒤
+- [x] 불의 아크 — 무보상·미채택 → 뒤늦은 인정
+- [x] 비주얼 1:1 — 전 비트 나레이션 대응, 무관 스톡 없음
+- [x] 숫자 의미 — 88은 8비트에서 회수, 55년은 문맥 명시
+- [x] 허구 필터 — 와이파이·최초 주장 배제 / PD ⚠ 2건 대체안 확보
 
 ## 예상 단가
 
-클립 4 × 12 + 커버 2장 × 2 + 나레이션 8줄(한·영) × 0.15 ≈ **53크레딧** (한·영 합계)
+클립 2×12 + 그래픽 1×2 + 나레이션 28줄(한·영 14비트)×0.15 + 음악 1 ≈ **31크레딧** (v1 대비 -44%, 커버·스틸 0크레딧)
+
+## 업로드 체크
+
+- Studio "altered or synthetic content" 라벨 ON
+- 설명란에 특허 원문 링크 명기
+- 커버 텍스트 편집 오버레이 (굽지 않음)
