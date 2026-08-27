@@ -1,21 +1,77 @@
 {
  "title": "P05 — 아무도 쓰지 않은 발명품 (에이브러햄 링컨 / US6469)",
- "cover_ko": "대통령이 남긴 도면 한 장",
- "cover_en": "A PRESIDENT'S FORGOTTEN PATENT",
+ "cover_ko": "아무도 쓰지 않은 발명품",
+ "cover_en": "THE INVENTION NOBODY USED",
  "beats": [
-  {"ko": "이 남자가 만든 발명품, 아무도 쓴 적이 없습니다.", "en": "This man's invention was never used by anyone.", "visual": "인물"},
-  {"ko": "천팔백사십구 년, 특허청에 도면 한 장이 접수됩니다.", "en": "In 1849, a drawing reached the Patent Office.", "visual": "인물"},
-  {"ko": "그때 강배들은 모래톱에 자주 걸렸습니다.", "en": "Back then riverboats got stuck on sandbars.", "visual": "그래픽"},
-  {"ko": "걸리면 짐을 전부 내려야 했죠.", "en": "Stuck meant unloading the entire cargo.", "visual": "그래픽"},
-  {"ko": "그의 아이디어는 간단했습니다.", "en": "His idea was simple.", "visual": "인물"},
-  {"ko": "배 옆구리에 고무 주머니를 답니다.", "en": "Strap rubber bags along the boat's sides.", "visual": "그래픽"},
-  {"ko": "공기를 넣으면 배가 떠오르죠.", "en": "Fill them with air; the boat rises.", "visual": "그래픽"},
-  {"ko": "짐을 내리지 않고 모래톱을 넘는 겁니다.", "en": "It floats over the bar, cargo and all.", "visual": "그래픽"},
-  {"ko": "서류의 서명은, 일리노이의 한 변호사.", "en": "The signature: a lawyer from Illinois.", "visual": "문서"},
-  {"ko": "그는 젊을 때 배가 걸리는 걸 직접 겪었습니다.", "en": "He had been stranded himself, years before.", "visual": "인물"},
-  {"ko": "모형은 직접 나무를 깎아 만들었고요.", "en": "He whittled the wooden model by hand.", "visual": "인물"},
-  {"ko": "하지만 이 장치는 한 번도 만들어지지 않았습니다.", "en": "But the device was never built.", "visual": "인물"},
-  {"ko": "십이 년 뒤, 그는 대통령이 됩니다.", "en": "Twelve years later, he became president.", "visual": "인물"},
-  {"ko": "특허를 가진 유일한 미국 대통령, 에이브러햄 링컨.", "en": "The only U.S. president with a patent: Abraham Lincoln.", "visual": "인물"}
+  {
+   "ko": "이 남자가 만든 발명품, 아무도 쓴 적이 없습니다.",
+   "en": "This man's invention was never used by anyone.",
+   "visual": "인물"
+  },
+  {
+   "ko": "천팔백사십구 년, 특허청에 도면 한 장이 접수됩니다.",
+   "en": "In 1849, a drawing reached the Patent Office.",
+   "visual": "인물"
+  },
+  {
+   "ko": "그때 강배들은 모래톱에 자주 걸렸습니다.",
+   "en": "Back then riverboats got stuck on sandbars.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "걸리면 짐을 전부 내려야 했죠.",
+   "en": "Stuck meant unloading the entire cargo.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "그의 아이디어는 간단했습니다.",
+   "en": "His idea was simple.",
+   "visual": "인물"
+  },
+  {
+   "ko": "배 옆구리에 고무 주머니를 답니다.",
+   "en": "Strap rubber bags along the boat's sides.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "공기를 넣으면 배가 떠오르죠.",
+   "en": "Fill them with air; the boat rises.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "짐을 내리지 않고 모래톱을 넘는 겁니다.",
+   "en": "It floats over the bar, cargo and all.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "서류의 서명은, 일리노이의 한 변호사.",
+   "en": "The signature: a lawyer from Illinois.",
+   "visual": "문서"
+  },
+  {
+   "ko": "그는 젊을 때 배가 걸리는 걸 직접 겪었습니다.",
+   "en": "He had been stranded himself, years before.",
+   "visual": "인물"
+  },
+  {
+   "ko": "모형은 직접 나무를 깎아 만들었고요.",
+   "en": "He whittled the wooden model by hand.",
+   "visual": "인물"
+  },
+  {
+   "ko": "하지만 이 장치는 한 번도 만들어지지 않았습니다.",
+   "en": "But the device was never built.",
+   "visual": "인물"
+  },
+  {
+   "ko": "십이 년 뒤, 그는 대통령이 됩니다.",
+   "en": "Twelve years later, he became president.",
+   "visual": "인물"
+  },
+  {
+   "ko": "특허를 가진 유일한 미국 대통령, 에이브러햄 링컨.",
+   "en": "The only U.S. president with a patent: Abraham Lincoln.",
+   "visual": "인물"
+  }
  ]
 }
