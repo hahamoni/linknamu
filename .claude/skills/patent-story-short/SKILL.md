@@ -210,3 +210,38 @@ visual ∈ 인물 | 클립 | 문서 | 그래픽
   Commons API `extmetadata`로 개별 확인하고 패키지 문서 표에 남긴다.
 - **도면 헤더에 발명자 이름이 인쇄돼 있다.** 정체 공개형에서는 초반 비트에 헤더가 보이지 않게
   크롭하고, 헤더 자체를 **마지막 반전 카드**로 쓴다 (P05 "ABRAHAM LINCOLN" 헤더).
+
+### 인용부호 감사 (2026-08-27 추가 — 실측으로 세 편에서 잡힘)
+
+**따옴표 안에 들어가는 말은 원문에 그 말이 실제로 있어야 한다.** 의역·요약을 따옴표로 감싸면
+시청자는 그것을 인용으로 읽는다. 대본이 완성된 뒤 반드시 한 번 훑는다:
+
+```
+python3 - <<'EOF'
+import json,re,glob
+for f in sorted(glob.glob('docs/shorts/ep-p*-beats.json')):
+    for i,b in enumerate(json.load(open(f))['beats'],1):
+        for m in re.findall(r"'([^']+)'", b['ko']):
+            print(f, i, m)
+EOF
+```
+뽑힌 문구를 **하나씩 특허 원문 전수 검색으로 대조한다.** 실제로 걸린 것들:
+
+- P09: '측면 조종 수단' → US821393에 `control`이 **0회**. 원문은 "means for maintaining or
+  restoring the equilibrium or lateral balance" → '측면 균형을 잡는 수단'으로 수정.
+- P06: '어느 쪽이든 상관없게.' → 원문은 "In my improved roll I overcome this wholly".
+  의역이므로 따옴표를 걷어내고 평서문으로 수정.
+- P08: 마지막 인용문이 전언 과정에서 흘렀다. 원문은 "Of all the men who **didn't** invent the
+  telephone, Gray was the nearest." (Enos Barton, Casson 1910 전언).
+
+전언 인용은 **누가 언제 전한 것인지**까지 패키지 문서에 적는다. Casson처럼 이해관계가 있는
+출처는 그 사실도 함께 적고, 설명란 주석으로 내보낸다.
+
+### OCR을 단독 근거로 쓰지 않는다
+
+옛 스캔의 텍스트층은 깨진다. US821393은 청구항 정형구 "In a flying-machine"을 `In a Engine`,
+`In a Entitle`로 읽었다 — 그대로 믿었으면 "특허에 엔진이 있다"는 정반대 결론이 나왔다.
+
+**단어 유무·횟수를 화면에 올릴 때는 최소 두 판본을 대조한다.** US645576은 두 판본이
+signal·telegraph·wireless·radio = 0으로 일치했지만 energy 횟수는 어긋나(42 vs 60+)
+**일치한 0만 카드에 남겼다.** 어긋나는 수치는 쓰지 않는다.

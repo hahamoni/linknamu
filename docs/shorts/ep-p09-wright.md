@@ -13,6 +13,7 @@
 | 청구항 **총 18개**. 전수 확인 결과 **엔진·모터·프로펠러를 청구 대상으로 삼은 항 없음** | ● | 원문 전수 확인. motor·propeller 0회. `Engine`이 1회 보이나 이는 청구항 11의 정형구 "In a flying-machine"을 OCR이 오인식한 것(같은 위치의 청구항 10은 "In a Entitle"로 깨져 있고, 나머지 10개 항은 모두 "In a flying-machine") |
 | 청구항 1: *"…means for imparting to the right and left portions of said aeroplane a helicoidal warp…"* — 청구 대상은 **날개를 비트는 수단** | ● | 원문 |
 | 방향타 연계: 날개 비틀기와 수직타를 함께 움직이는 구성이 별도 청구항으로 존재 | ● | 원문 |
+| 9비트 인용구의 근거: 원문 목적 진술 *"The objects of our invention are to provide **means for maintaining or restoring the equilibrium or lateral balance** of the apparatus, to provide means for guiding the machine both vertically and horizontally…"* — **주의: 이 특허에 'control'이라는 단어는 0회다.** 초고에서 '측면 조종 수단'으로 썼다가 원문 대조에서 잡아 고쳤다 | ● | 원문 전수 검색 |
 | 출원 시점(1903-03) 기준 특허는 **1902년 글라이더** 기반 — 동력 비행(1903-12-17) 이전 출원 | ● | 출원일 대조 |
 | 특허 마지막 장 증인란에 **"CHAS. E. TAYLOR"** 서명 (공동 증인 E. EARLE FORRER) | ● | patentimages PDF 10쪽(=명세서 최종면) 직접 확인 — *"ORVILLE WRIGHT. WILBUR WRIGHT. Witnesses: CHAS. E. TAYLOR, E. EARLE FORRER."* |
 | **주의**: 도면 시트(1~3장)의 증인란은 **다른 두 사람의 육필 서명**이다. 테일러의 이름은 명세서 마지막 장에만 있다. 13비트 "그 서류 마지막 장"은 이 구분을 지킨 표현 | ● | 도면 시트 하단 육필 증인란 vs 10쪽 활자 증인란 대조 |
@@ -35,7 +36,7 @@
 | 6 | 그래픽 | 한쪽 날개를 비틀면 기체가 기울죠. | 윙워핑 도면 푸시인 |
 | 7 | 그래픽 | 그 기울기를 방향타와 묶은 게 핵심이었습니다. | FIG.1 |
 | 8 | 인물 | 기계가 아니라 조종법에 권리를 낸 겁니다. | 헤더 푸시인 |
-| 9 | 문서 | 서류에 적힌 건 '측면 조종 수단'뿐이었습니다. | **타이틀 카드 어둡게** — 61.5% 지점 |
+| 9 | 문서 | 서류에 적힌 건 '측면 균형을 잡는 수단'입니다. | **타이틀 카드 어둡게** — 61.5% 지점 |
 | 10 | 인물 | 그래서 날개를 비틀지 않는 비행기까지 걸렸습니다. | 윙워핑 도면 어둡게 |
 | 11 | 인물 | 미국 법원은 라이트 형제 손을 들어줬고요. | FIG.1 어둡게 |
 | 12 | 인물 | 소송은 십 년 넘게 이어졌고, 정부가 특허를 묶었죠. | 헤더 어둡게 |
