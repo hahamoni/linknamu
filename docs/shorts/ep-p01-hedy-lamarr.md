@@ -97,6 +97,10 @@ Vertical 9:16 diagram. A minimal technical illustration on near-black navy backg
 
 ## 생성 대기열 (크레딧 충전 시 즉시 실행)
 
+> 2026-08-27 실측: 나레이션(항목 3)은 Gemini 로컬 파이프라인으로 완료(`ep-p01-qa-report.md`).
+> 클립·다이어그램은 **Higgsfield free 플랜에서 생성 불가**("Requires basic plan or higher") — basic 이상 플랜 + 크레딧 필요. 다이어그램 실측 1cr(예상 1.5cr보다 저렴).
+> 스틸 다운로드는 클라우드 세션 공유 IP가 Wikimedia에서 429 — 로컬 실행 필수 재확인 (`generate.py --stills`, UA 헤더 내장).
+
 1. `generate_video_batch` — 클립 A(무전 장비)·B(피아노 롤), veo3_1_lite 8s 720p 9:16 audio on (16cr)
 2. `generate_image` — 88채널 다이어그램, nano_banana 9:16 (1.5cr)
 3. `generate_audio_batch` — 한 14줄 + 영 14줄, text2speech_v2/minimax (4.2cr) → §5 검수(원문 대조·durationSec÷음절≥4.5·51.1535625초 폐기)

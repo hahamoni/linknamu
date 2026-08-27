@@ -115,6 +115,9 @@ def main():
 
     if "--stills" in args:
         sd = out / "stills"; sd.mkdir(exist_ok=True)
+        opener = urllib.request.build_opener()  # Wikimedia는 기본 UA를 거부함 (UA 정책)
+        opener.addheaders = [("User-Agent", "linknamu-shorts/1.0 (archive stills fetch)")]
+        urllib.request.install_opener(opener)
         for name, fp in STILLS.items():
             url = f"https://commons.wikimedia.org/wiki/Special:FilePath/{fp}"
             print(f"↓ {name}")
