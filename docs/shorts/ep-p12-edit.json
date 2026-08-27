@@ -1,0 +1,53 @@
+{
+ "_note": "P12 편집 스펙. 전량 0크레딧 — US645576 단일 도면 시트와 본문 크롭의 블루프린트 반전 + 코드 렌더 카드 3종. 반전은 14비트 — 대법원 판결 다섯 달 전에 그는 이미 죽었다. 착지 화면은 그의 육필 서명.",
+ "edit": [
+  {"kind": "pad", "src": "stills/20_towers_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/10_header_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/23_signature_inv.png", "opts": {}},
+  {"kind": "still", "src": "stills/30_card_title.png", "opts": {"focus": "center"}},
+  {"kind": "pad", "src": "stills/20_towers_inv.png", "opts": {"fast": true}},
+  {"kind": "pad", "src": "stills/21_tx_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/22_rx_inv.png", "opts": {}},
+  {"kind": "still", "src": "stills/32_card_count.png", "opts": {"focus": "center"}},
+  {"kind": "still", "src": "stills/31_card_claim1.png", "opts": {"focus": "center"}},
+  {"kind": "pad", "src": "stills/24_messages_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/20_towers_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/10_header_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/21_tx_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/23_signature_inv.png", "opts": {"bright": true}}
+ ],
+ "subs_ko": [
+  "테슬라가 라디오를 발명했다는 말,\n근거가 뭘까요?",
+  "늘 이 특허 한 장이\n나옵니다.",
+  "1897년,\n테슬라가 낸 서류죠.",
+  "제목은 '전기 에너지를\n보내는 방식'입니다.",
+  "도면엔\n탑 두 개가 서 있고요.",
+  "한쪽에서 땅과 공기로\n전기를 흘려보내면",
+  "다른 쪽 탑이\n그걸 받습니다.",
+  "전기를 보내는 특허입니다.",
+  "청구항 9개가\n전부 에너지 전송이고요.",
+  "메시지도 보낼 수 있다고\n한 문장 덧붙였을 뿐입니다.",
+  "그럼 1943년\n대법원 판결은요?",
+  "마르코니 특허 하나를\n무효로 만든 재판이었습니다.",
+  "테슬라에게 무언가를 준\n판결이 아니었어요.",
+  "그 판결 다섯 달 전,\n그는 이미 세상에 없었고요."
+ ],
+ "subs_en": [
+  "They say Tesla invented radio.\nOn what evidence?",
+  "One patent\nalways comes up.",
+  "Tesla filed it\nin 1897.",
+  "Its title: System of Transmission\nof Electrical Energy.",
+  "The drawing\nshows two towers.",
+  "One sends current\nthrough the earth and air.",
+  "The other tower\ncollects it.",
+  "It is a patent for sending power.",
+  "All nine claims are about\ntransmitting energy.",
+  "One sentence adds that it\ncould carry messages too.",
+  "So what about the 1943\nSupreme Court ruling?",
+  "That case struck down one\nof Marconi's patents.",
+  "It gave Tesla nothing.\nHe wasn't even a party.",
+  "And five months before it,\nhe was already dead."
+ ],
+ "bottom_beats": [4, 8, 9, 10, 12, 13, 14],
+ "ambient": []
+}

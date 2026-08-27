@@ -1,0 +1,21 @@
+{
+ "title": "P12 — 라디오 특허가 아니었다 (니콜라 테슬라 / US645576)",
+ "cover_ko": "라디오 특허가 아니었다",
+ "cover_en": "NOT A RADIO PATENT",
+ "beats": [
+  {"ko": "테슬라가 라디오를 발명했다는 말, 근거가 뭘까요?", "en": "They say Tesla invented radio. On what evidence?", "visual": "인물"},
+  {"ko": "늘 이 특허 한 장이 나옵니다.", "en": "One patent always comes up.", "visual": "인물"},
+  {"ko": "천팔백구십칠 년, 테슬라가 낸 서류죠.", "en": "Tesla filed it in 1897.", "visual": "인물"},
+  {"ko": "제목은 '전기 에너지를 보내는 방식'입니다.", "en": "Its title: System of Transmission of Electrical Energy.", "visual": "그래픽"},
+  {"ko": "도면엔 탑 두 개가 서 있고요.", "en": "The drawing shows two towers.", "visual": "그래픽"},
+  {"ko": "한쪽에서 땅과 공기로 전기를 흘려보내면", "en": "One sends current through the earth and air.", "visual": "그래픽"},
+  {"ko": "다른 쪽 탑이 그걸 받습니다.", "en": "The other tower collects it.", "visual": "그래픽"},
+  {"ko": "전기를 보내는 특허입니다.", "en": "It is a patent for sending power.", "visual": "인물"},
+  {"ko": "청구항 아홉 개가 전부 에너지 전송이고요.", "en": "All nine claims are about transmitting energy.", "visual": "문서"},
+  {"ko": "메시지도 보낼 수 있다고 한 문장 덧붙였을 뿐입니다.", "en": "One sentence adds that it could carry messages too.", "visual": "인물"},
+  {"ko": "그럼 천구백사십삼 년 대법원 판결은요?", "en": "So what about the 1943 Supreme Court ruling?", "visual": "인물"},
+  {"ko": "마르코니 특허 하나를 무효로 만든 재판이었습니다.", "en": "That case struck down one of Marconi's patents.", "visual": "인물"},
+  {"ko": "테슬라에게 무언가를 준 판결이 아니었어요.", "en": "It gave Tesla nothing. He wasn't even a party.", "visual": "인물"},
+  {"ko": "그 판결 다섯 달 전, 그는 이미 세상에 없었고요.", "en": "And five months before it, he was already dead.", "visual": "인물"}
+ ]
+}
