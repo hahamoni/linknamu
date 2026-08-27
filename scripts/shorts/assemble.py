@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-"""P01 편집 조립 — 나레이션 타임라인에 맞춰 비트별 비주얼을 잘라 붙인다.
+"""쇼츠 편집 조립 — 나레이션 타임라인에 맞춰 비트별 비주얼을 잘라 붙인다.
 
 사용:
   python3 scripts/shorts/assemble.py docs/shorts/ep-p01-beats.json --lang ko \
       --font <NotoSansKR-Bold.ttf 경로> [--no-subs] [--music <트랙.mp3>]
 
-산출: ep-p01_output/ep-p01_<lang>_preview.mp4 (720x1280 24fps, 나레이션+클립 앰비언트 믹스)
-음악 트랙을 주면 최종 믹스(ep-p01_<lang>.mp4), 없으면 프리뷰. 의존성: ffmpeg.
+산출: <ep>_output/<ep>_<lang>_preview.mp4 (720x1280 24fps, 나레이션+클립 앰비언트 믹스)
+음악 트랙을 주면 최종 믹스(<ep>_<lang>.mp4), 없으면 프리뷰. 의존성: ffmpeg.
 비주얼 매핑·자막 줄바꿈은 아래 EDIT/SUBS 스펙 (패키지 문서 비트 표 기준).
 
 폰트: OFL Noto Sans KR —
@@ -230,7 +230,8 @@ def main():
              "-map", "[mix]", "-c:a", "aac", "-b:a", "160k", m])
         audio = m
 
-    final = str(out_dir / f"ep-p01_{lang}{'' if music else '_preview'}.mp4")
+    stem = ep_path.stem.replace("-beats", "")   # 편별 출력명 (ep-p02 등)
+    final = str(out_dir / f"{stem}_{lang}{'' if music else '_preview'}.mp4")
     if font and "--no-subs" not in args:
         print("· 자막 번인 + 먹싱 (libass)")
         family = "Noto Sans KR"
