@@ -1,0 +1,21 @@
+{
+ "title": "P07 — 지퍼라는 말을 듣지 못한 발명가 (휘트컴 저드슨 / US504038)",
+ "cover_ko": "그는 이름조차 듣지 못했다",
+ "cover_en": "HE NEVER HEARD ITS NAME",
+ "beats": [
+  {"ko": "이 장치, 옷에 쓰라고 만든 게 아니었습니다.", "en": "This thing was never meant for clothes.", "visual": "인물"},
+  {"ko": "천팔백구십삼 년, 시카고에서 특허가 나옵니다.", "en": "In 1893, a Chicago inventor got a patent.", "visual": "인물"},
+  {"ko": "구두끈이 너무 귀찮다는 게 이유였죠.", "en": "His reason: shoelaces were a nuisance.", "visual": "그래픽"},
+  {"ko": "고리를 하나씩 채우는 대신", "en": "Instead of hooking each clasp by hand,", "visual": "그래픽"},
+  {"ko": "손잡이를 쭉 올리면 한 번에 잠깁니다.", "en": "one pull closes them all at once.", "visual": "그래픽"},
+  {"ko": "그런데 자꾸 저절로 풀렸습니다.", "en": "But it kept popping open.", "visual": "인물"},
+  {"ko": "만국박람회에 내놨지만, 아무도 사지 않았죠.", "en": "He showed it at the World's Fair. Nobody bought.", "visual": "인물"},
+  {"ko": "이십 년 동안 실패작이었습니다.", "en": "For twenty years it was a failure.", "visual": "인물"},
+  {"ko": "특허 어디에도 '옷'이라는 말은 없습니다.", "en": "The patent never says the word \"clothing.\"", "visual": "문서"},
+  {"ko": "다른 기술자가 이빨 모양을 바꿔 완성합니다.", "en": "Another engineer redesigned the teeth.", "visual": "그래픽"},
+  {"ko": "고무장화 회사가 여기에 이름을 붙였고요.", "en": "A rubber boot company gave it a name.", "visual": "인물"},
+  {"ko": "쭉 잠긴다는 소리에서 온 말, 지퍼였습니다.", "en": "From the sound it makes: the zipper.", "visual": "인물"},
+  {"ko": "그 이름이 붙은 건 천구백이십삼 년.", "en": "That name was coined in 1923.", "visual": "인물"},
+  {"ko": "발명가는 그보다 십사 년 전에 죽었습니다.", "en": "The inventor had died fourteen years earlier.", "visual": "인물"}
+ ]
+}

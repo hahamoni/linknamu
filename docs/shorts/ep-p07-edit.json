@@ -1,0 +1,53 @@
+{
+ "_note": "P07 편집 스펙. 인물 사진 미확보 — 특허 도면 반전본·인용 카드 중심(0크레딧). 반전은 14비트(발명가 사망이 명명보다 14년 앞섬).",
+ "edit": [
+  {"kind": "pad", "src": "stills/11_shoe_fig_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/10_header_1893_inv.png", "opts": {}},
+  {"kind": "still", "src": "stills/20_card_shoe.png", "opts": {"focus": "center"}},
+  {"kind": "pad", "src": "stills/12_slider_fig_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/12_slider_fig_inv.png", "opts": {"fast": true}},
+  {"kind": "pad", "src": "stills/11_shoe_fig_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/10_header_1893_inv.png", "opts": {"dark": true}},
+  {"kind": "still", "src": "stills/21_card_conceal.png", "opts": {"focus": "center", "dark": true}},
+  {"kind": "still", "src": "stills/20_card_shoe.png", "opts": {"focus": "center", "fast": true}},
+  {"kind": "pad", "src": "stills/13_sundback_teeth_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/13_sundback_teeth_inv.png", "opts": {"fast": true}},
+  {"kind": "pad", "src": "stills/12_slider_fig_inv.png", "opts": {"bright": true}},
+  {"kind": "pad", "src": "stills/10_header_1893_inv.png", "opts": {"bright": true}},
+  {"kind": "pad", "src": "stills/11_shoe_fig_inv.png", "opts": {"dark": true}}
+ ],
+ "subs_ko": [
+  "이 장치, 옷에 쓰라고\n만든 게 아니었습니다.",
+  "1893년, 시카고에서\n특허가 나옵니다.",
+  "구두끈이 너무 귀찮다는 게\n이유였죠.",
+  "고리를 하나씩\n채우는 대신",
+  "손잡이를 쭉 올리면\n한 번에 잠깁니다.",
+  "그런데 자꾸\n저절로 풀렸습니다.",
+  "만국박람회에 내놨지만,\n아무도 사지 않았죠.",
+  "20년 동안\n실패작이었습니다.",
+  "특허 어디에도\n'옷'이라는 말은 없습니다.",
+  "다른 기술자가 이빨 모양을\n바꿔 완성합니다.",
+  "고무장화 회사가\n여기에 이름을 붙였고요.",
+  "쭉 잠긴다는 소리에서 온 말,\n지퍼였습니다.",
+  "그 이름이 붙은 건\n1923년.",
+  "발명가는 그보다\n14년 전에 죽었습니다."
+ ],
+ "subs_en": [
+  "This thing was never\nmeant for clothes.",
+  "In 1893, a Chicago inventor\ngot a patent.",
+  "His reason:\nshoelaces were a nuisance.",
+  "Instead of hooking\neach clasp by hand,",
+  "one pull closes\nthem all at once.",
+  "But it kept\npopping open.",
+  "He showed it at the World's Fair.\nNobody bought.",
+  "For twenty years\nit was a failure.",
+  "The patent never says\nthe word \"clothing.\"",
+  "Another engineer\nredesigned the teeth.",
+  "A rubber boot company\ngave it a name.",
+  "From the sound it makes:\nthe zipper.",
+  "That name was\ncoined in 1923.",
+  "The inventor had died\nfourteen years earlier."
+ ],
+ "bottom_beats": [3, 8, 9],
+ "ambient": []
+}
