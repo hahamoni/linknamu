@@ -49,9 +49,15 @@
 뒤의 것이 다 찬 편을 감지해 조립까지 끝냅니다. 사람이 07:00 UTC에 깨어 있을 필요가 없습니다.
 
 ```bash
-python3 scripts/shorts/patient_tts.py p02 p03 p04 p05 p06 p07 p08 p09 p10 p11 --lang ko --minutes 600 &
+python3 scripts/shorts/patient_tts.py p01:en:1,2 p02 p03 p04 p05 p06 p07 p08 p09 p10 p11 \
+    --lang ko --minutes 600 &
 python3 scripts/shorts/finish_episodes.py --lang ko --font <Pretendard-Bold.ttf> --minutes 600 &
 ```
+
+`p01:en:1,2` 가 맨 앞인 이유: P01 영어 나레이션 중 **2·4·5·6·7비트가 낡았습니다.**
+대본 v3 리라이트(2026-08-27 14:42) 이전에 만들어진 음성이라 옛 문장을 읽고 있습니다.
+파일에 소리가 멀쩡히 들어 있어서 자동 탐지로는 못 잡기 때문에 청크 1·2를 직접 지정합니다.
+이것만 다시 만들면 P01 영어판이 완성됩니다.
 
 편 하나만 손으로 돌릴 때:
 ```
