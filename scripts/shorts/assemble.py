@@ -38,9 +38,11 @@ EDIT = [
     ("card", "stills/03_signature_1941.jpg", {}),
     ("still", "stills/02_screenland_1942.png", {}),
     ("pad", "stills/11_samson_1949.png", {}),
-    ("still", "stills/01_heavenly_body_1944.jpg", {"focus": "top", "dark": True}),
-    ("still", "stills/01_heavenly_body_1944.jpg", {"focus": "top", "bright": True}),
-    ("dissolve", "stills/01_heavenly_body_1944.jpg", {"sig": "stills/03_signature_1941.jpg"}),
+    ("still", "stills/12_lady_without_passport_1950.jpg", {"dark": True}),
+    # 13~14 병합: 같은 초상 연속 컷 대신 한 컷을 길게 — 밝아지는 푸시인 → 비트14 시작점에 서명 디졸브
+    ("dissolve", "stills/01_heavenly_body_1944.jpg",
+     {"sig": "stills/03_signature_1941.jpg", "span": 2, "bright": True}),
+    ("skip", "", {}),
 ]
 SUBS = [
     "당신의 블루투스,\n이 배우에게서\n시작됐다면요?",
@@ -121,8 +123,13 @@ def main():
 
     print("· 비트 세그먼트 렌더링")
     still_post = f",{GRADE},{GRAIN},{VIG}"
-    for i, ((kind, src, o), dur) in enumerate(zip(EDIT, fdurs), 1):
+    seg_names = []
+    for i, ((kind, src, o), _d) in enumerate(zip(EDIT, fdurs), 1):
+        if kind == "skip":  # 직전 span 세그먼트에 흡수된 비트
+            continue
+        dur = sum(fdurs[i - 1:i - 1 + o.get("span", 1)])
         out = str(tmp / f"seg{i:02d}.mp4")
+        seg_names.append(f"seg{i:02d}.mp4")
         sp = str(out_dir / src)
         if kind == "still":
             extra = ""
@@ -144,9 +151,12 @@ def main():
         elif kind == "image":
             kb(sp, dur, out, 0.16 if o.get("fast") else 0.06, "center", "")
         elif kind == "dissolve":
-            fade, d1 = 0.5, dur * 0.58
+            fade = 0.5
+            # span 병합 시 서명 전환점 = 첫 비트 길이 (자막 경계와 일치)
+            d1 = fdurs[i - 1] if o.get("span") else dur * 0.58
+            extra = ",eq=brightness=0.06:saturation=0.7" if o.get("bright") else ""
             a, b = str(tmp / "b14a.mp4"), str(tmp / "b14b.mp4")
-            kb(sp, d1 + fade, a, 0.10, "top", still_post)
+            kb(sp, d1 + fade, a, 0.10, "top", still_post + extra)
             png = str(tmp / "card14.png")
             compose_card(str(out_dir / o["sig"]), png)
             kb(png, dur - d1 + fade, b, 0.08, "center", f",{GRAIN},{VIG}")
@@ -157,7 +167,7 @@ def main():
 
     print("· 비디오 concat")
     lst = tmp / "list.txt"
-    lst.write_text("".join(f"file 'seg{i:02d}.mp4'\n" for i in range(1, 15)))
+    lst.write_text("".join(f"file '{n}'\n" for n in seg_names))
     silent = str(tmp / "video_silent.mp4")
     run(["-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", silent])
 
