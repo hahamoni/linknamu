@@ -98,7 +98,9 @@ Vertical 9:16 diagram. A minimal technical illustration on near-black navy backg
 ## 생성 대기열 (크레딧 충전 시 즉시 실행)
 
 > 2026-08-27 실측: 나레이션(항목 3)은 Gemini 로컬 파이프라인으로 완료(`ep-p01-qa-report.md`).
-> 클립·다이어그램은 **Higgsfield free 플랜에서 생성 불가**("Requires basic plan or higher") — basic 이상 플랜 + 크레딧 필요. 다이어그램 실측 1cr(예상 1.5cr보다 저렴).
+> **다이어그램(항목 2) 완료** — 생성 모델 대신 코드 렌더링(`render_diagram.py`, 0크레딧): 생성 모델은 '정확히 88개'를 못 세므로 프로그래매틱이 더 정확. 산출 `ep-p01_output/diagram_88ch.png`.
+> 클립 A·B(항목 1)는 Gemini `veo-3.1-lite-generate-preview`로 파이프라인 준비 완료(`generate_visuals.py` + `ep-p01-visuals.json`) — 단 **무료 티어는 이미지·비디오 생성 쿼터 0** (전 모델 첫 호출부터 429). Google AI Studio 과금(tier 1) 활성화 후 `python3 scripts/shorts/generate_visuals.py docs/shorts/ep-p01-visuals.json --clips` 실행.
+> (Higgsfield 경로는 free 플랜 생성 불가 확인 — Gemini 직행으로 전환.)
 > 스틸 다운로드는 클라우드 세션 공유 IP가 Wikimedia에서 429 — 로컬 실행 필수 재확인 (`generate.py --stills`, UA 헤더 내장).
 
 1. `generate_video_batch` — 클립 A(무전 장비)·B(피아노 롤), veo3_1_lite 8s 720p 9:16 audio on (16cr)

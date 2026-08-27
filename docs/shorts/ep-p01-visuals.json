@@ -1,0 +1,13 @@
+{
+ "title": "P01 시각물 스펙 — 프롬프트 원본은 ep-p01-hedy-lamarr.md",
+ "images": [
+  {"name": "diagram_88ch",
+   "prompt": "Vertical 9:16 diagram. A minimal technical illustration on near-black navy background: two small radio towers left and right, between them 88 thin horizontal cyan frequency lines stacked like piano strings, one line glowing as a signal dot jumps between lines. Desaturated navy and cyan, heavy film grain, blueprint linework. No people, no text, no legible characters."}
+ ],
+ "clips": [
+  {"name": "clipA_radio",
+   "prompt": "Vertical 9:16 shot. Slow lateral dolly across a 1940s radio transmitter rack with glowing vacuum tubes and dials in a dark room. Single cold light source, dust in the air. Desaturated navy and cyan, heavy film grain. Cinematic, moody, shallow depth of field, no people, no text on screen. Ambient sound: soft electrical hum, faint radio static."},
+  {"name": "clipB_pianoroll",
+   "prompt": "Vertical 9:16 shot. Slow overhead rotation above a perforated player-piano paper roll unspooling across a dark surface, punched holes catching a single beam of light. Desaturated navy and cyan, heavy film grain. Cinematic, moody, shallow depth of field, no people, no text on screen, no legible writing, no readable characters. Ambient sound: slow mechanical clicking, room tone."}
+ ]
+}
