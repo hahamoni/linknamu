@@ -165,21 +165,21 @@ def main():
         out = str(tmp / f"seg{i:02d}.mp4")
         seg_names.append(f"seg{i:02d}.mp4")
         sp = str(out_dir / src)
+        tone = ""
+        if o.get("dark"):
+            tone = ",eq=brightness=-0.12:saturation=0.45"
+        if o.get("bright"):
+            tone = ",eq=brightness=0.06:saturation=0.7"
         if kind == "still":
-            extra = ""
-            if o.get("dark"):
-                extra = ",eq=brightness=-0.12:saturation=0.45"
-            if o.get("bright"):
-                extra = ",eq=brightness=0.06:saturation=0.7"
-            kb(sp, dur, out, 0.16 if o.get("fast") else 0.10, o.get("focus", "center"), still_post + extra)
+            kb(sp, dur, out, 0.16 if o.get("fast") else 0.10, o.get("focus", "center"), still_post + tone)
         elif kind == "card":
             png = str(tmp / f"card{i:02d}.png")
             compose_card(sp, png)
-            kb(png, dur, out, 0.08, "center", f",{GRAIN},{VIG}")
+            kb(png, dur, out, 0.08, "center", f",{GRAIN},{VIG}{tone}")
         elif kind == "pad":
             png = str(tmp / f"pad{i:02d}.png")
             compose_pad(sp, png)
-            kb(png, dur, out, 0.09, "center", still_post)
+            kb(png, dur, out, 0.16 if o.get("fast") else 0.09, "center", still_post + tone)
         elif kind == "clip":
             seg_clip(sp, dur, out, o["start"])
         elif kind == "image":

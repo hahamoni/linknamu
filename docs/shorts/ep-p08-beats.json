@@ -3,19 +3,75 @@
  "cover_ko": "두 시간이 갈랐다는 거짓말",
  "cover_en": "THE TWO-HOUR MYTH",
  "beats": [
-  {"ko": "전화의 주인을 두 시간이 갈랐다고 하죠?", "en": "They say two hours decided who owned the telephone.", "visual": "인물"},
-  {"ko": "천팔백칠십육 년, 같은 날 서류 두 장이 접수됩니다.", "en": "In 1876, two documents arrived on the same day.", "visual": "인물"},
-  {"ko": "한 장은 벨의 특허 출원, 다른 한 장은 그레이의 예고장.", "en": "One was Bell's application; one was Gray's caveat.", "visual": "그래픽"},
-  {"ko": "예고장은 아직 만드는 중이라는 뜻입니다.", "en": "A caveat means: still building it.", "visual": "그래픽"},
-  {"ko": "누가 몇 시에 냈는지는 지금도 알 수 없습니다.", "en": "Who filed first, nobody can prove today.", "visual": "인물"},
-  {"ko": "그런데 그 시각은 애초에 의미가 없었습니다.", "en": "But the clock never mattered.", "visual": "인물"},
-  {"ko": "당시 법은 먼저 낸 사람 편이 아니었거든요.", "en": "The law then favored the first to invent.", "visual": "그래픽"},
-  {"ko": "벨이 이긴 진짜 이유는 따로 있었습니다.", "en": "Bell won for a different reason.", "visual": "인물"},
-  {"ko": "특허 제목은 전화가 아니라 '전신의 개량'.", "en": "The patent's title is \"Improvement in Telegraphy.\"", "visual": "문서"},
-  {"ko": "그는 기계가 아니라 방법에 특허를 냈습니다.", "en": "He patented a method, not a machine.", "visual": "그래픽"},
-  {"ko": "그래서 육백 번 소송을 걸고도 지지 않았죠.", "en": "That's why he won six hundred lawsuits.", "visual": "인물"},
-  {"ko": "그레이는 전화를 잃었습니다.", "en": "Gray lost the telephone.", "visual": "인물"},
-  {"ko": "대신 그가 세운 회사가 벨의 전화기를 만들었고요.", "en": "But the company he founded built Bell's phones.", "visual": "인물"},
-  {"ko": "동업자의 말. '못 만든 사람 중 그가 제일 가까웠다.'", "en": "His partner: of all who missed it, Gray came closest.", "visual": "인물"}
+  {
+   "ko": "전화의 주인을 두 시간이 갈랐다고 하죠?",
+   "en": "They say two hours decided who owned the telephone.",
+   "visual": "인물"
+  },
+  {
+   "ko": "천팔백칠십육 년, 같은 날 서류 두 장이 접수됩니다.",
+   "en": "In 1876, two documents arrived on the same day.",
+   "visual": "인물"
+  },
+  {
+   "ko": "한 장은 벨의 특허 출원, 다른 한 장은 그레이의 예고장.",
+   "en": "One was Bell's application; one was Gray's caveat.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "예고장은 아직 만드는 중이라는 뜻입니다.",
+   "en": "A caveat means: still building it.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "누가 몇 시에 냈는지는 지금도 알 수 없습니다.",
+   "en": "Who filed first, nobody can prove today.",
+   "visual": "인물"
+  },
+  {
+   "ko": "그런데 그 시각은 애초에 의미가 없었습니다.",
+   "en": "But the clock never mattered.",
+   "visual": "인물"
+  },
+  {
+   "ko": "당시 법은 먼저 낸 사람 편이 아니었거든요.",
+   "en": "The law then favored the first to invent.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "벨이 이긴 진짜 이유는 따로 있었습니다.",
+   "en": "Bell won for a different reason.",
+   "visual": "인물"
+  },
+  {
+   "ko": "특허 제목은 전화가 아니라 '전신의 개량'.",
+   "en": "The patent's title is \"Improvement in Telegraphy.\"",
+   "visual": "문서"
+  },
+  {
+   "ko": "그는 기계가 아니라 방법에 특허를 냈습니다.",
+   "en": "He patented a method, not a machine.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "벨의 회사는 육백 번 소송을 걸고도 지지 않았죠.",
+   "en": "Bell's company fought six hundred suits and never lost.",
+   "visual": "인물"
+  },
+  {
+   "ko": "그레이는 전화를 잃었습니다.",
+   "en": "Gray lost the telephone.",
+   "visual": "인물"
+  },
+  {
+   "ko": "대신 그가 세운 회사가 벨의 전화기를 만들었고요.",
+   "en": "But the company he founded built Bell's phones.",
+   "visual": "인물"
+  },
+  {
+   "ko": "동업자의 말. '못 만든 사람 중 그가 제일 가까웠다.'",
+   "en": "His partner: of all who didn't invent it, Gray was nearest.",
+   "visual": "인물"
+  }
  ]
 }

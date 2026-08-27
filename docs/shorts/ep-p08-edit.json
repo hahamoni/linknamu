@@ -1,20 +1,97 @@
 {
  "_note": "P08 편집 스펙. 인물 사진 미확보 — 특허 도면 반전본·서명·인용 카드 중심(0크레딧). 9비트 'TELEGRAPHY' 헤더가 반전의 물증.",
  "edit": [
-  {"kind": "pad", "src": "stills/12_apparatus_inv.png", "opts": {}},
-  {"kind": "pad", "src": "stills/10_header_telegraphy_inv.png", "opts": {"dark": true}},
-  {"kind": "pad", "src": "stills/14_pulses_inv.png", "opts": {}},
-  {"kind": "still", "src": "stills/20_card_title.png", "opts": {"focus": "center", "dark": true}},
-  {"kind": "pad", "src": "stills/12_apparatus_inv.png", "opts": {"fast": true}},
-  {"kind": "pad", "src": "stills/14_pulses_inv.png", "opts": {"dark": true}},
-  {"kind": "pad", "src": "stills/13_bell_signature_inv.png", "opts": {}},
-  {"kind": "pad", "src": "stills/11_waves_inv.png", "opts": {}},
-  {"kind": "still", "src": "stills/20_card_title.png", "opts": {"focus": "center"}},
-  {"kind": "still", "src": "stills/21_card_claim5.png", "opts": {"focus": "center"}},
-  {"kind": "pad", "src": "stills/11_waves_inv.png", "opts": {"fast": true}},
-  {"kind": "pad", "src": "stills/12_apparatus_inv.png", "opts": {"dark": true}},
-  {"kind": "pad", "src": "stills/14_pulses_inv.png", "opts": {"bright": true}},
-  {"kind": "pad", "src": "stills/13_bell_signature_inv.png", "opts": {"bright": true}}
+  {
+   "kind": "pad",
+   "src": "stills/12_apparatus_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/10_header_telegraphy_inv.png",
+   "opts": {
+    "dark": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/14_pulses_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "still",
+   "src": "stills/20_card_title.png",
+   "opts": {
+    "focus": "center",
+    "dark": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/12_apparatus_inv.png",
+   "opts": {
+    "fast": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/14_pulses_inv.png",
+   "opts": {
+    "dark": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/13_bell_signature_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/11_waves_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "still",
+   "src": "stills/20_card_title.png",
+   "opts": {
+    "focus": "center"
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/21_card_claim5.png",
+   "opts": {
+    "focus": "center"
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/11_waves_inv.png",
+   "opts": {
+    "fast": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/12_apparatus_inv.png",
+   "opts": {
+    "dark": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/14_pulses_inv.png",
+   "opts": {
+    "bright": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/13_bell_signature_inv.png",
+   "opts": {
+    "bright": true
+   }
+  }
  ],
  "subs_ko": [
   "전화의 주인을\n두 시간이 갈랐다고 하죠?",
@@ -27,10 +104,10 @@
   "벨이 이긴 진짜 이유는\n따로 있었습니다.",
   "특허 제목은 전화가 아니라\n'전신의 개량'.",
   "그는 기계가 아니라\n방법에 특허를 냈습니다.",
-  "그래서 600번 소송을 걸고도\n지지 않았죠.",
+  "벨의 회사는 600번 소송을 걸고도\n지지 않았죠.",
   "그레이는 전화를 잃었습니다.",
   "대신 그가 세운 회사가\n벨의 전화기를 만들었고요.",
-  "동업자의 말.\n'못 만든 사람 중 그가 제일 가까웠다.'"
+  "동업자의 말. '못 만든 사람 중\n그가 제일 가까웠다.'"
  ],
  "subs_en": [
   "They say two hours decided\nwho owned the telephone.",
@@ -43,11 +120,16 @@
   "Bell won for\na different reason.",
   "The patent's title is\n\"Improvement in Telegraphy.\"",
   "He patented a method,\nnot a machine.",
-  "That's why he won\nsix hundred lawsuits.",
+  "Bell's company fought six\nhundred suits and never lost.",
   "Gray lost the telephone.",
   "But the company he founded\nbuilt Bell's phones.",
-  "His partner: of all who\nmissed it, Gray came closest."
+  "His partner: of all who didn't\ninvent it, Gray was nearest."
  ],
- "bottom_beats": [4, 9, 10, 14],
+ "bottom_beats": [
+  4,
+  9,
+  10,
+  14
+ ],
  "ambient": []
 }

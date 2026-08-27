@@ -3,19 +3,75 @@
  "cover_ko": "구글 것이 아니었다",
  "cover_en": "GOOGLE DIDN'T OWN IT",
  "beats": [
-  {"ko": "구글을 만든 그 알고리즘, 특허 주인은 누구일까요?", "en": "Who owned the patent on the algorithm that built Google?", "visual": "인물"},
-  {"ko": "천구백구십팔 년, 서류 한 장이 접수됩니다.", "en": "In 1998, one filing was submitted.", "visual": "인물"},
-  {"ko": "제목은 '연결된 문서에 순위 매기기'였죠.", "en": "The title: ranking nodes in a linked database.", "visual": "그래픽"},
-  {"ko": "원리는 한 문장이면 끝납니다.", "en": "The idea fits in a single sentence.", "visual": "그래픽"},
-  {"ko": "다른 문서가 가리키면 점수가 올라갑니다.", "en": "A document scores higher when others point to it.", "visual": "그래픽"},
-  {"ko": "점수 높은 문서가 가리키면 더 크게 올라가고요.", "en": "And higher when the pointers themselves score high.", "visual": "그래픽"},
-  {"ko": "그 점수로 검색 결과를 줄 세운 겁니다.", "en": "That score is what ordered the search results.", "visual": "그래픽"},
-  {"ko": "이게 구글의 시작이었습니다.", "en": "This was where Google began.", "visual": "인물"},
-  {"ko": "그런데 발명자란엔 이름이 하나뿐입니다.", "en": "But only one name sits on the inventor line.", "visual": "문서"},
-  {"ko": "세르게이 브린의 이름은 어디에도 없죠.", "en": "Sergey Brin's name appears nowhere on it.", "visual": "인물"},
-  {"ko": "그리고 특허 주인도 구글이 아니었습니다.", "en": "And the owner of the patent was not Google.", "visual": "인물"},
-  {"ko": "스탠퍼드 대학이었어요.", "en": "It was Stanford University.", "visual": "인물"},
-  {"ko": "대학은 돈 대신 구글 주식을 받았고요.", "en": "The university took Google shares instead of cash.", "visual": "인물"},
-  {"ko": "그 주식은 나중에 삼억 달러가 넘었습니다.", "en": "Those shares later came to over three hundred million.", "visual": "인물"}
+  {
+   "ko": "구글을 만든 그 알고리즘, 특허 주인은 누구일까요?",
+   "en": "Who owned the patent on the algorithm that built Google?",
+   "visual": "인물"
+  },
+  {
+   "ko": "천구백구십팔 년, 서류 한 장이 접수됩니다.",
+   "en": "In 1998, one filing was submitted.",
+   "visual": "인물"
+  },
+  {
+   "ko": "제목은 '연결된 문서에 순위 매기기'였죠.",
+   "en": "The title: ranking nodes in a linked database.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "원리는 한 문장이면 끝납니다.",
+   "en": "The idea fits in a single sentence.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "다른 문서가 가리키면 점수가 올라갑니다.",
+   "en": "A document scores higher when others point to it.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "점수 높은 문서가 가리키면 더 크게 올라가고요.",
+   "en": "And higher when the pointers themselves score high.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "그 점수로 검색 결과를 줄 세운 겁니다.",
+   "en": "That score is what ordered the search results.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "이게 구글의 시작이었습니다.",
+   "en": "This was where Google began.",
+   "visual": "인물"
+  },
+  {
+   "ko": "그런데 발명자란엔 이름이 하나뿐입니다.",
+   "en": "But only one name sits on the inventor line.",
+   "visual": "문서"
+  },
+  {
+   "ko": "세르게이 브린은 감사의 말에만 나옵니다.",
+   "en": "Sergey Brin appears only in the acknowledgements.",
+   "visual": "인물"
+  },
+  {
+   "ko": "그리고 특허 주인도 구글이 아니었습니다.",
+   "en": "And the owner of the patent was not Google.",
+   "visual": "인물"
+  },
+  {
+   "ko": "스탠퍼드 대학이었어요.",
+   "en": "It was Stanford University.",
+   "visual": "인물"
+  },
+  {
+   "ko": "대학은 돈 대신 구글 주식을 받았고요.",
+   "en": "The university took Google shares instead of cash.",
+   "visual": "인물"
+  },
+  {
+   "ko": "그 주식은 삼억 삼천육백만 달러가 됐습니다.",
+   "en": "Those shares became three hundred thirty-six million dollars.",
+   "visual": "인물"
+  }
  ]
 }
