@@ -3,7 +3,7 @@
  "edit": [
   {
    "kind": "pad",
-   "src": "stills/12_board_inv.png",
+   "src": "stills/01_board_kennard.jpg",
    "opts": {}
   },
   {
@@ -13,7 +13,7 @@
   },
   {
    "kind": "pad",
-   "src": "stills/12_board_inv.png",
+   "src": "stills/01_board_kennard.jpg",
    "opts": {
     "fast": true
    }
@@ -24,12 +24,9 @@
    "opts": {}
   },
   {
-   "kind": "still",
-   "src": "stills/20_quote_card.png",
-   "opts": {
-    "focus": "center",
-    "dark": true
-   }
+   "kind": "pad",
+   "src": "stills/12_board_inv.png",
+   "opts": {}
   },
   {
    "kind": "still",
@@ -60,21 +57,19 @@
   },
   {
    "kind": "pad",
-   "src": "stills/13_planchette_inv.png",
+   "src": "stills/02_bond_grave.jpg",
    "opts": {
     "dark": true
    }
   },
   {
    "kind": "pad",
-   "src": "stills/11_header_inv.png",
-   "opts": {
-    "dark": true
-   }
+   "src": "stills/03_fuld_patent_p1.jpg",
+   "opts": {}
   },
   {
    "kind": "pad",
-   "src": "stills/12_board_inv.png",
+   "src": "stills/01_board_kennard.jpg",
    "opts": {
     "dark": true
    }

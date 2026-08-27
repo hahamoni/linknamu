@@ -1,20 +1,92 @@
 {
  "_note": "P04 편집 스펙. 니콜스 인물 사진 미존재 — 특허 도면 'INVENTOR LARRY D. NICHOLS' 블록을 인물 대체 카드로 사용(P01 서명 카드와 동일 문법). 13비트 청구항 카드가 9비트 도면(3x3)과 짝을 이뤄 반전을 회수.",
  "edit": [
-  {"kind": "pad", "src": "stills/13_fig1_cube_inv.png", "opts": {}},
-  {"kind": "pad", "src": "stills/11_inventor_block_inv.png", "opts": {}},
-  {"kind": "pad", "src": "stills/14_fig2_magnets_inv.png", "opts": {}},
-  {"kind": "pad", "src": "stills/13_fig1_cube_inv.png", "opts": {"fast": true}},
-  {"kind": "pad", "src": "stills/12_header_1972_inv.png", "opts": {}},
-  {"kind": "pad", "src": "stills/11_inventor_block_inv.png", "opts": {"fast": true}},
-  {"kind": "pad", "src": "stills/13_fig1_cube_inv.png", "opts": {"dark": true}},
-  {"kind": "pad", "src": "stills/12_header_1972_inv.png", "opts": {"dark": true}},
-  {"kind": "pad", "src": "stills/15_fig3_3x3_inv.png", "opts": {}},
-  {"kind": "pad", "src": "stills/14_fig2_magnets_inv.png", "opts": {"fast": true}},
-  {"kind": "pad", "src": "stills/13_fig1_cube_inv.png", "opts": {"bright": true}},
-  {"kind": "pad", "src": "stills/11_inventor_block_inv.png", "opts": {"dark": true}},
-  {"kind": "still", "src": "stills/20_claim_card.png", "opts": {"focus": "center"}},
-  {"kind": "pad", "src": "stills/11_inventor_block_inv.png", "opts": {"bright": true}}
+  {
+   "kind": "pad",
+   "src": "stills/13_fig1_cube_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/11_inventor_block_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/14_fig2_magnets_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/13_fig1_cube_inv.png",
+   "opts": {
+    "fast": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/12_header_1972_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/11_inventor_block_inv.png",
+   "opts": {
+    "fast": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/13_fig1_cube_inv.png",
+   "opts": {
+    "dark": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/12_header_1972_inv.png",
+   "opts": {
+    "dark": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/15_fig3_3x3_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/03_cube_3x3.jpg",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/13_fig1_cube_inv.png",
+   "opts": {
+    "bright": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/02_cube_2x2.jpg",
+   "opts": {
+    "dark": true
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/20_claim_card.png",
+   "opts": {
+    "focus": "center"
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/11_inventor_block_inv.png",
+   "opts": {
+    "bright": true
+   }
+  }
  ],
  "subs_ko": [
   "루빅스 큐브,\n먼저 나온 게 있었다면요?",
@@ -48,6 +120,12 @@
   "His claim began with\n\"eight cube pieces.\"",
   "His line: \"It could have been\nthe Nichols Cube.\""
  ],
- "bottom_beats": [2, 6, 12, 13, 14],
+ "bottom_beats": [
+  2,
+  6,
+  12,
+  13,
+  14
+ ],
  "ambient": []
 }

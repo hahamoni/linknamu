@@ -44,7 +44,19 @@
 
 **TTS 풀어쓰기**: 1891년→천팔백구십일 년.
 
-## 비주얼 확보 상태
+## 아카이브 스틸 (확보 완료)
+
+| 파일 | 용도 | 라이선스 | 크레딧 |
+|---|---|---|---|
+| Ouija board - Kennard Novelty Company | 1·3·12, 커버 | Public domain | — |
+| Elijah Jefferson Bond Gravestone Rear Detail | 10 (발명자의 무덤) | **CC BY-SA 3.0** | ✅ 설명란 |
+| Patent Case File No. 1,125,833 (William Fuld) — NARA | 11 | Public domain | — |
+| US446054 도면 (patentimages) → 블루프린트 반전 | 2·4·5·13 | Public domain | — |
+| 코드 렌더 카드 (인용·TOY OR GAME·OUIJA·OUIDA) | 6·7·8·9·14 | 자체 제작 | — |
+
+인물 사진(본드·풀드·피터스)은 Wikimedia에 존재하지 않음을 검색으로 확인. 무덤·특허 문서로 대체.
+
+## (구) 비주얼 확보 상태
 
 Commons 검색 진행 중. 확보 우선순위:
 1. 특허 도면/표제부 (PD 확정 — patentimages 직접 취득 가능)
