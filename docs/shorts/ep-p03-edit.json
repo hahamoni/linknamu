@@ -1,0 +1,53 @@
+{
+ "_note": "P03 편집 스펙. 인물 사진 미확보 — 특허 도면(원조 보드·플랜쳇) 반전본 + 인용/이름 카드 중심(0크레딧). 8비트 'OUIJA' 카드와 14비트 'OUIDA' 카드가 한 글자만 다른 시각적 각운으로 반전을 완성.",
+ "edit": [
+  {"kind": "pad", "src": "stills/12_board_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/11_header_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/12_board_inv.png", "opts": {"fast": true}},
+  {"kind": "pad", "src": "stills/13_planchette_inv.png", "opts": {}},
+  {"kind": "still", "src": "stills/20_quote_card.png", "opts": {"focus": "center", "dark": true}},
+  {"kind": "still", "src": "stills/20_quote_card.png", "opts": {"focus": "center", "span": 2}},
+  {"kind": "skip", "src": "", "opts": {}},
+  {"kind": "still", "src": "stills/22_name_ouija.png", "opts": {"focus": "center"}},
+  {"kind": "still", "src": "stills/21_title_card.png", "opts": {"focus": "center"}},
+  {"kind": "pad", "src": "stills/13_planchette_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/11_header_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/12_board_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/13_planchette_inv.png", "opts": {"fast": true}},
+  {"kind": "still", "src": "stills/23_name_ouida.png", "opts": {"focus": "center", "bright": true}}
+ ],
+ "subs_ko": [
+  "영혼과 대화하는 판,\n특허엔 뭐라고 적혀 있을까요?",
+  "1891년, 미국이\n이 판에 특허를 내줍니다.",
+  "알파벳과 숫자가 적힌 나무판,\n그리고 작은 삼각대.",
+  "손을 살짝 올리면\n삼각대가 글자를 짚습니다.",
+  "특허 원문에는\n이렇게 적혀 있죠.",
+  "\"판이 움직여\n문장을 만든다.\"",
+  "누가 움직이는지는,\n끝까지 쓰지 않았습니다.",
+  "이름도 판에게 물었더니,\n'위저'라고 답했죠.",
+  "서류에 적힌 제목은,\n'장난감 또는 게임'.",
+  "큰돈을 번 건\n발명자가 아니었습니다.",
+  "공장 도장공이 회사를 넘겨받아\n백만장자가 됐죠.",
+  "이름을 지은 여자는\n기록에서 지워졌습니다.",
+  "그런데 그날, 그녀 목에는\n로켓 목걸이가 있었습니다.",
+  "그 안에 있던 이름은,\n소설가 '위다'였습니다."
+ ],
+ "subs_en": [
+  "A board that talks to spirits?\nRead its patent.",
+  "In 1891, America\ngranted it a patent.",
+  "A wooden board of letters,\nand a small pointer.",
+  "Rest your hand; the pointer\npicks out letters.",
+  "The patent itself\nsays this:",
+  "\"the table will move and point\nto certain letters.\"",
+  "Who moves it,\nit never says.",
+  "They asked the board its name.\nIt spelled Ouija.",
+  "The title on the document:\n\"Toy or Game.\"",
+  "The man who got rich\nwas not the inventor.",
+  "A factory painter took over\nand made a million.",
+  "The woman who named it\nwas erased.",
+  "But that night,\nshe wore a locket.",
+  "The name inside it:\nthe novelist Ouida."
+ ],
+ "bottom_beats": [5, 6, 7, 8, 9, 14],
+ "ambient": []
+}
