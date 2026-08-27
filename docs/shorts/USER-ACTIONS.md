@@ -25,3 +25,26 @@
 
 - 음악은 Claude가 Pixabay(무귀속·상업 허용)에서 직접 확보 중 — 유튜브 오디오 라이브러리 선호 시에만 사람 손 필요.
 - 아카이브 스틸은 Wikimedia에서 직접 수집 가능(429 시 재시도로 해결).
+
+---
+
+## 진행 로그 (2026-08-27 세션)
+
+### 완료
+- **P01 헤디 라마르** — 최종본 `ep-p01_ko.mp4` (42.5s, 음악·자막 포함). 영어판은 5개 비트 나레이션 재생성 대기.
+- **P02~P05 대본 4편** — 전부 게이트 통과, 특허 원문 검증 완료.
+  - P02 모노폴리(리지 매기) 43.3s · P03 위저 보드 44.2s · P04 니콜스 큐브 41.8s · P05 링컨 40.9s
+- **P02·P05 편집 스펙 + 아카이브 스틸** 확보 — 클립 생성 없이 0크레딧으로 조립 가능.
+
+### 막힌 것 — Gemini 무료 티어 TTS 일일 쿼터 (3개 모델 전부 소진)
+- 리셋: **매일 07:00 UTC (16:00 KST)**.
+- 그때까지 신규 나레이션 생성 불가 → 대본·스틸·편집 스펙만 선행 작업.
+- **해소 방법: Google AI Studio 결제 연결(tier 1).** 위 "계정·결제" 항목 참조.
+
+### 리셋 후 바로 실행 (편별 1줄씩)
+```
+python3 scripts/shorts/chunked_tts.py docs/shorts/ep-pNN-beats.json --lang ko --model gemini-3.1-flash-tts-preview
+python3 scripts/shorts/compress_silence.py docs/shorts/ep-pNN_output/beat*_ko.wav
+python3 scripts/shorts/assemble.py docs/shorts/ep-pNN-beats.json --lang ko --edit docs/shorts/ep-pNN-edit.json --font <Pretendard-Bold.ttf> --music <track.mp3>
+```
+자리표시 무음 나레이션으로 비주얼만 미리 보려면: `python3 scripts/shorts/placeholder_wavs.py docs/shorts/ep-pNN-beats.json --lang ko`
