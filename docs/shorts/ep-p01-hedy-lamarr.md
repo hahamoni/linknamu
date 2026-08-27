@@ -100,7 +100,8 @@ Vertical 9:16 diagram. A minimal technical illustration on near-black navy backg
 > 2026-08-27 실측: 나레이션(항목 3)은 Gemini 로컬 파이프라인으로 완료(`ep-p01-qa-report.md`).
 > **다이어그램(항목 2) 완료** — 생성 모델 대신 코드 렌더링(`render_diagram.py`, 0크레딧): 생성 모델은 '정확히 88개'를 못 세므로 프로그래매틱이 더 정확. 산출 `ep-p01_output/diagram_88ch.png`.
 > 클립 A·B(항목 1)는 Gemini `veo-3.1-lite-generate-preview`로 파이프라인 준비 완료(`generate_visuals.py` + `ep-p01-visuals.json`) — 단 **무료 티어는 이미지·비디오 생성 쿼터 0** (전 모델 첫 호출부터 429). Google AI Studio 과금(tier 1) 활성화 후 `python3 scripts/shorts/generate_visuals.py docs/shorts/ep-p01-visuals.json --clips` 실행.
-> **클립 스틸 확보 (2026-08-27, Gemini 앱/Plus 구독 수동 생성)** — `clipA_radio_still.png`(통과: v2 재생성으로 패널 라벨 제거 — 남은 건 계기판 눈금 숫자뿐, 시대 고증상 자연스러움) / `clipB_pianoroll_still.png`(통과: 텍스트·인물 없음, 스펙 부합). 둘 다 768×1376(≈9:16), 비전 검수 완료. **스틸이므로 최종 컷용 8초 영상(앰비언트 사운드 포함)은 별도 생성 필요** — 앱에서 영상 모드로 같은 프롬프트 사용, 우하단 Gemini 워터마크는 편집에서 크롭. 영상 확보 전까지는 스틸 + Ken Burns(푸시인/틸트)로 대체 가능.
+> **클립 스틸 확보 (2026-08-27, Gemini 앱/Plus 구독 수동 생성)** — `clipA_radio_still.png`(통과: v2 재생성으로 패널 라벨 제거 — 남은 건 계기판 눈금 숫자뿐, 시대 고증상 자연스러움) / `clipB_pianoroll_still.png`(통과: 텍스트·인물 없음, 스펙 부합). 둘 다 768×1376(≈9:16), 비전 검수 완료.
+> **클립 영상 확보 (2026-08-27, Gemini 앱 Veo 수동 생성 → 로컬 후처리)** — 앱 산출이 16:9(1280×720, 10초, AAC 앰비언트 포함)라 ffmpeg로 9:16 크롭(720×1280): `clipA_radio.mp4`(달리를 따라가는 이동 크롭 — 0–3s 관 클러스터 → 3–7s 팬 → 7s~ 새 클러스터, 4개 체크포인트 검수 통과) / `clipB_pianoroll.mp4`(고정 크롭, 롤이 대각선으로 프레임 충전, 통과). 16:9 마스터 2편도 보존(`*_16x9_master.mp4`) — 재크롭 필요 시 사용. 오디오 실측: A 험/스태틱 mean -36.7dB, B 클릭/룸톤 -49.6dB(음악 밑에 깔기 적합). 우하단 Gemini 워터마크는 편집에서 크롭/커버. 비트당 사용 구간 권장: 비트4→A 0–4s, 비트5→A 5.5–10s, 비트7→B 0–4.5s, 비트8→B 5.5–10s.
 > (Higgsfield 경로는 free 플랜 생성 불가 확인 — Gemini 직행으로 전환.)
 > 스틸 다운로드는 클라우드 세션 공유 IP가 Wikimedia에서 429 — 로컬 실행 필수 재확인 (`generate.py --stills`, UA 헤더 내장).
 
