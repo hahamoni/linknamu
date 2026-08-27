@@ -54,7 +54,7 @@
   },
   {
    "kind": "pad",
-   "src": "stills/18_reexam_head_inv.png",
+   "src": "stills/23_req_date_inv.png",
    "opts": {}
   },
   {
@@ -93,11 +93,11 @@
   "그게 전부입니다.\n청구항은 4개였고요.",
   "특허청은\n이 서류를 통과시켰습니다.",
   "본문 끝엔 이렇게 적혀 있었죠.\n'사용권 문의 환영.'",
-  "그런데 등록 6주 만에\n재심사가 걸립니다.",
+  "그런데 6주 만에,\n특허청이 스스로 다시 엽니다.",
   "옛날 그네 특허들이\n줄줄이 나왔고요.",
   "결과는 한 줄이었습니다.\n'청구항 전부 취소.'",
   "그 서류를 써준 변리사는\n아버지였습니다.",
-  "발명자란에 적힌 아들은,\n일곱 살이었고요."
+  "그 아들은 낼 때 다섯 살,\n나올 때 일곱 살이었고요."
  ],
  "subs_en": [
   "Can a way of swinging\non a swing be patented?",
@@ -109,11 +109,11 @@
   "That's all of it.\nFour claims, nothing more.",
   "The patent office\nlet it through.",
   "The last line reads: licenses\navailable upon request.",
-  "Six weeks after it issued,\nreexamination began.",
+  "Six weeks later, the office\nreopened it on its own.",
   "Older swing patents surfaced,\none after another.",
   "The result was one line:\nall claims cancelled.",
   "The attorney who wrote\nthat filing was his father.",
-  "And the son named as inventor\nwas seven years old."
+  "Five when he filed it.\nSeven when it issued."
  ],
  "bottom_beats": [
   3,
