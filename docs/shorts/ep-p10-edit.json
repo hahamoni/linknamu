@@ -1,0 +1,129 @@
+{
+ "_note": "P10 편집 스펙. 전량 0크레딧 — US6368227 도면·본문 크롭의 블루프린트 반전 + 코드 렌더 카드 4종. 반전은 13·14비트의 이름 짝(OLSON/OLSON) — 변리사가 아버지, 발명자가 일곱 살 아들.",
+ "edit": [
+  {
+   "kind": "pad",
+   "src": "stills/21_fig2_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/10_header_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "still",
+   "src": "stills/30_card_title.png",
+   "opts": {
+    "focus": "center"
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/21_fig2_inv.png",
+   "opts": {
+    "fast": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/15_claim1_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/20_fig1_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/22_fig3_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/13_abstract_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "still",
+   "src": "stills/31_card_license.png",
+   "opts": {
+    "focus": "center"
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/18_reexam_head_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/19_reexam_refs_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/24_cancel_line_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "still",
+   "src": "stills/32_card_attorney.png",
+   "opts": {
+    "focus": "center"
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/33_card_inventor.png",
+   "opts": {
+    "focus": "center",
+    "bright": true
+   }
+  }
+ ],
+ "subs_ko": [
+  "그네 타는 법,\n특허가 될 수 있을까요?",
+  "2000년 겨울, 특허청에\n서류 한 장이 들어옵니다.",
+  "제목은 그냥\n'그네 타는 방법'이었죠.",
+  "앞뒤로 구르는\n그 방법이 아닙니다.",
+  "줄을 한쪽씩\n번갈아 당기는 겁니다.",
+  "그러면 그네가\n옆으로 흔들리죠.",
+  "그게 전부입니다.\n청구항은 4개였고요.",
+  "특허청은\n이 서류를 통과시켰습니다.",
+  "본문 끝엔 이렇게 적혀 있었죠.\n'사용권 문의 환영.'",
+  "그런데 등록 6주 만에\n재심사가 걸립니다.",
+  "옛날 그네 특허들이\n줄줄이 나왔고요.",
+  "결과는 한 줄이었습니다.\n'청구항 전부 취소.'",
+  "그 서류를 써준 변리사는\n아버지였습니다.",
+  "발명자란에 적힌 아들은,\n일곱 살이었고요."
+ ],
+ "subs_en": [
+  "Can a way of swinging\non a swing be patented?",
+  "In the winter of 2000,\none filing reached the office.",
+  "The title was simply\n\"Method of Swinging on a Swing.\"",
+  "Not the back-and-forth\nkind you know.",
+  "You pull alternately on one\nchain, then the other.",
+  "The swing then moves\nside to side.",
+  "That's all of it.\nFour claims, nothing more.",
+  "The patent office\nlet it through.",
+  "The last line reads: licenses\navailable upon request.",
+  "Six weeks after it issued,\nreexamination began.",
+  "Older swing patents surfaced,\none after another.",
+  "The result was one line:\nall claims cancelled.",
+  "The attorney who wrote\nthat filing was his father.",
+  "And the son named as inventor\nwas seven years old."
+ ],
+ "bottom_beats": [
+  3,
+  6,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14
+ ],
+ "ambient": []
+}
