@@ -215,9 +215,12 @@ def main():
             "[Events]",
             "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
         ]
+        BOTTOM_BEATS = {9, 14}  # 서명 카드가 중앙에 오는 비트 — 자막을 하단으로 (겹침 방지)
         for i, t in enumerate(SUBS):
-            lines.append(f"Dialogue: 0,{ts(starts[i])},{ts(starts[i]+fdurs[i])},Default,,0,0,0,,"
-                         + t.replace("\n", "\\N"))
+            bottom = (i + 1) in BOTTOM_BEATS
+            mv, tag = (250, "{\\an2}") if bottom else (0, "")
+            lines.append(f"Dialogue: 0,{ts(starts[i])},{ts(starts[i]+fdurs[i])},Default,,0,0,{mv},,"
+                         + tag + t.replace("\n", "\\N"))
         ass.write_text("\n".join(lines))
         run(["-i", silent, "-i", audio,
              "-vf", f"subtitles=filename='{ass}':fontsdir='{Path(font).parent}'",
