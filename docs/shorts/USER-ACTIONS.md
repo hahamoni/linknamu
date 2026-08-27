@@ -43,10 +43,20 @@
 - 그때까지 신규 나레이션 생성 불가 → 대본·스틸·편집 스펙만 선행 작업.
 - **해소 방법: Google AI Studio 결제 연결(tier 1).** 위 "계정·결제" 항목 참조.
 
-### 리셋 후 바로 실행 (편별 1줄씩)
+### 리셋 후 — **명령 두 줄이면 전 편이 알아서 완성됩니다**
+
+두 프로세스를 같이 띄워 두면 됩니다. 앞의 것이 쿼터가 열릴 때마다 나레이션을 조금씩 채우고,
+뒤의 것이 다 찬 편을 감지해 조립까지 끝냅니다. 사람이 07:00 UTC에 깨어 있을 필요가 없습니다.
+
+```bash
+python3 scripts/shorts/patient_tts.py p02 p03 p04 p05 p06 p07 p08 p09 p10 p11 --lang ko --minutes 600 &
+python3 scripts/shorts/finish_episodes.py --lang ko --font <Pretendard-Bold.ttf> --minutes 600 &
+```
+
+편 하나만 손으로 돌릴 때:
 ```
 python3 scripts/shorts/chunked_tts.py docs/shorts/ep-pNN-beats.json --lang ko --model gemini-3.1-flash-tts-preview
 python3 scripts/shorts/compress_silence.py docs/shorts/ep-pNN_output/beat*_ko.wav
-python3 scripts/shorts/assemble.py docs/shorts/ep-pNN-beats.json --lang ko --edit docs/shorts/ep-pNN-edit.json --font <Pretendard-Bold.ttf> --music <track.mp3>
+python3 scripts/shorts/assemble.py docs/shorts/ep-pNN-beats.json --lang ko --edit docs/shorts/ep-pNN-edit.json --font <Pretendard-Bold.ttf> --music docs/shorts/ep-pNN_output/music_bed.mp3
 ```
 자리표시 무음 나레이션으로 비주얼만 미리 보려면: `python3 scripts/shorts/placeholder_wavs.py docs/shorts/ep-pNN-beats.json --lang ko`

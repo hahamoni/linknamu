@@ -1,0 +1,53 @@
+{
+ "_note": "P11 편집 스펙. 전량 0크레딧 — US6285999 도면·서지 크롭의 블루프린트 반전 + 코드 렌더 카드. 반전 축은 9~12비트에서 서류의 두 줄을 차례로 여는 것 — 발명자란엔 Lawrence Page 하나뿐, 양수인란엔 스탠퍼드. 착지는 14비트 금액 카드.",
+ "edit": [
+  {"kind": "pad", "src": "stills/20_fig1_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/10_header_inv.png", "opts": {}},
+  {"kind": "still", "src": "stills/30_card_title.png", "opts": {"focus": "center"}},
+  {"kind": "pad", "src": "stills/20_fig1_inv.png", "opts": {"fast": true}},
+  {"kind": "still", "src": "stills/31_card_abstract.png", "opts": {"focus": "center"}},
+  {"kind": "pad", "src": "stills/21_fig2_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/22_fig3_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/10_header_inv.png", "opts": {"fast": true}},
+  {"kind": "pad", "src": "stills/13_inventor_only_inv.png", "opts": {}},
+  {"kind": "still", "src": "stills/32_card_inventor.png", "opts": {"focus": "center"}},
+  {"kind": "pad", "src": "stills/11_inventor_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/14_assignee_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/11_inventor_inv.png", "opts": {}},
+  {"kind": "still", "src": "stills/34_card_money.png", "opts": {"focus": "center", "bright": true}}
+ ],
+ "subs_ko": [
+  "구글을 만든 그 알고리즘,\n특허 주인은 누구일까요?",
+  "1998년,\n서류 한 장이 접수됩니다.",
+  "제목은 '연결된 문서에\n순위 매기기'였죠.",
+  "원리는\n한 문장이면 끝납니다.",
+  "다른 문서가 가리키면\n점수가 올라갑니다.",
+  "점수 높은 문서가 가리키면\n더 크게 올라가고요.",
+  "그 점수로\n검색 결과를 줄 세운 겁니다.",
+  "이게\n구글의 시작이었습니다.",
+  "그런데 발명자란엔\n이름이 하나뿐입니다.",
+  "세르게이 브린의 이름은\n어디에도 없죠.",
+  "그리고 특허 주인도\n구글이 아니었습니다.",
+  "스탠퍼드 대학이었어요.",
+  "대학은 돈 대신\n구글 주식을 받았고요.",
+  "그 주식은 나중에\n3억 달러가 넘었습니다."
+ ],
+ "subs_en": [
+  "Who owned the patent on the\nalgorithm that built Google?",
+  "In 1998,\none filing was submitted.",
+  "The title: ranking nodes\nin a linked database.",
+  "The idea fits\nin a single sentence.",
+  "A document scores higher\nwhen others point to it.",
+  "And higher when the pointers\nthemselves score high.",
+  "That score is what ordered\nthe search results.",
+  "This was where\nGoogle began.",
+  "But only one name sits\non the inventor line.",
+  "Sergey Brin's name\nappears nowhere on it.",
+  "And the owner of the patent\nwas not Google.",
+  "It was Stanford University.",
+  "The university took Google\nshares instead of cash.",
+  "Those shares later came to\nover three hundred million."
+ ],
+ "bottom_beats": [3, 5, 9, 10, 11, 12, 13, 14],
+ "ambient": []
+}

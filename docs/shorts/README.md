@@ -66,6 +66,8 @@ python3 scripts/shorts/placeholder_wavs.py docs/shorts/ep-pNN-beats.json --lang 
 | `qa_transcribe.py` | STT 받아쓰기 ↔ 대본 대조, 숫자 표기 정규화 |
 | `assemble.py` | 나레이션 타임라인에 비주얼 조립 · Ken Burns · 그레이드 · libass 자막 · 오디오 믹스 |
 | `placeholder_wavs.py` | 무음 자리표시(드라이런) |
+| `patient_tts.py` | 쿼터가 열릴 때마다 자리표시 청크만 골라 채우는 인내형 러너 |
+| `finish_episodes.py` | 나레이션이 다 찬 편을 감지해 **무음압축→조립까지 무인 실행** |
 | `render_diagram.py` | 88채널 도약 다이어그램 (정확히 88선) |
 | `render_card.py` | 특허 원문 인용 카드 (핵심 단어 금색 강조) |
 | `invert_drawing.py` | 특허 도면 → 블루프린트 반전 (자막 대비 확보) |
