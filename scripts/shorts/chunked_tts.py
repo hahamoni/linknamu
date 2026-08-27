@@ -21,11 +21,12 @@ MIN_GAP_MS = 300   # 분할 후보로 인정하는 내부 무음 최소 길이
 PAD_MS = 120       # 분할 후 각 세그먼트 앞뒤에 남길 무음
 RMS_THR = 300      # 20ms 창 RMS 무음 판정 임계값
 
-STYLE = {
-    "ko": ("차분하고 낮은 다큐멘터리 나레이션 톤으로, 늘어지지 않는 적당한 템포로 "
-           "또렷하게 읽어주세요. 각 문장이 끝나면 1초간 조용히 쉬었다가 다음 문장을 읽어주세요.\n\n"),
-    "en": ("Read in a calm, low documentary narration tone at a steady, unhurried but "
-           "not slow pace. After each sentence, stay silent for one second before the next.\n\n"),
+STYLE = {  # v3: 시청 유지율 위해 빠른 템포 (피드백 2026-08-28 "나레이션이 너무 느려")
+    "ko": ("차분하고 낮은 다큐멘터리 나레이션 톤이지만, 빠른 템포로 또렷하게 읽어주세요. "
+           "단어를 늘어뜨리지 말고 경쾌하게 끊어 읽으세요. 각 문장이 끝나면 1초간 조용히 쉬었다가 "
+           "다음 문장을 읽어주세요.\n\n"),
+    "en": ("Read in a calm, low documentary narration tone at a brisk, energetic pace. "
+           "Do not drag words. After each sentence, stay silent for one second before the next.\n\n"),
 }
 
 

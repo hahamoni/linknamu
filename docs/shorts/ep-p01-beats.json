@@ -1,21 +1,21 @@
 {
- "title": "P01 v2 — 발명자 칸의 여배우 (헤디 라머)",
- "cover_ko": "발명자 칸의 이름은 여배우였다",
- "cover_en": "THE INVENTOR WAS A MOVIE STAR",
+ "title": "P01-C v2 역추적형 — 블루투스에서 1942로 (이름이 마지막 한 방)",
+ "cover_ko": "당신의 블루투스, 그 시작",
+ "cover_en": "BLUETOOTH BEGAN WITH HER",
  "beats": [
-  {"ko": "가장 아름답다던 이 배우는, 배우만이 아니었습니다.", "en": "The world's most beautiful actress was not just an actress.", "visual": "인물"},
-  {"ko": "천구백사십이 년, 특허청에 서류 한 장이 접수됩니다.", "en": "In 1942, a document reached the Patent Office.", "visual": "인물"},
-  {"ko": "발명자 칸의 이름은 헐리우드 배우였습니다.", "en": "The inventor line carried a movie star's name.", "visual": "인물"},
-  {"ko": "장치의 목적은 무선 신호를 도청에서 지키는 것.", "en": "Its goal: keep radio signals safe from eavesdroppers.", "visual": "클립"},
-  {"ko": "송신기와 수신기가 주파수를 함께 뜁니다.", "en": "Transmitter and receiver hop frequencies together.", "visual": "클립"},
-  {"ko": "주파수는 모두 여든여덟 개였습니다.", "en": "Eighty-eight frequencies in all.", "visual": "그래픽"},
-  {"ko": "두 장치를 맞물리게 한 부품은 자동피아노의 종이 롤.", "en": "The part keeping them in step: a player piano roll.", "visual": "클립"},
-  {"ko": "여든여덟은 피아노 건반의 수입니다.", "en": "Eighty-eight is the number of piano keys.", "visual": "클립"},
-  {"ko": "미 해군은 이 장치를 채택하지 않았습니다.", "en": "The Navy never adopted the device.", "visual": "인물"},
-  {"ko": "서류는 서랍으로 들어갔습니다.", "en": "The papers went into a drawer.", "visual": "문서"},
-  {"ko": "특허는 천구백오십구 년에 만료됐습니다.", "en": "It expired in 1959.", "visual": "인물"},
-  {"ko": "그녀는 아무 보상도 받지 못했습니다.", "en": "She was never paid a single dollar.", "visual": "인물"},
-  {"ko": "상이 온 것은 오십오 년 뒤였습니다.", "en": "The award came 55 years later.", "visual": "인물"},
-  {"ko": "수상 소감은 한마디, \"이제야 왔군요.\"", "en": "Her whole speech: 'Well, it's about time.'", "visual": "인물"}
+  {"ko": "당신의 블루투스, 이 배우에게서 시작됐다면요?", "en": "What if your Bluetooth started with this actress?", "visual": "인물"},
+  {"ko": "블루투스의 심장은 '주파수 도약'이라는 기술이죠.", "en": "Bluetooth's heart is 'frequency hopping.'", "visual": "그래픽"},
+  {"ko": "이 설계의 원본은, 천구백사십이 년의 특허입니다.", "en": "Its original blueprint: a 1942 patent.", "visual": "클립"},
+  {"ko": "목적은 어뢰의 무선 신호 도청을 막는 것.", "en": "Its goal: stop torpedo signals being intercepted.", "visual": "클립"},
+  {"ko": "채널은 모두 여든여덟 개.", "en": "Eighty-eight channels in all.", "visual": "그래픽"},
+  {"ko": "두 장치를 맞물린 부품은 자동피아노의 종이 롤.", "en": "The part syncing them: a player piano roll.", "visual": "클립"},
+  {"ko": "여든여덟이 피아노 건반의 수인 이유죠.", "en": "That's why it matches piano keys.", "visual": "클립"},
+  {"ko": "발명자는 군인도, 공학자도 아니었습니다.", "en": "The inventor was no soldier or engineer.", "visual": "인물"},
+  {"ko": "특허의 서명란엔, 낯선 여자의 이름 하나.", "en": "On the patent: one unfamiliar woman's name.", "visual": "문서"},
+  {"ko": "그 여자의 얼굴은, 온 세상이 알고 있었습니다.", "en": "But the whole world knew her face.", "visual": "인물"},
+  {"ko": "해군은 장치를 서랍에 묻었고, 보상은 없었습니다.", "en": "The Navy buried it; she was never paid.", "visual": "인물"},
+  {"ko": "그녀는 평생 '얼굴'로만 소비됐습니다.", "en": "Her whole life, only the face was seen.", "visual": "인물"},
+  {"ko": "그 발명자는, 당대 '세상에서 가장 아름다운 여자'.", "en": "The inventor: 'the most beautiful woman in the world.'", "visual": "인물"},
+  {"ko": "할리우드의 전설, '헤디 라마르'였습니다.", "en": "Hollywood legend Hedy Lamarr.", "visual": "인물"}
  ]
 }

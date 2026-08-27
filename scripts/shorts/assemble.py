@@ -25,37 +25,38 @@ VIG = "vignette=PI/4.4"
 
 # 비트별 비주얼: (종류, 소스, 옵션) — still(그레이드+줌) / card(서명 카드) / pad(블러 패드) /
 # clip(구간 트림) / image(스타일 완성본, 그레이드 없음) / dissolve(초상→서명 카드)
+# C안 v2 (ep-p01-scripts-v3.md) — 블루투스 역추적, 이름은 마지막 비트에 공개
 EDIT = [
     ("still", "stills/01_heavenly_body_1944.jpg", {"focus": "top"}),
-    ("still", "stills/02_screenland_1942.png", {}),
-    ("card", "stills/03_signature_1941.jpg", {}),
+    ("image", "diagram_88ch.png", {}),
     ("clip", "clipA_radio.mp4", {"start": 0.0}),
     ("clip", "clipA_radio.mp4", {"start": 5.85}),
-    ("image", "diagram_88ch.png", {}),
+    ("image", "diagram_88ch.png", {"fast": True}),
     ("clip", "clipB_pianoroll.mp4", {"start": 0.0}),
     ("clip", "clipB_pianoroll.mp4", {"start": 5.2}),
     ("pad", "stills/09_kiesler_1933.jpg", {}),
-    ("still", "stills/10_patent_page7.jpg", {"focus": "mid", "fast": True}),
+    ("card", "stills/03_signature_1941.jpg", {}),
+    ("still", "stills/02_screenland_1942.png", {}),
     ("pad", "stills/11_samson_1949.png", {}),
     ("still", "stills/01_heavenly_body_1944.jpg", {"focus": "top", "dark": True}),
     ("still", "stills/01_heavenly_body_1944.jpg", {"focus": "top", "bright": True}),
     ("dissolve", "stills/01_heavenly_body_1944.jpg", {"sig": "stills/03_signature_1941.jpg"}),
 ]
 SUBS = [
-    "가장 아름답다던 이 배우는,\n배우만이 아니었습니다.",
-    "1942년, 특허청에\n서류 한 장이 접수됩니다.",
-    "발명자 칸의 이름은\n헐리우드 배우였습니다.",
-    "장치의 목적은 무선 신호를\n도청에서 지키는 것.",
-    "송신기와 수신기가\n주파수를 함께 뜁니다.",
-    "주파수는 모두 88개였습니다.",
-    "두 장치를 맞물리게 한 부품은\n자동피아노의 종이 롤.",
-    "88은 피아노 건반의 수입니다.",
-    "미 해군은 이 장치를\n채택하지 않았습니다.",
-    "서류는 서랍으로 들어갔습니다.",
-    "특허는 1959년에 만료됐습니다.",
-    "그녀는 아무 보상도\n받지 못했습니다.",
-    "상이 온 것은 55년 뒤였습니다.",
-    "수상 소감은 한마디,\n\"이제야 왔군요.\"",
+    "당신의 블루투스,\n이 배우에게서\n시작됐다면요?",
+    "블루투스의 심장은\n'주파수 도약'이라는\n기술이죠.",
+    "이 설계의 원본은,\n1942년의 특허입니다.",
+    "목적은 어뢰의 무선 신호\n도청을 막는 것.",
+    "채널은 모두 88개.",
+    "두 장치를 맞물린 부품은\n자동피아노의 종이 롤.",
+    "88이 피아노 건반의\n수인 이유죠.",
+    "발명자는 군인도,\n공학자도 아니었습니다.",
+    "특허의 서명란엔,\n낯선 여자의 이름 하나.",
+    "그 여자의 얼굴은,\n온 세상이 알고 있었습니다.",
+    "해군은 장치를 서랍에 묻었고,\n보상은 없었습니다.",
+    "그녀는 평생\n'얼굴'로만 소비됐습니다.",
+    "그 발명자는, 당대\n'세상에서 가장 아름다운 여자'.",
+    "할리우드의 전설,\n'헤디 라마르'였습니다.",
 ]
 ENC = ["-c:v", "libx264", "-crf", "19", "-preset", "medium", "-pix_fmt", "yuv420p", "-r", str(FPS), "-an"]
 
@@ -141,7 +142,7 @@ def main():
         elif kind == "clip":
             seg_clip(sp, dur, out, o["start"])
         elif kind == "image":
-            kb(sp, dur, out, 0.06, "center", "")
+            kb(sp, dur, out, 0.16 if o.get("fast") else 0.06, "center", "")
         elif kind == "dissolve":
             fade, d1 = 0.5, dur * 0.58
             a, b = str(tmp / "b14a.mp4"), str(tmp / "b14b.mp4")
@@ -208,8 +209,9 @@ def main():
             "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, "
             "BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, "
             "BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
-            f"Style: Default,{family},44,&H00FFFFFF,&H00FFFFFF,&HD0000000,&H80000000,"
-            "-1,0,0,0,100,100,0,0,1,3,1,2,40,40,270,1", "",
+            # 크기 52·중앙 배치(Alignment 5) — 피드백 2026-08-28
+            f"Style: Default,{family},52,&H00FFFFFF,&H00FFFFFF,&HD0000000,&H80000000,"
+            "-1,0,0,0,100,100,0,0,1,3,1,5,25,25,0,1", "",
             "[Events]",
             "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
         ]
