@@ -1,0 +1,21 @@
+{
+ "title": "P04 — 이름이 될 뻔했던 큐브 (래리 니콜스 / US3655201)",
+ "cover_ko": "먼저 도착한 사람의 이름",
+ "cover_en": "HE GOT THERE FIRST",
+ "beats": [
+  {"ko": "루빅스 큐브, 먼저 나온 게 있었다면요?", "en": "What if a cube came before Rubik's?", "visual": "인물"},
+  {"ko": "천구백오십칠 년, 화학자 한 명이 큐브를 만듭니다.", "en": "In 1957, a chemist folded one from paper.", "visual": "인물"},
+  {"ko": "여덟 조각을 자석으로 붙인 이 큐브", "en": "Eight small cubes, held by magnets.", "visual": "그래픽"},
+  {"ko": "세 방향으로 돌아가는 구조였죠.", "en": "It turned on three axes.", "visual": "그래픽"},
+  {"ko": "천구백칠십이 년, 미국 특허가 나옵니다.", "en": "In 1972, the US patent issued.", "visual": "그래픽"},
+  {"ko": "루빅의 큐브보다 이 년 빨랐습니다.", "en": "Two years before Rubik's cube.", "visual": "인물"},
+  {"ko": "그는 완구회사 오십여 곳에 보냈습니다.", "en": "He mailed it to fifty toy companies.", "visual": "인물"},
+  {"ko": "전부 거절당했고, 그중엔 아이디얼도 있었죠.", "en": "All refused. One of them was Ideal.", "visual": "인물"},
+  {"ko": "서류의 첫 줄은, '여덟 개의 조각'이었습니다.", "en": "The claim began: \"eight cube pieces.\"", "visual": "문서"},
+  {"ko": "팔 년 뒤, 그 아이디얼이 루빅스 큐브를 팝니다.", "en": "Eight years later, Ideal sold Rubik's Cube.", "visual": "인물"},
+  {"ko": "그해 미국에서만 팔백사십만 개가 팔립니다.", "en": "That year: 8.4 million in the US alone.", "visual": "인물"},
+  {"ko": "그는 소송을 걸어 일심에서 이겼습니다.", "en": "He sued, and won the first trial.", "visual": "인물"},
+  {"ko": "항소심은 그 '여덟'이라는 단어에 걸렸습니다.", "en": "On appeal, that one word \"eight\" undid it.", "visual": "인물"},
+  {"ko": "그의 한마디. '니콜스 큐브가 될 수도 있었다.'", "en": "His line: \"It could have been the Nichols Cube.\"", "visual": "인물"}
+ ]
+}

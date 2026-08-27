@@ -1,0 +1,21 @@
+{
+ "title": "P03 — 위저 보드가 스스로 지었다는 이름 (US446054)",
+ "cover_ko": "판이 자기 이름을 말했다",
+ "cover_en": "THE BOARD NAMED ITSELF",
+ "beats": [
+  {"ko": "영혼과 대화하는 판, 특허엔 뭐라고 적혀 있을까요?", "en": "A board that talks to spirits? Read its patent.", "visual": "인물"},
+  {"ko": "천팔백구십일 년, 미국이 이 판에 특허를 내줍니다.", "en": "In 1891, America granted it a patent.", "visual": "인물"},
+  {"ko": "알파벳과 숫자가 적힌 나무판, 그리고 작은 삼각대.", "en": "A wooden board of letters, and a small pointer.", "visual": "그래픽"},
+  {"ko": "손을 살짝 올리면 삼각대가 글자를 짚습니다.", "en": "Rest your hand; the pointer picks out letters.", "visual": "그래픽"},
+  {"ko": "특허 원문에는 이렇게 적혀 있죠.", "en": "The patent itself says this:", "visual": "그래픽"},
+  {"ko": "\"판이 움직여 문장을 만든다.\"", "en": "\"the table will move and point to certain letters.\"", "visual": "그래픽"},
+  {"ko": "누가 움직이는지는, 끝까지 쓰지 않았습니다.", "en": "Who moves it, it never says.", "visual": "그래픽"},
+  {"ko": "이름도 판에게 물었더니, '위저'라고 답했죠.", "en": "They asked the board its name. It spelled Ouija.", "visual": "인물"},
+  {"ko": "서류에 적힌 제목은, '장난감 또는 게임'.", "en": "The title on the document: \"Toy or Game.\"", "visual": "문서"},
+  {"ko": "큰돈을 번 건 발명자가 아니었습니다.", "en": "The man who got rich was not the inventor.", "visual": "인물"},
+  {"ko": "공장 도장공이 회사를 넘겨받아 백만장자가 됐죠.", "en": "A factory painter took over and made a million.", "visual": "인물"},
+  {"ko": "이름을 지은 여자는 기록에서 지워졌습니다.", "en": "The woman who named it was erased.", "visual": "인물"},
+  {"ko": "그런데 그날, 그녀 목에는 로켓 목걸이가 있었습니다.", "en": "But that night, she wore a locket.", "visual": "인물"},
+  {"ko": "그 안에 있던 이름은, 소설가 '위다'였습니다.", "en": "The name inside it: the novelist Ouida.", "visual": "인물"}
+ ]
+}
