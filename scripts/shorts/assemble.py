@@ -185,15 +185,30 @@ def main():
 
     final = str(out_dir / f"ep-p01_{lang}{'' if music else '_preview'}.mp4")
     if font and "--no-subs" not in args:
-        print("· 자막 번인 + 먹싱")
-        dt = []
+        print("· 자막 번인 + 먹싱 (libass)")
+
+        def ts(sec):
+            cs = int(round(sec * 100))
+            return f"{cs//360000}:{cs//6000%60:02d}:{cs//100%60:02d}.{cs%100:02d}"
+
+        ass = tmp / "subs.ass"
+        lines = [
+            "[Script Info]", "ScriptType: v4.00+", f"PlayResX: {W}", f"PlayResY: {H}", "",
+            "[V4+ Styles]",
+            "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, "
+            "BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, "
+            "BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
+            "Style: Default,Noto Sans KR,44,&H00FFFFFF,&H00FFFFFF,&HD0000000,&H80000000,"
+            "-1,0,0,0,100,100,0,0,1,3,1,2,40,40,270,1", "",
+            "[Events]",
+            "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
+        ]
         for i, t in enumerate(SUBS):
-            tf = tmp / f"sub{i+1:02d}.txt"
-            tf.write_text(t)
-            dt.append(f"drawtext=fontfile='{font}':textfile='{tf}':fontsize=42:fontcolor=white"
-                      f":borderw=3:bordercolor=black@0.85:line_spacing=10:x=(w-text_w)/2:y=h*0.76"
-                      f":enable='between(t,{starts[i]:.3f},{starts[i]+fdurs[i]:.3f})'")
-        run(["-i", silent, "-i", audio, "-vf", ",".join(dt),
+            lines.append(f"Dialogue: 0,{ts(starts[i])},{ts(starts[i]+fdurs[i])},Default,,0,0,0,,"
+                         + t.replace("\n", "\\N"))
+        ass.write_text("\n".join(lines))
+        run(["-i", silent, "-i", audio,
+             "-vf", f"subtitles=filename='{ass}':fontsdir='{Path(font).parent}'",
              "-map", "0:v", "-map", "1:a", "-c:a", "copy"] + ENC[:8] + ["-shortest", final])
     else:
         run(["-i", silent, "-i", audio, "-map", "0:v", "-map", "1:a", "-c", "copy", "-shortest", final])
