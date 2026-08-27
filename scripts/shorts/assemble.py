@@ -150,7 +150,7 @@ def main():
             compose_card(str(out_dir / o["sig"]), png)
             kb(png, dur - d1 + fade, b, 0.08, "center", f",{GRAIN},{VIG}")
             run(["-i", a, "-i", b, "-filter_complex",
-                 f"[0:v][1:v]xfade=transition=dissolve:duration={fade}:offset={d1 - fade/2:.3f}",
+                 f"[0:v][1:v]xfade=transition=fade:duration={fade}:offset={d1 - fade/2:.3f}",
                  "-t", f"{dur:.4f}"] + ENC + [out])
         print(f"  {i:02d} {kind} {dur:.2f}s")
 
