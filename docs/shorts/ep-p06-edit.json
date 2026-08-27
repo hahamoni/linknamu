@@ -1,20 +1,95 @@
 {
  "_note": "P06 편집 스펙. 인물 사진 없음 — 특허 도면·서명·인용 카드로 구성(0크레딧). 반전은 1890년 '벽 그려진' 도면.",
  "edit": [
-  {"kind": "pad", "src": "stills/14_roll_1891.png", "opts": {}},
-  {"kind": "pad", "src": "stills/15_header_1891.png", "opts": {}},
-  {"kind": "pad", "src": "stills/14_roll_1891.png", "opts": {"fast": true}},
-  {"kind": "still", "src": "stills/20_card_direction.png", "opts": {"focus": "center", "dark": true}},
-  {"kind": "pad", "src": "stills/15_header_1891.png", "opts": {"fast": true}},
-  {"kind": "pad", "src": "stills/14_roll_1891.png", "opts": {}},
-  {"kind": "still", "src": "stills/20_card_direction.png", "opts": {"focus": "center"}},
-  {"kind": "pad", "src": "stills/12_signature.png", "opts": {}},
-  {"kind": "still", "src": "stills/20_card_direction.png", "opts": {"focus": "center", "fast": true}},
-  {"kind": "pad", "src": "stills/14_roll_1891.png", "opts": {"dark": true}},
-  {"kind": "pad", "src": "stills/13_header_1890.png", "opts": {}},
-  {"kind": "pad", "src": "stills/10_wall_fig1.png", "opts": {}},
-  {"kind": "pad", "src": "stills/11_wall_fig2_under.png", "opts": {"fast": true}},
-  {"kind": "still", "src": "stills/21_card_wholly.png", "opts": {"focus": "center", "bright": true}}
+  {
+   "kind": "pad",
+   "src": "stills/14_roll_1891_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/15_header_1891_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/14_roll_1891_inv.png",
+   "opts": {
+    "fast": true
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/20_card_direction.png",
+   "opts": {
+    "focus": "center",
+    "dark": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/15_header_1891_inv.png",
+   "opts": {
+    "fast": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/14_roll_1891_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "still",
+   "src": "stills/20_card_direction.png",
+   "opts": {
+    "focus": "center"
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/12_signature_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "still",
+   "src": "stills/20_card_direction.png",
+   "opts": {
+    "focus": "center",
+    "fast": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/14_roll_1891_inv.png",
+   "opts": {
+    "dark": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/13_header_1890_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/10_wall_fig1_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/11_wall_fig2_under_inv.png",
+   "opts": {
+    "fast": true
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/21_card_wholly.png",
+   "opts": {
+    "focus": "center",
+    "bright": true
+   }
+  }
  ],
  "subs_ko": [
   "휴지, 앞으로 거세요\n뒤로 거세요?",
@@ -48,6 +123,11 @@
   "And the paper\nhangs under.",
   "His goal was one thing:\nmake direction not matter."
  ],
- "bottom_beats": [4, 7, 9, 14],
+ "bottom_beats": [
+  4,
+  7,
+  9,
+  14
+ ],
  "ambient": []
 }

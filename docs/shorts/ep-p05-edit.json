@@ -1,21 +1,100 @@
 {
  "_note": "P05 편집 스펙. 1846 무수염 초상으로 정체를 숨기고, 14비트에서 특허 헤더 'ABRAHAM LINCOLN' 카드로 반전. 비트1-2는 한 컷 연속(span).",
  "edit": [
-  {"kind": "still", "src": "stills/01_lincoln_1846.jpg", "opts": {"focus": "top", "span": 2}},
-  {"kind": "skip", "src": "", "opts": {}},
-  {"kind": "pad", "src": "stills/12_fig1_ship.png", "opts": {}},
-  {"kind": "pad", "src": "stills/14_fig3_section.png", "opts": {}},
-  {"kind": "still", "src": "stills/01_lincoln_1846.jpg", "opts": {"focus": "top", "bright": true}},
-  {"kind": "pad", "src": "stills/13_fig2_chamber.png", "opts": {}},
-  {"kind": "pad", "src": "stills/12_fig1_ship.png", "opts": {"fast": true}},
-  {"kind": "pad", "src": "stills/14_fig3_section.png", "opts": {"fast": true}},
-  {"kind": "still", "src": "stills/10_patent_text.png", "opts": {"focus": "mid", "fast": true}},
-  {"kind": "still", "src": "stills/01_lincoln_1846.jpg", "opts": {"focus": "top", "dark": true}},
-  {"kind": "pad", "src": "stills/13_fig2_chamber.png", "opts": {"fast": true}},
-  {"kind": "pad", "src": "stills/12_fig1_ship.png", "opts": {"dark": true}},
-  {"kind": "dissolve", "src": "stills/07_lincoln_1860_beard.jpg",
-   "opts": {"sig": "stills/11_header_reveal.png", "span": 2, "bright": true}},
-  {"kind": "skip", "src": "", "opts": {}}
+  {
+   "kind": "still",
+   "src": "stills/01_lincoln_1846.jpg",
+   "opts": {
+    "focus": "top",
+    "span": 2
+   }
+  },
+  {
+   "kind": "skip",
+   "src": "",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/12_fig1_ship_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/14_fig3_section_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "still",
+   "src": "stills/01_lincoln_1846.jpg",
+   "opts": {
+    "focus": "top",
+    "bright": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/13_fig2_chamber_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/12_fig1_ship_inv.png",
+   "opts": {
+    "fast": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/14_fig3_section_inv.png",
+   "opts": {
+    "fast": true
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/10_patent_text_inv.png",
+   "opts": {
+    "focus": "mid",
+    "fast": true
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/01_lincoln_1846.jpg",
+   "opts": {
+    "focus": "top",
+    "dark": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/13_fig2_chamber_inv.png",
+   "opts": {
+    "fast": true
+   }
+  },
+  {
+   "kind": "pad",
+   "src": "stills/12_fig1_ship_inv.png",
+   "opts": {
+    "dark": true
+   }
+  },
+  {
+   "kind": "dissolve",
+   "src": "stills/07_lincoln_1860_beard.jpg",
+   "opts": {
+    "sig": "stills/11_header_reveal.png",
+    "span": 2,
+    "bright": true
+   }
+  },
+  {
+   "kind": "skip",
+   "src": "",
+   "opts": {}
+  }
  ],
  "subs_ko": [
   "이 남자가 만든 발명품,\n아무도 쓴 적이 없습니다.",
@@ -49,6 +128,9 @@
   "Twelve years later,\nhe became president.",
   "The only U.S. president\nwith a patent: Abraham Lincoln."
  ],
- "bottom_beats": [9, 14],
+ "bottom_beats": [
+  9,
+  14
+ ],
  "ambient": []
 }
