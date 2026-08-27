@@ -1,0 +1,21 @@
+{
+ "title": "P01-C 역추적형 — 블루투스에서 1942로 (이름은 맨 끝)",
+ "cover_ko": "당신의 블루투스, 그 시작",
+ "cover_en": "BLUETOOTH BEGAN WITH HER",
+ "beats": [
+  {"ko": "당신의 블루투스, 이 배우에게서 시작됐다면요?", "en": "What if your Bluetooth started with this actress?", "visual": "인물"},
+  {"ko": "블루투스의 심장은 '주파수 도약'이라는 기술이죠.", "en": "Bluetooth's heart is 'frequency hopping.'", "visual": "그래픽"},
+  {"ko": "이 설계의 원본은, 천구백사십이 년의 특허입니다.", "en": "Its original blueprint: a 1942 patent.", "visual": "클립"},
+  {"ko": "목적은 어뢰의 무선 신호 도청을 막는 것.", "en": "Its goal: stop torpedo signals being intercepted.", "visual": "클립"},
+  {"ko": "채널은 모두 여든여덟 개.", "en": "Eighty-eight channels in all.", "visual": "그래픽"},
+  {"ko": "두 장치를 맞물린 부품은 자동피아노의 종이 롤.", "en": "The part syncing them: a player piano roll.", "visual": "클립"},
+  {"ko": "여든여덟이 피아노 건반의 수인 이유죠.", "en": "That's why it matches piano keys.", "visual": "클립"},
+  {"ko": "발명자는 군인도, 공학자도 아니었습니다.", "en": "The inventor was no soldier or engineer.", "visual": "인물"},
+  {"ko": "특허의 서명란엔, 낯선 여자의 이름 하나.", "en": "On the patent: one unfamiliar woman's name.", "visual": "문서"},
+  {"ko": "그 여자의 얼굴은, 온 세상이 알고 있었습니다.", "en": "But the whole world knew her face.", "visual": "인물"},
+  {"ko": "해군은 장치를 서랍에 묻었고, 보상은 없었습니다.", "en": "The Navy buried it; she was never paid.", "visual": "인물"},
+  {"ko": "그녀는 평생 '얼굴'로만 소비됐습니다.", "en": "Her whole life, only the face was seen.", "visual": "인물"},
+  {"ko": "발명자의 예명은 — 헤디 라머.", "en": "Her stage name: Hedy Lamarr.", "visual": "인물"},
+  {"ko": "오십오 년 뒤 상이 왔을 때, 그녀의 답. '이제야 왔군요.'", "en": "Fifty-five years late, her reply: 'About time.'", "visual": "인물"}
+ ]
+}

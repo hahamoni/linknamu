@@ -1,0 +1,21 @@
+{
+ "title": "P01-A 수사형 — 발명자의 정체 (마지막 공개)",
+ "cover_ko": "이 발명자, 정체를 숨겼다",
+ "cover_en": "NOBODY KNEW THE INVENTOR",
+ "beats": [
+  {"ko": "이 발명자가 누구인지 알면, 아무도 믿지 않습니다.", "en": "Nobody believes who this inventor really was.", "visual": "인물"},
+  {"ko": "천구백사십이 년, 특허청에 서류 한 장이 접수됩니다.", "en": "In 1942, a strange file reached the Patent Office.", "visual": "인물"},
+  {"ko": "내용은, 어뢰의 무선 신호 도청을 막는 장치.", "en": "A device to stop torpedo signals being intercepted.", "visual": "클립"},
+  {"ko": "송신기와 수신기가 주파수를 함께 뜁니다.", "en": "Transmitter and receiver hop frequencies together.", "visual": "클립"},
+  {"ko": "주파수는 정확히 여든여덟 개.", "en": "Exactly eighty-eight frequencies in all.", "visual": "그래픽"},
+  {"ko": "두 장치를 맞물린 부품은, 자동피아노의 종이 롤.", "en": "The part syncing them: a player piano roll.", "visual": "클립"},
+  {"ko": "여든여덟은 피아노 건반의 수입니다.", "en": "Eighty-eight is the number of piano keys.", "visual": "클립"},
+  {"ko": "그런데 발명자의 직업이 문제였습니다.", "en": "But the inventor's job was the problem.", "visual": "인물"},
+  {"ko": "군인도, 교수도, 기술자도 아니었거든요.", "en": "Not a soldier, engineer, or professor.", "visual": "인물"},
+  {"ko": "특허의 서명란엔, 낯선 여자의 이름.", "en": "On the signature line: an unfamiliar woman's name.", "visual": "문서"},
+  {"ko": "미 해군은 장치를 서랍에 묻었습니다.", "en": "The Navy buried the device in a drawer.", "visual": "인물"},
+  {"ko": "보상은 없었고, 특허는 조용히 만료됐습니다.", "en": "No payment came; the patent quietly expired.", "visual": "인물"},
+  {"ko": "그 발명자는, 당대 '세상에서 가장 아름다운 여자'.", "en": "The inventor: 'the most beautiful woman in the world.'", "visual": "인물"},
+  {"ko": "헐리우드의 전설, '헤디 라머'였습니다.", "en": "Hollywood legend Hedy Lamarr.", "visual": "인물"}
+ ]
+}

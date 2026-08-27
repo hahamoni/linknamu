@@ -1,0 +1,21 @@
+{
+ "title": "P01-B 저주형 — 얼굴만 원한 세상 (반전: 블루투스)",
+ "cover_ko": "가장 아름다운 얼굴의 저주",
+ "cover_en": "BEAUTY WAS HER CURSE",
+ "beats": [
+  {"ko": "가장 아름다운 여자라는 말은, 칭찬이 아니었습니다.", "en": "'Most beautiful woman' was never a compliment.", "visual": "인물"},
+  {"ko": "헤디 라머. 스튜디오는 그녀의 얼굴만 원했죠.", "en": "Hedy Lamarr. Studios only wanted her face.", "visual": "인물"},
+  {"ko": "밤마다 그녀는 설계도를 그렸습니다.", "en": "At night, she drew blueprints.", "visual": "인물"},
+  {"ko": "천구백사십이 년, 어뢰를 지키는 장치를 발명합니다.", "en": "In 1942 she invented a torpedo-guarding device.", "visual": "클립"},
+  {"ko": "송신기와 수신기가 주파수를 함께 뜁니다.", "en": "Transmitter and receiver hop frequencies together.", "visual": "클립"},
+  {"ko": "채널은 여든여덟 개. 피아노 건반의 수죠.", "en": "Eighty-eight channels, the number of piano keys.", "visual": "그래픽"},
+  {"ko": "부품은 정말로, 자동피아노의 종이 롤.", "en": "The syncing part: a real player piano roll.", "visual": "클립"},
+  {"ko": "해군의 대답은, '가서 전쟁 채권이나 파시죠.'", "en": "The Navy's reply: 'Go sell war bonds.'", "visual": "인물"},
+  {"ko": "특허장의 이름은 배우가 아닌, 헤디 키슬러 마키.", "en": "The patent bears her legal name, not stage name.", "visual": "문서"},
+  {"ko": "장치는 서랍으로 들어갔습니다.", "en": "The device went into a drawer.", "visual": "인물"},
+  {"ko": "특허는 만료됐고, 그녀는 한 푼도 받지 못했습니다.", "en": "It expired; she was never paid a dollar.", "visual": "인물"},
+  {"ko": "세상은 끝까지, 그녀를 얼굴로만 기억했습니다.", "en": "The world remembered only her face.", "visual": "인물"},
+  {"ko": "그런데 그 설계는, 죽지 않았습니다.", "en": "But her design never died.", "visual": "인물"},
+  {"ko": "당신의 블루투스가 그 증거입니다 — 팔십사 년째요.", "en": "Your Bluetooth is the proof, eighty-four years on.", "visual": "그래픽"}
+ ]
+}
