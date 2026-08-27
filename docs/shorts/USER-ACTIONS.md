@@ -50,7 +50,7 @@
 뒤의 것이 다 찬 편을 감지해 조립까지 끝냅니다. 사람이 07:00 UTC에 깨어 있을 필요가 없습니다.
 
 ```bash
-python3 scripts/shorts/patient_tts.py p01:en:1,2 p02 p03 p04 p05 p06 p07 p08 p09 p10 p11 \
+python3 scripts/shorts/patient_tts.py p01:en:1,2 p02 p03 p04 p05 p06 p07 p08 p09 p10 p11 p12 \
     --lang ko --minutes 600 &
 python3 scripts/shorts/finish_episodes.py --lang ko --font <Pretendard-Bold.ttf> --minutes 600 &
 ```
