@@ -53,6 +53,7 @@ v1(4컷×8초)은 20편 실측 분석에 따라 폐기 — 근거: `docs/shorts/
 | Patent Case File No. 2,292,387 … (page 7).jpg 외 42p | 10 (도면 크롭) | NARA 연방 기록물, PD | ✓ |
 | Hedy Kiesler 1933.jpg | 9 | **PD-anon-70-EU, 미국 PD ✓** (파일 페이지 확인 완료) | ✓ |
 | Hedi Lamarr in "Samson and Delilah" (1949).png | 11 | **CC0 1.0 ✓** (파일 페이지 확인 완료) | ✓ |
+| Hedy Lamarr in A Lady Without Passport trailer 2.JPG | 12 (C안 v3 편집: 동일 사진 연속 방지 교체) | **PD ✓** (트레일러 스크린샷, extmetadata 확인 2026-08-27) | ✓ |
 
 전 6종 라이선스 확정 — 대체안 불필요. 스틸 다운로드는 편집 단계에서 로컬로 (이 세션 프록시는 upload.wikimedia.org 차단).
 
