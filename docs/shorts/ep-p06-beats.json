@@ -1,0 +1,77 @@
+{
+ "title": "P06 — 휴지 방향, 특허는 정말 답을 말했나 (세스 휠러 / US465588)",
+ "cover_ko": "특허는 답을 말하지 않았다",
+ "cover_en": "THE PATENT NEVER SAID OVER",
+ "beats": [
+  {
+   "ko": "휴지, 앞으로 거세요 뒤로 거세요?",
+   "en": "Toilet paper: over, or under?",
+   "visual": "인물"
+  },
+  {
+   "ko": "백 년 넘은 논쟁입니다.",
+   "en": "It's a hundred-year-old fight.",
+   "visual": "인물"
+  },
+  {
+   "ko": "설문에선 열에 일곱이 '앞으로'였고요.",
+   "en": "Surveys say seven in ten hang it over.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "그런데 몇 년 전, 인터넷이 답을 찾았다고 했죠.",
+   "en": "A few years ago, the internet declared a winner.",
+   "visual": "인물"
+  },
+  {
+   "ko": "천팔백구십일 년 특허 도면입니다.",
+   "en": "This is an 1891 patent drawing.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "종이가 앞으로 넘어와 있죠.",
+   "en": "The paper comes over the top.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "논쟁 끝, 앞으로가 정답. 그렇게 퍼졌습니다.",
+   "en": "Case closed, they said. Over wins.",
+   "visual": "인물"
+  },
+  {
+   "ko": "그런데 특허 본문을 읽어보면",
+   "en": "But read the patent text itself.",
+   "visual": "인물"
+  },
+  {
+   "ko": "앞이라는 말도, 뒤라는 말도 없습니다.",
+   "en": "It never says over. It never says under.",
+   "visual": "문서"
+  },
+  {
+   "ko": "도면엔 벽도, 걸이도 그려져 있지 않고요.",
+   "en": "No wall, no holder, is drawn at all.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "같은 발명가가 일 년 먼저 낸 특허가 있습니다.",
+   "en": "The same inventor filed another patent a year earlier.",
+   "visual": "인물"
+  },
+  {
+   "ko": "거기엔 벽이 그려져 있습니다.",
+   "en": "That one does show a wall.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "그리고 휴지는, 뒤로 내려옵니다.",
+   "en": "And the paper hangs under.",
+   "visual": "그래픽"
+  },
+  {
+   "ko": "그의 목표는 하나였습니다. '어느 쪽이든 상관없게.'",
+   "en": "His goal was one thing: make direction not matter.",
+   "visual": "인물"
+  }
+ ]
+}

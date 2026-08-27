@@ -1,0 +1,53 @@
+{
+ "_note": "P06 편집 스펙. 인물 사진 없음 — 특허 도면·서명·인용 카드로 구성(0크레딧). 반전은 1890년 '벽 그려진' 도면.",
+ "edit": [
+  {"kind": "pad", "src": "stills/14_roll_1891.png", "opts": {}},
+  {"kind": "pad", "src": "stills/15_header_1891.png", "opts": {}},
+  {"kind": "pad", "src": "stills/14_roll_1891.png", "opts": {"fast": true}},
+  {"kind": "still", "src": "stills/20_card_direction.png", "opts": {"focus": "center", "dark": true}},
+  {"kind": "pad", "src": "stills/15_header_1891.png", "opts": {"fast": true}},
+  {"kind": "pad", "src": "stills/14_roll_1891.png", "opts": {}},
+  {"kind": "still", "src": "stills/20_card_direction.png", "opts": {"focus": "center"}},
+  {"kind": "pad", "src": "stills/12_signature.png", "opts": {}},
+  {"kind": "still", "src": "stills/20_card_direction.png", "opts": {"focus": "center", "fast": true}},
+  {"kind": "pad", "src": "stills/14_roll_1891.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/13_header_1890.png", "opts": {}},
+  {"kind": "pad", "src": "stills/10_wall_fig1.png", "opts": {}},
+  {"kind": "pad", "src": "stills/11_wall_fig2_under.png", "opts": {"fast": true}},
+  {"kind": "still", "src": "stills/21_card_wholly.png", "opts": {"focus": "center", "bright": true}}
+ ],
+ "subs_ko": [
+  "휴지, 앞으로 거세요\n뒤로 거세요?",
+  "백 년 넘은 논쟁입니다.",
+  "설문에선 열에 일곱이\n'앞으로'였고요.",
+  "그런데 몇 년 전,\n인터넷이 답을 찾았다고 했죠.",
+  "1891년 특허 도면입니다.",
+  "종이가 앞으로\n넘어와 있죠.",
+  "논쟁 끝, 앞으로가 정답.\n그렇게 퍼졌습니다.",
+  "그런데 특허 본문을\n읽어보면",
+  "앞이라는 말도,\n뒤라는 말도 없습니다.",
+  "도면엔 벽도, 걸이도\n그려져 있지 않고요.",
+  "같은 발명가가 1년 먼저 낸\n특허가 있습니다.",
+  "거기엔 벽이\n그려져 있습니다.",
+  "그리고 휴지는,\n뒤로 내려옵니다.",
+  "그의 목표는 하나였습니다.\n'어느 쪽이든 상관없게.'"
+ ],
+ "subs_en": [
+  "Toilet paper:\nover, or under?",
+  "It's a hundred-year-old fight.",
+  "Surveys say seven in ten\nhang it over.",
+  "A few years ago, the internet\ndeclared a winner.",
+  "This is an 1891\npatent drawing.",
+  "The paper comes\nover the top.",
+  "Case closed, they said.\nOver wins.",
+  "But read the patent\ntext itself.",
+  "It never says over.\nIt never says under.",
+  "No wall, no holder,\nis drawn at all.",
+  "The same inventor filed another\npatent a year earlier.",
+  "That one does\nshow a wall.",
+  "And the paper\nhangs under.",
+  "His goal was one thing:\nmake direction not matter."
+ ],
+ "bottom_beats": [4, 7, 9, 14],
+ "ambient": []
+}
