@@ -1,0 +1,53 @@
+{
+ "_note": "P09 편집 스펙. 특허 도면 반전본 + 인용 카드(0크레딧). 반전은 14비트 — 증인란의 찰리 테일러(엔진을 손으로 깎은 정비공).",
+ "edit": [
+  {"kind": "pad", "src": "stills/11_fig1_glider_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/10_header_inv.png", "opts": {}},
+  {"kind": "still", "src": "stills/20_card_title.png", "opts": {"focus": "center"}},
+  {"kind": "pad", "src": "stills/12_fig_warp_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/11_fig1_glider_inv.png", "opts": {"fast": true}},
+  {"kind": "pad", "src": "stills/12_fig_warp_inv.png", "opts": {"fast": true}},
+  {"kind": "pad", "src": "stills/11_fig1_glider_inv.png", "opts": {}},
+  {"kind": "pad", "src": "stills/10_header_inv.png", "opts": {"fast": true}},
+  {"kind": "still", "src": "stills/20_card_title.png", "opts": {"focus": "center", "dark": true}},
+  {"kind": "pad", "src": "stills/12_fig_warp_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/11_fig1_glider_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/10_header_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/14_witness_crop_inv.png", "opts": {}},
+  {"kind": "still", "src": "stills/21_card_witness.png", "opts": {"focus": "center", "bright": true}}
+ ],
+ "subs_ko": [
+  "비행기 특허,\n엔진 이야기가 아니었습니다.",
+  "라이트 형제가 낸 서류를\n열어 보면",
+  "제목은 그냥\n'나는 기계'입니다.",
+  "청구항 18개 어디에도\n엔진은 없고요.",
+  "그들이 특허 낸 건\n날개를 비트는 방법이었습니다.",
+  "한쪽 날개를 비틀면\n기체가 기울죠.",
+  "그 기울기를 방향타와 묶은 게\n핵심이었습니다.",
+  "기계가 아니라\n조종법에 권리를 낸 겁니다.",
+  "서류에 적힌 건\n'측면 조종 수단'뿐이었습니다.",
+  "그래서 날개를 비틀지 않는\n비행기까지 걸렸습니다.",
+  "미국 법원은\n라이트 형제 손을 들어줬고요.",
+  "소송은 10년 넘게 이어졌고,\n정부가 특허를 묶었죠.",
+  "그 서류 마지막 장,\n증인란을 볼까요.",
+  "그 엔진을 손으로 깎은 정비공,\n찰리 테일러였습니다."
+ ],
+ "subs_en": [
+  "The airplane patent was\nnever about the engine.",
+  "Open the papers\nthe Wright brothers filed.",
+  "The title is simply\n\"Flying-Machine.\"",
+  "None of the eighteen claims\nmentions an engine.",
+  "What they patented\nwas twisting the wing.",
+  "Twist one side\nand the machine banks.",
+  "Linking that tilt to the rudder\nwas the key.",
+  "They claimed the method\nof control, not a machine.",
+  "The papers claim only\nmeans for lateral control.",
+  "So even planes that didn't\ntwist wings were caught.",
+  "American courts\nsided with the Wrights.",
+  "It ran a decade until the\ngovernment pooled the patents.",
+  "Now look at the witness line\non the last page.",
+  "Charlie Taylor - the mechanic\nwho carved that engine."
+ ],
+ "bottom_beats": [3, 9, 14],
+ "ambient": []
+}

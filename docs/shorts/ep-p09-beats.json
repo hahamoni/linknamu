@@ -1,0 +1,21 @@
+{
+ "title": "P09 — 엔진은 그 특허에 없었다 (라이트 형제 / US821393)",
+ "cover_ko": "엔진은 특허에 없었다",
+ "cover_en": "THE ENGINE ISN'T IN IT",
+ "beats": [
+  {"ko": "비행기 특허, 엔진 이야기가 아니었습니다.", "en": "The airplane patent was never about the engine.", "visual": "인물"},
+  {"ko": "라이트 형제가 낸 서류를 열어 보면", "en": "Open the papers the Wright brothers filed.", "visual": "인물"},
+  {"ko": "제목은 그냥 '나는 기계'입니다.", "en": "The title is simply \"Flying-Machine.\"", "visual": "그래픽"},
+  {"ko": "청구항 열여덟 개 어디에도 엔진은 없고요.", "en": "None of the eighteen claims mentions an engine.", "visual": "그래픽"},
+  {"ko": "그들이 특허 낸 건 날개를 비트는 방법이었습니다.", "en": "What they patented was twisting the wing.", "visual": "그래픽"},
+  {"ko": "한쪽 날개를 비틀면 기체가 기울죠.", "en": "Twist one side and the machine banks.", "visual": "그래픽"},
+  {"ko": "그 기울기를 방향타와 묶은 게 핵심이었습니다.", "en": "Linking that tilt to the rudder was the key.", "visual": "그래픽"},
+  {"ko": "기계가 아니라 조종법에 권리를 낸 겁니다.", "en": "They claimed the method of control, not a machine.", "visual": "인물"},
+  {"ko": "서류에 적힌 건 '측면 조종 수단'뿐이었습니다.", "en": "The papers claim only means for lateral control.", "visual": "문서"},
+  {"ko": "그래서 날개를 비틀지 않는 비행기까지 걸렸습니다.", "en": "So even planes that didn't twist wings were caught.", "visual": "인물"},
+  {"ko": "미국 법원은 라이트 형제 손을 들어줬고요.", "en": "American courts sided with the Wrights.", "visual": "인물"},
+  {"ko": "소송은 십 년 넘게 이어졌고, 정부가 특허를 묶었죠.", "en": "It ran a decade until the government pooled the patents.", "visual": "인물"},
+  {"ko": "그 서류 마지막 장, 증인란을 볼까요.", "en": "Now look at the witness line on the last page.", "visual": "인물"},
+  {"ko": "그 엔진을 손으로 깎은 정비공, 찰리 테일러였습니다.", "en": "Charlie Taylor - the mechanic who carved that engine.", "visual": "인물"}
+ ]
+}
