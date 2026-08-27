@@ -1,5 +1,5 @@
 {
- "title": "P01-C 역추적형 — 블루투스에서 1942로 (이름은 맨 끝)",
+ "title": "P01-C v2 역추적형 — 블루투스에서 1942로 (이름이 마지막 한 방)",
  "cover_ko": "당신의 블루투스, 그 시작",
  "cover_en": "BLUETOOTH BEGAN WITH HER",
  "beats": [
@@ -15,7 +15,7 @@
   {"ko": "그 여자의 얼굴은, 온 세상이 알고 있었습니다.", "en": "But the whole world knew her face.", "visual": "인물"},
   {"ko": "해군은 장치를 서랍에 묻었고, 보상은 없었습니다.", "en": "The Navy buried it; she was never paid.", "visual": "인물"},
   {"ko": "그녀는 평생 '얼굴'로만 소비됐습니다.", "en": "Her whole life, only the face was seen.", "visual": "인물"},
-  {"ko": "발명자의 예명은 — 헤디 라머.", "en": "Her stage name: Hedy Lamarr.", "visual": "인물"},
-  {"ko": "오십오 년 뒤 상이 왔을 때, 그녀의 답. '이제야 왔군요.'", "en": "Fifty-five years late, her reply: 'About time.'", "visual": "인물"}
+  {"ko": "그 발명자는, 당대 '세상에서 가장 아름다운 여자'.", "en": "The inventor: 'the most beautiful woman in the world.'", "visual": "인물"},
+  {"ko": "헐리우드의 전설, '헤디 라머'였습니다.", "en": "Hollywood legend Hedy Lamarr.", "visual": "인물"}
  ]
 }
