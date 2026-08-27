@@ -50,12 +50,9 @@
    }
   },
   {
-   "kind": "still",
-   "src": "stills/20_card_title.png",
-   "opts": {
-    "focus": "center",
-    "dark": true
-   }
+   "kind": "pad",
+   "src": "stills/17_objects_inv.png",
+   "opts": {}
   },
   {
    "kind": "pad",
