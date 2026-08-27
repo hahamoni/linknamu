@@ -45,3 +45,6 @@ __pycache__/
 
 # 편집 중간 산출물
 docs/shorts/*_output/_build/
+
+# 드라이런 자리표시(무음) 나레이션과 조립 중간산출물
+docs/shorts/*_output/_build/
