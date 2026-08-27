@@ -77,6 +77,7 @@ Vertical 9:16 diagram. A minimal technical illustration on near-black navy backg
 
 - 음악: 드라마틱 미드템포 피아노, 단일 트랙 45초 (38.5만 편의 검증 무드), 클립 앰비언트는 -18dB 아래.
   **소스: 유튜브 오디오 라이브러리** (Higgsfield는 단독 음악 생성 미지원 — 실측 확인. 무료·라이선스 안전이라 정책상으로도 우세).
+- **음악 확정 (2026-08-27)** — 유튜브 오디오 라이브러리는 로그인 필요(세션 접근 불가)라 동급 라이선스 안전 소스로 대체: [Pixabay "Cinematic Dramatic Emotional Piano" (Music_For_Creators, #131839)](https://pixabay.com/music/main-title-cinematic-dramatic-emotional-piano-131839/), Pixabay Content License(무귀속·상업/유튜브 허용). 전체 3:08 중 **48–105초 구간** 사용(도입 잔잔→중반 상승→페이오프 정점, 스토리 아크와 일치 — RMS 프로파일 실측 근거). 산출: `music_bed.mp3`(0.8s 페이드인) → 최종 믹스 `ep-p01_ko.mp4` (음악 -14dB, 종료 1.2s 페이드아웃, 전체 피크 -0.9dB).
 - TTS 검수: params.prompt 대조 / durationSec÷음절 <4.5 재생성 / 51.1535625초 폐기. 깨짐 감시: 맞물리게 · 도청 · 뜁니다.
 - **나레이션 생성·검수 완료 (2026-08-26~27, Gemini 로컬 파이프라인)** — 28건 전부 통과 (ko 비트4는 발음 유도 재생성으로 해결). 결과·이슈 로그: `ep-p01-qa-report.md`
 

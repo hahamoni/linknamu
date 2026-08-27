@@ -186,6 +186,16 @@ def main():
     final = str(out_dir / f"ep-p01_{lang}{'' if music else '_preview'}.mp4")
     if font and "--no-subs" not in args:
         print("· 자막 번인 + 먹싱 (libass)")
+        family = "Noto Sans KR"
+        try:  # 폰트 파일에서 패밀리명 자동 추출 (fonttools 있으면) — 커스텀 폰트 교체 대응
+            from fontTools.ttLib import TTFont
+            name = TTFont(font)["name"]
+            rec = name.getName(16, 3, 1, 0x409) or name.getName(1, 3, 1, 0x409)
+            if rec:
+                family = rec.toUnicode()
+        except Exception:
+            pass
+        print(f"  폰트 패밀리: {family}")
 
         def ts(sec):
             cs = int(round(sec * 100))
@@ -198,7 +208,7 @@ def main():
             "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, "
             "BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, "
             "BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
-            "Style: Default,Noto Sans KR,44,&H00FFFFFF,&H00FFFFFF,&HD0000000,&H80000000,"
+            f"Style: Default,{family},44,&H00FFFFFF,&H00FFFFFF,&HD0000000,&H80000000,"
             "-1,0,0,0,100,100,0,0,1,3,1,2,40,40,270,1", "",
             "[Events]",
             "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
