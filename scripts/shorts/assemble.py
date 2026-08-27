@@ -13,7 +13,7 @@
   curl -sLo nkr.woff2 https://cdn.jsdelivr.net/fontsource/fonts/noto-sans-kr@latest/korean-700-normal.woff2
   pip install fonttools brotli && python3 -c "from fontTools.ttLib import TTFont; f=TTFont('nkr.woff2'); f.flavor=None; f.save('NotoSansKR-Bold.ttf')"
 """
-import os, subprocess, sys, wave
+import json, os, subprocess, sys, wave
 from pathlib import Path
 
 FF = os.environ.get("FFMPEG", "/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2")
@@ -60,6 +60,25 @@ SUBS = [
     "그 발명자는, 당대\n'세상에서 가장 아름다운 여자'.",
     "할리우드의 전설,\n'헤디 라마르'였습니다.",
 ]
+SUBS_EN = [
+    "What if your Bluetooth\nstarted with this actress?",
+    "Inside Bluetooth: a signal\nthat keeps switching channels.",
+    "Its original blueprint:\na 1942 patent.",
+    "So enemies couldn't listen in\non torpedo signals.",
+    "Eighty-eight channels,\nimpossible to follow.",
+    "The two machines kept time\nwith a player piano roll.",
+    "That's why: eighty-eight,\nlike piano keys.",
+    "The inventor was\nno soldier or engineer.",
+    "On the patent:\none unfamiliar woman's name.",
+    "But the whole world\nknew her face.",
+    "The Navy buried it;\nshe was never paid.",
+    "Her whole life,\nonly the face was seen.",
+    "The inventor: 'the most\nbeautiful woman in the world.'",
+    "Hollywood legend\nHedy Lamarr.",
+]
+BOTTOM = {9, 14}      # 서명 카드가 중앙에 오는 비트 — 자막 하단 배치 (겹침 방지)
+AMBIENT = [(3, "clipA_radio.mp4", 0.0), (4, "clipA_radio.mp4", 5.85),
+           (6, "clipB_pianoroll.mp4", 0.0), (7, "clipB_pianoroll.mp4", 5.2)]
 ENC = ["-c:v", "libx264", "-crf", "19", "-preset", "medium", "-pix_fmt", "yuv420p", "-r", str(FPS), "-an"]
 
 
@@ -100,12 +119,27 @@ def seg_clip(src, dur, out, start):
     run(["-ss", f"{start:.3f}", "-i", src, "-t", f"{dur:.4f}", "-vf", f"fps={FPS},scale={W}:{H}"] + ENC + [out])
 
 
+def load_spec(path):
+    """편별 편집 스펙 JSON → (EDIT, SUBS, SUBS_EN, BOTTOM, AMBIENT) 치환.
+
+    형식: {"edit":[{"kind","src","opts"}...], "subs_ko":[...], "subs_en":[...],
+           "bottom_beats":[...], "ambient":[{"beat","clip","start"}...]}
+    """
+    s = json.loads(Path(path).read_text())
+    edit = [(e["kind"], e.get("src", ""), e.get("opts", {})) for e in s["edit"]]
+    amb = [(a["beat"] - 1, a["clip"], a["start"]) for a in s.get("ambient", [])]
+    return edit, s.get("subs_ko", []), s.get("subs_en", []), set(s.get("bottom_beats", [])), amb
+
+
 def main():
+    global EDIT, SUBS, SUBS_EN, BOTTOM, AMBIENT
     args = sys.argv[1:]
     ep_path = Path(args[0])
     lang = args[args.index("--lang") + 1] if "--lang" in args else "ko"
     font = args[args.index("--font") + 1] if "--font" in args else None
     music = args[args.index("--music") + 1] if "--music" in args else None
+    if "--edit" in args:
+        EDIT, SUBS, SUBS_EN, BOTTOM, AMBIENT = load_spec(args[args.index("--edit") + 1])
     out_dir = ep_path.parent / (ep_path.stem.replace("-beats", "") + "_output")
     tmp = out_dir / "_build"
     tmp.mkdir(exist_ok=True)
@@ -177,15 +211,17 @@ def main():
     narr = str(tmp / "narration.wav")
     run(["-f", "concat", "-safe", "0", "-i", str(na), narr])
     amb_in, amb_f, amb_lbl = [], [], []
-    for j, (bi, clip, s0) in enumerate([(3, "clipA_radio.mp4", 0.0), (4, "clipA_radio.mp4", 5.85),
-                                        (6, "clipB_pianoroll.mp4", 0.0), (7, "clipB_pianoroll.mp4", 5.2)]):
+    for j, (bi, clip, s0) in enumerate(AMBIENT):
         amb_in += ["-ss", f"{s0:.3f}", "-t", f"{fdurs[bi]:.4f}", "-i", str(out_dir / clip)]
         ms = int(starts[bi] * 1000)
         amb_f.append(f"[{j+1}:a]volume=0.4,adelay={ms}|{ms}[a{j}]")
         amb_lbl.append(f"[a{j}]")
-    fc = ";".join(amb_f) + f";[0:a]{''.join(amb_lbl)}amix=inputs=5:normalize=0[mix]"
     audio = str(tmp / "audio_mix.m4a")
-    run(["-i", narr] + amb_in + ["-filter_complex", fc, "-map", "[mix]", "-c:a", "aac", "-b:a", "160k", audio])
+    if amb_f:
+        fc = ";".join(amb_f) + f";[0:a]{''.join(amb_lbl)}amix=inputs={len(amb_f)+1}:normalize=0[mix]"
+        run(["-i", narr] + amb_in + ["-filter_complex", fc, "-map", "[mix]", "-c:a", "aac", "-b:a", "160k", audio])
+    else:  # 생성 클립 없는 편 — 나레이션만
+        run(["-i", narr, "-c:a", "aac", "-b:a", "160k", audio])
     if music:
         m = str(tmp / "audio_music.m4a")
         run(["-i", audio, "-i", music, "-filter_complex",
@@ -225,9 +261,9 @@ def main():
             "[Events]",
             "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
         ]
-        BOTTOM_BEATS = {9, 14}  # 서명 카드가 중앙에 오는 비트 — 자막을 하단으로 (겹침 방지)
-        for i, t in enumerate(SUBS):
-            bottom = (i + 1) in BOTTOM_BEATS
+        subs = SUBS if lang == "ko" else SUBS_EN
+        for i, t in enumerate(subs):
+            bottom = (i + 1) in BOTTOM
             mv, tag = (250, "{\\an2}") if bottom else (0, "")
             lines.append(f"Dialogue: 0,{ts(starts[i])},{ts(starts[i]+fdurs[i])},Default,,0,0,{mv},,"
                          + tag + t.replace("\n", "\\N"))
