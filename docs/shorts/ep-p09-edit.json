@@ -11,8 +11,8 @@
   {"kind": "pad", "src": "stills/10_header_inv.png", "opts": {"fast": true}},
   {"kind": "still", "src": "stills/20_card_title.png", "opts": {"focus": "center", "dark": true}},
   {"kind": "pad", "src": "stills/12_fig_warp_inv.png", "opts": {"dark": true}},
-  {"kind": "pad", "src": "stills/11_fig1_glider_inv.png", "opts": {"dark": true}},
-  {"kind": "pad", "src": "stills/10_header_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/15_sheet2_inv.png", "opts": {"dark": true}},
+  {"kind": "pad", "src": "stills/16_sheet1_inv.png", "opts": {}},
   {"kind": "pad", "src": "stills/14_witness_crop_inv.png", "opts": {}},
   {"kind": "still", "src": "stills/21_card_witness.png", "opts": {"focus": "center", "bright": true}}
  ],

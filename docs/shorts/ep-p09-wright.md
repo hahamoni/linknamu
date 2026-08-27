@@ -14,7 +14,8 @@
 | 청구항 1: *"…means for imparting to the right and left portions of said aeroplane a helicoidal warp…"* — 청구 대상은 **날개를 비트는 수단** | ● | 원문 |
 | 방향타 연계: 날개 비틀기와 수직타를 함께 움직이는 구성이 별도 청구항으로 존재 | ● | 원문 |
 | 출원 시점(1903-03) 기준 특허는 **1902년 글라이더** 기반 — 동력 비행(1903-12-17) 이전 출원 | ● | 출원일 대조 |
-| 특허 마지막 장 증인란에 **"CHAS. E. TAYLOR"** 서명 (공동 증인 E. EARLE FORRER) | ● | patentimages PDF 10쪽 직접 확인 — *"ORVILLE WRIGHT. WILBUR WRIGHT. Witnesses: CHAS. E. TAYLOR, E. EARLE FORRER."* |
+| 특허 마지막 장 증인란에 **"CHAS. E. TAYLOR"** 서명 (공동 증인 E. EARLE FORRER) | ● | patentimages PDF 10쪽(=명세서 최종면) 직접 확인 — *"ORVILLE WRIGHT. WILBUR WRIGHT. Witnesses: CHAS. E. TAYLOR, E. EARLE FORRER."* |
+| **주의**: 도면 시트(1~3장)의 증인란은 **다른 두 사람의 육필 서명**이다. 테일러의 이름은 명세서 마지막 장에만 있다. 13비트 "그 서류 마지막 장"은 이 구분을 지킨 표현 | ● | 도면 시트 하단 육필 증인란 vs 10쪽 활자 증인란 대조 |
 | 찰리 테일러가 1903년 6주 만에 12마력 알루미늄 엔진을 사내에서 깎아 만듦 | ● | Smithsonian NASM · Wright Brothers NHP |
 | 특허 소송이 1909~1917년 이어지고, 1917년 **정부 주도 특허 풀(MAA)**로 종결 | ● | Wikipedia/Wright brothers patent war, MAA 1917 |
 | 커티스 등 경쟁자 상대 미국 법원 판결은 라이트 측 승소 | ● | Wright Co. v. Herring-Curtiss Co. (1913) |

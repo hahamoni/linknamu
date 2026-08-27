@@ -41,16 +41,19 @@ def pick_font(path, size):
 
 
 def wrap(draw, text, font, max_w):
-    lines, cur = [], ""
-    for word in text.split():
-        trial = (cur + " " + word).strip()
-        if draw.textlength(trial, font=font) <= max_w:
-            cur = trial
-        else:
-            if cur:
-                lines.append(cur)
-            cur = word
-    if cur:
+    """줄바꿈. 텍스트에 \\n 이 있으면 그 자리를 반드시 끊는다 — 이름이 두 줄로
+    갈라져 강조가 깨지는 것을 막기 위한 수동 제어."""
+    lines = []
+    for para in text.split("\n"):
+        cur = ""
+        for word in para.split():
+            trial = (cur + " " + word).strip()
+            if draw.textlength(trial, font=font) <= max_w:
+                cur = trial
+            else:
+                if cur:
+                    lines.append(cur)
+                cur = word
         lines.append(cur)
     return lines
 
