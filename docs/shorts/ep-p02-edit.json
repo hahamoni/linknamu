@@ -1,5 +1,5 @@
 {
- "_note": "P02 편집 스펙 v3. 같은 사진을 두 번 쓰지 않는다(피드백 2026-08-28). 이미지가 비트 수보다 적은 자리는 span 으로 한 장을 여러 비트에 걸쳐 오래 띄운다. 자막 위치·투명도는 assemble.py 가 전 비트 동일하게 처리하므로 bottom_beats 는 쓰지 않는다. 모노폴리 로고는 14비트에서만.",
+ "_note": "P02 편집 스펙 v3. 같은 사진을 두 번 쓰지 않는다(피드백 2026-08-28). 이미지가 비트 수보다 적은 자리는 span 으로 한 장을 여러 비트에 걸쳐 오래 띄운다. 자막 위치·투명도는 assemble.py 가 전 비트 동일하게 처리하므로 bottom_beats 는 쓰지 않는다. 모노폴리 로고는 14비트에서만. 대로우 사진 두 장은 보드의 MONOPOLY 글자가 찍혀 있어 반전이 샜다. 글자가 안 보이게 잘라낸 _crop 판본을 쓴다.",
  "edit": [
   {
    "kind": "still",
@@ -8,14 +8,14 @@
   },
   {
    "kind": "still",
-   "src": "stills/04_darrow.jpg",
+   "src": "stills/04_darrow_crop.jpg",
    "opts": {
     "focus": "top"
    }
   },
   {
    "kind": "still",
-   "src": "stills/04b_darrow_500.jpg",
+   "src": "stills/04b_darrow_500_crop.jpg",
    "opts": {
     "focus": "top"
    }
