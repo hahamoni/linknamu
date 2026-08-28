@@ -1,76 +1,76 @@
 {
- "title": "P03 — 위저 보드가 스스로 지었다는 이름 (US446054)",
- "cover_ko": "특허엔 장난감이라 적혔다",
- "cover_en": "THE PATENT CALLED IT A TOY",
+ "title": "P03 — 이름을 스스로 지었다는 판 (US446054)",
+ "cover_ko": "이 판이 스스로 지은 이름",
+ "cover_en": "THE BOARD NAMED ITSELF",
  "beats": [
   {
-   "ko": "영혼과 대화하는 판, 특허엔 뭐라고 적혀 있을까요?",
-   "en": "A board that talks to spirits? Read its patent.",
+   "ko": "손을 올리면 저절로 움직인다는 판, 들어보셨죠?",
+   "en": "You've heard of the board that moves by itself?",
    "visual": "인물"
   },
   {
-   "ko": "천팔백구십일 년, 미국이 이 판에 특허를 내줍니다.",
-   "en": "In 1891, America granted it a patent.",
+   "ko": "백 년 전 미국에서 정식으로 등록된 물건입니다.",
+   "en": "It was formally registered in America a century ago.",
    "visual": "인물"
   },
   {
-   "ko": "알파벳과 숫자가 적힌 나무판, 그리고 작은 삼각대.",
-   "en": "A wooden board of letters, and a small pointer.",
+   "ko": "알파벳과 숫자가 적힌 나무판, 그리고 삼각대.",
+   "en": "A wooden board of letters and numbers, and a pointer.",
    "visual": "그래픽"
   },
   {
    "ko": "손을 살짝 올리면 삼각대가 글자를 짚습니다.",
-   "en": "Rest your hand; the pointer picks out letters.",
+   "en": "Rest your hands on it and the pointer picks out letters.",
    "visual": "그래픽"
   },
   {
-   "ko": "특허 원문에는 이렇게 적혀 있죠.",
-   "en": "The patent itself says this:",
+   "ko": "서류엔 이렇게 적혀 있습니다.",
+   "en": "The papers put it this way.",
    "visual": "그래픽"
   },
   {
    "ko": "\"판이 움직여 문장을 만든다.\"",
-   "en": "\"the table will move and point to certain letters.\"",
+   "en": "\"The table will move and form sentences.\"",
    "visual": "그래픽"
   },
   {
-   "ko": "누가 움직이는지는, 끝까지 쓰지 않았습니다.",
-   "en": "Who moves it, it never says.",
+   "ko": "누가 움직이는지는 쓰지 않았고요.",
+   "en": "Who moves it, they never wrote down.",
    "visual": "그래픽"
   },
   {
-   "ko": "이름도 한 여자가 물었고, '위저'라고 답했죠.",
-   "en": "A woman asked the board its name. It spelled Ouija.",
+   "ko": "이름은 한 여자가 물어서 정했습니다.",
+   "en": "A woman asked the board its name.",
    "visual": "인물"
   },
   {
    "ko": "서류에 적힌 제목은, '장난감 또는 게임'.",
-   "en": "The title on the document: \"Toy or Game.\"",
+   "en": "The title on the papers: \"Toy or Game.\"",
    "visual": "문서"
   },
   {
-   "ko": "큰돈을 번 건 발명자가 아니었습니다.",
-   "en": "The man who got rich was not the inventor.",
+   "ko": "큰돈을 번 건 만든 사람이 아니었습니다.",
+   "en": "The one who got rich was not the maker.",
    "visual": "인물"
   },
   {
    "ko": "공장 도장공이 회사를 넘겨받아 백만장자가 됐죠.",
-   "en": "A factory painter took over and made a million.",
+   "en": "A factory painter took the company and made millions.",
    "visual": "인물"
   },
   {
-   "ko": "이름을 지은 여자는 기록에서 지워졌습니다.",
-   "en": "The woman who named it was erased.",
+   "ko": "이름을 지은 여자는 기록에서 지워졌고요.",
+   "en": "The woman who named it was erased from the record.",
    "visual": "인물"
   },
   {
-   "ko": "그런데 그날, 그녀 목에는 로켓 목걸이가 있었습니다.",
-   "en": "But that night, she wore a locket.",
+   "ko": "그날 그녀 목엔 소설가 '위다'의 초상이 있었습니다.",
+   "en": "That day she wore a locket of the novelist Ouida.",
    "visual": "인물"
   },
   {
-   "ko": "그 안에 있던 이름은, 소설가 '위다'였습니다.",
-   "en": "The name inside it: the novelist Ouida.",
+   "ko": "이 판의 이름은 위저보드, 분신사바와 뿌리가 같죠.",
+   "en": "This is the Ouija board - same root as Kokkuri-san.",
    "visual": "인물"
   }
  ]

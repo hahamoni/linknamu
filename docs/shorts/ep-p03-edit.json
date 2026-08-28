@@ -1,9 +1,9 @@
 {
- "_note": "P03 편집 스펙. 인물 사진 미확보 — 특허 도면(원조 보드·플랜쳇) 반전본 + 인용/이름 카드 중심(0크레딧). 8비트 'OUIJA' 카드와 14비트 'OUIDA' 카드가 한 글자만 다른 시각적 각운으로 반전을 완성.",
+ "_note": "P03 편집 스펙 v2. 새 구조 — 위저보드 실물(01_board_kennard.jpg)은 14비트에서만 쓴다. 그 전에는 삼각대·도면·카드로만 보여줘 정체를 숨긴다. 'OUIJA' 글자 카드도 쓰지 않는다. '특허'라는 단어는 나레이션에서 전면 배제.",
  "edit": [
   {
    "kind": "pad",
-   "src": "stills/01_board_kennard.jpg",
+   "src": "stills/13_planchette_inv.png",
    "opts": {}
   },
   {
@@ -13,39 +13,41 @@
   },
   {
    "kind": "pad",
-   "src": "stills/01_board_kennard.jpg",
+   "src": "stills/12_board_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/13_planchette_inv.png",
    "opts": {
     "fast": true
    }
   },
   {
    "kind": "pad",
-   "src": "stills/13_planchette_inv.png",
-   "opts": {}
-  },
-  {
-   "kind": "pad",
-   "src": "stills/12_board_inv.png",
+   "src": "stills/10_patent_drawing_inv.png",
    "opts": {}
   },
   {
    "kind": "still",
    "src": "stills/20_quote_card.png",
    "opts": {
-    "focus": "center",
-    "span": 2
+    "focus": "center"
    }
   },
   {
-   "kind": "skip",
-   "src": "",
-   "opts": {}
+   "kind": "still",
+   "src": "stills/20_quote_card.png",
+   "opts": {
+    "focus": "center",
+    "dark": true
+   }
   },
   {
-   "kind": "still",
-   "src": "stills/22_name_ouija.png",
+   "kind": "pad",
+   "src": "stills/12_board_inv.png",
    "opts": {
-    "focus": "center"
+    "dark": true
    }
   },
   {
@@ -56,78 +58,82 @@
    }
   },
   {
-   "kind": "pad",
+   "kind": "still",
    "src": "stills/02_bond_grave.jpg",
    "opts": {
-    "dark": true
+    "focus": "mid"
    }
   },
   {
-   "kind": "pad",
+   "kind": "still",
    "src": "stills/03_fuld_patent_p1.jpg",
-   "opts": {}
-  },
-  {
-   "kind": "pad",
-   "src": "stills/01_board_kennard.jpg",
    "opts": {
-    "dark": true
+    "focus": "top"
    }
   },
   {
    "kind": "pad",
-   "src": "stills/13_planchette_inv.png",
+   "src": "stills/10_patent_drawing_inv.png",
    "opts": {
-    "fast": true
+    "dark": true
    }
   },
   {
    "kind": "still",
    "src": "stills/23_name_ouida.png",
    "opts": {
-    "focus": "center",
+    "focus": "center"
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/01_board_kennard.jpg",
+   "opts": {
     "bright": true
    }
   }
  ],
  "subs_ko": [
-  "영혼과 대화하는 판,\n특허엔 뭐라고 적혀 있을까요?",
-  "1891년, 미국이\n이 판에 특허를 내줍니다.",
-  "알파벳과 숫자가 적힌 나무판,\n그리고 작은 삼각대.",
+  "손을 올리면 저절로\n움직인다는 판, 들어보셨죠?",
+  "100년 전 미국에서\n정식으로 등록된 물건입니다.",
+  "알파벳과 숫자가 적힌\n나무판, 그리고 삼각대.",
   "손을 살짝 올리면\n삼각대가 글자를 짚습니다.",
-  "특허 원문에는\n이렇게 적혀 있죠.",
+  "서류엔 이렇게 적혀 있습니다.",
   "\"판이 움직여\n문장을 만든다.\"",
-  "누가 움직이는지는,\n끝까지 쓰지 않았습니다.",
-  "이름도 한 여자가 물었고,\n'위저'라고 답했죠.",
+  "누가 움직이는지는\n쓰지 않았고요.",
+  "이름은 한 여자가\n물어서 정했습니다.",
   "서류에 적힌 제목은,\n'장난감 또는 게임'.",
-  "큰돈을 번 건\n발명자가 아니었습니다.",
+  "큰돈을 번 건\n만든 사람이 아니었습니다.",
   "공장 도장공이 회사를 넘겨받아\n백만장자가 됐죠.",
-  "이름을 지은 여자는\n기록에서 지워졌습니다.",
-  "그런데 그날, 그녀 목에는\n로켓 목걸이가 있었습니다.",
-  "그 안에 있던 이름은,\n소설가 '위다'였습니다."
+  "이름을 지은 여자는\n기록에서 지워졌고요.",
+  "그날 그녀 목엔 소설가\n'위다'의 초상이 있었습니다.",
+  "이 판의 이름은 위저보드,\n분신사바와 뿌리가 같죠."
  ],
  "subs_en": [
-  "A board that talks to spirits?\nRead its patent.",
-  "In 1891, America\ngranted it a patent.",
-  "A wooden board of letters,\nand a small pointer.",
-  "Rest your hand; the pointer\npicks out letters.",
-  "The patent itself\nsays this:",
-  "\"the table will move and point\nto certain letters.\"",
-  "Who moves it,\nit never says.",
-  "A woman asked the board its name.\nIt spelled Ouija.",
-  "The title on the document:\n\"Toy or Game.\"",
-  "The man who got rich\nwas not the inventor.",
-  "A factory painter took over\nand made a million.",
-  "The woman who named it\nwas erased.",
-  "But that night,\nshe wore a locket.",
-  "The name inside it:\nthe novelist Ouida."
+  "You've heard of the board\nthat moves by itself?",
+  "It was formally registered\nin America a century ago.",
+  "A wooden board of letters\nand numbers, and a pointer.",
+  "Rest your hands on it and\nthe pointer picks out letters.",
+  "The papers put it this way.",
+  "\"The table will move\nand form sentences.\"",
+  "Who moves it,\nthey never wrote down.",
+  "A woman asked\nthe board its name.",
+  "The title on the papers:\n\"Toy or Game.\"",
+  "The one who got rich\nwas not the maker.",
+  "A factory painter took the\ncompany and made millions.",
+  "The woman who named it\nwas erased from the record.",
+  "That day she wore a locket\nof the novelist Ouida.",
+  "This is the Ouija board -\nsame root as Kokkuri-san."
  ],
  "bottom_beats": [
   5,
   6,
   7,
-  8,
   9,
+  10,
+  11,
+  12,
+  13,
   14
  ],
  "ambient": []
