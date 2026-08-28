@@ -158,16 +158,21 @@ def main():
     tmp = out_dir / "_build"
     tmp.mkdir(exist_ok=True)
 
+    # 비트 수는 대본에서 읽는다. 편마다 다르고(P04는 13), 대본을 줄여도 이전 판의
+    # beat14_*.wav 가 폴더에 남아 있어서, 고정값을 쓰면 없는 대사가 한 줄 붙는다.
+    nbeats = len(json.loads(ep_path.read_text())["beats"])
+    if EDIT and len(EDIT) != nbeats:
+        sys.exit(f"✗ 편집 스펙 {len(EDIT)}항목 ≠ 대본 {nbeats}비트 — 스펙을 맞추세요.")
     durs = []
-    for i in range(1, 15):
+    for i in range(1, nbeats + 1):
         with wave.open(str(out_dir / f"beat{i:02d}_{lang}.wav")) as w:
             durs.append(w.getnframes() / w.getframerate())
     bounds = [0.0]
     for d in durs:
         bounds.append(bounds[-1] + d)
     # 프레임 정확 경계 (누적 드리프트 방지)
-    fdurs = [round(bounds[i + 1] * FPS) / FPS - round(bounds[i] * FPS) / FPS for i in range(14)]
-    starts = [round(bounds[i] * FPS) / FPS for i in range(14)]
+    fdurs = [round(bounds[i + 1] * FPS) / FPS - round(bounds[i] * FPS) / FPS for i in range(nbeats)]
+    starts = [round(bounds[i] * FPS) / FPS for i in range(nbeats)]
 
     print("· 비트 세그먼트 렌더링")
     still_post = f",{GRADE},{GRAIN},{VIG}"
@@ -221,7 +226,7 @@ def main():
 
     print("· 오디오 믹스 (나레이션 + 클립 앰비언트)")
     na = tmp / "narr_list.txt"
-    na.write_text("".join(f"file '../beat{i:02d}_{lang}.wav'\n" for i in range(1, 15)))
+    na.write_text("".join(f"file '../beat{i:02d}_{lang}.wav'\n" for i in range(1, nbeats + 1)))
     narr = str(tmp / "narration.wav")
     run(["-f", "concat", "-safe", "0", "-i", str(na), narr])
     amb_in, amb_f, amb_lbl = [], [], []

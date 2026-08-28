@@ -1,6 +1,13 @@
 {
- "_note": "P04 편집 스펙 v3. 13비트. 같은 사진을 두 번 쓰지 않는다(피드백 2026-08-28). 이미지가 비트 수보다 적은 자리는 span 으로 한 장을 여러 비트에 걸쳐 오래 띄운다. 자막 위치·투명도는 assemble.py 가 전 비트 동일하게 처리하므로 bottom_beats 는 쓰지 않는다. 루빅스 큐브는 13비트에서만. 02_cube_2x2.jpg 는 루빅 브랜드 제품이라 반전이 새므로 쓰지 않는다.",
+ "_note": "P04 편집 스펙 v5. 13비트. 글자만 있는 그림(특허 헤더·발명자란·본문 스캔·코드 카드)은 전부 뺐다(피드백 2026-08-28). 도면만 열 비트가 이어지면 화면이 다 똑같아 보여서, 실제 사진을 사이사이 넣었다. 컬러 3x3 큐브 사진은 13비트(반전)에서 처음 나온다 — 1비트의 주황 단색면과 6~7비트의 2x2 는 '루빅스 큐브'로 읽히지 않는다. 같은 사진은 두 번 쓰지 않는다.",
  "edit": [
+  {
+   "kind": "still",
+   "src": "stills/40_cube_orange.jpg",
+   "opts": {
+    "focus": "center"
+   }
+  },
   {
    "kind": "pad",
    "src": "stills/13_fig1_cube_inv.png",
@@ -8,62 +15,58 @@
   },
   {
    "kind": "pad",
-   "src": "stills/11_inventor_block_inv.png",
-   "opts": {}
-  },
-  {
-   "kind": "pad",
    "src": "stills/14_fig2_magnets_inv.png",
-   "opts": {
-    "span": 2
-   }
-  },
-  {
-   "kind": "skip",
-   "src": "",
    "opts": {}
   },
   {
    "kind": "pad",
-   "src": "stills/12_header_1972_inv.png",
+   "src": "stills/16_fig2b_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "pad",
+   "src": "stills/17_fig2c_inv.png",
    "opts": {}
   },
   {
    "kind": "still",
-   "src": "stills/30_card_rejected.png",
+   "src": "stills/02_cube_2x2.jpg",
    "opts": {
     "focus": "center",
+    "dark": true,
     "span": 2
    }
   },
   {
    "kind": "skip",
    "src": "",
-   "opts": {}
-  },
-  {
-   "kind": "pad",
-   "src": "stills/10_patent_drawing_p2_inv.png",
    "opts": {}
   },
   {
    "kind": "pad",
    "src": "stills/15_fig3_3x3_inv.png",
+   "opts": {
+    "span": 2
+   }
+  },
+  {
+   "kind": "skip",
+   "src": "",
    "opts": {}
   },
   {
    "kind": "still",
-   "src": "stills/31_card_84.png",
+   "src": "stills/41_rubik.jpg",
    "opts": {
-    "focus": "center"
+    "focus": "center",
+    "dark": true,
+    "span": 3
    }
   },
   {
-   "kind": "pad",
-   "src": "stills/20_claim_card.png",
-   "opts": {
-    "span": 2
-   }
+   "kind": "skip",
+   "src": "",
+   "opts": {}
   },
   {
    "kind": "skip",

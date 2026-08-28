@@ -1,20 +1,11 @@
 {
- "_note": "P03 편집 스펙 v3. 같은 사진을 두 번 쓰지 않는다(피드백 2026-08-28). 이미지가 비트 수보다 적은 자리는 span 으로 한 장을 여러 비트에 걸쳐 오래 띄운다. 자막 위치·투명도는 assemble.py 가 전 비트 동일하게 처리하므로 bottom_beats 는 쓰지 않는다. 위저보드 실물은 14비트에서만. OUIJA 글자 카드는 쓰지 않는다.",
+ "_note": "P03 편집 스펙 v4. 14비트. 글자만 있는 그림(특허 헤더·본문 스캔·알파벳판 도면·코드로 그린 카드)은 전부 뺐다(피드백 2026-08-28). 남은 것은 실제 사진과 실제 판화·도면뿐. 같은 사진을 두 번 쓰지 않고, 모자란 자리는 span 으로 한 장을 두 비트에 걸쳐 띄운다. 알아볼 수 있는 위저보드 실물은 14비트에서만 — 그 전에는 강신회·심령사진·판화로만 끌고 간다.",
  "edit": [
   {
-   "kind": "pad",
-   "src": "stills/13_planchette_inv.png",
-   "opts": {}
-  },
-  {
-   "kind": "pad",
-   "src": "stills/11_header_inv.png",
-   "opts": {}
-  },
-  {
-   "kind": "pad",
-   "src": "stills/12_board_inv.png",
+   "kind": "still",
+   "src": "stills/41_seance_palladino.jpg",
    "opts": {
+    "focus": "center",
     "span": 2
    }
   },
@@ -25,12 +16,33 @@
   },
   {
    "kind": "pad",
-   "src": "stills/10_patent_drawing_inv.png",
+   "src": "stills/13_planchette_inv.png",
+   "opts": {
+    "span": 2
+   }
+  },
+  {
+   "kind": "skip",
+   "src": "",
    "opts": {}
   },
   {
    "kind": "still",
-   "src": "stills/20_quote_card.png",
+   "src": "stills/40_tables_1853.jpg",
+   "opts": {
+    "focus": "center",
+    "dark": true,
+    "span": 2
+   }
+  },
+  {
+   "kind": "skip",
+   "src": "",
+   "opts": {}
+  },
+  {
+   "kind": "still",
+   "src": "stills/42_spirit_1865.jpg",
    "opts": {
     "focus": "center",
     "span": 2
@@ -43,24 +55,10 @@
   },
   {
    "kind": "still",
-   "src": "stills/03_fuld_patent_p1.jpg",
+   "src": "stills/43_seance_1939.jpg",
    "opts": {
-    "focus": "top",
-    "dark": true
-   }
-  },
-  {
-   "kind": "still",
-   "src": "stills/21_title_card.png",
-   "opts": {
-    "focus": "center"
-   }
-  },
-  {
-   "kind": "still",
-   "src": "stills/02_bond_grave.jpg",
-   "opts": {
-    "focus": "mid",
+    "focus": "center",
+    "dark": true,
     "span": 2
    }
   },
@@ -71,14 +69,21 @@
   },
   {
    "kind": "still",
-   "src": "stills/30_card_painter.png",
+   "src": "stills/02_bond_grave.jpg",
    "opts": {
-    "focus": "center"
+    "focus": "center",
+    "dark": true,
+    "span": 2
    }
   },
   {
+   "kind": "skip",
+   "src": "",
+   "opts": {}
+  },
+  {
    "kind": "still",
-   "src": "stills/23_name_ouida.png",
+   "src": "stills/44_mumler.jpg",
    "opts": {
     "focus": "center"
    }

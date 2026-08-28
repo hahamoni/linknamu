@@ -47,13 +47,25 @@
 
 ## 아카이브 스틸 (확보 완료)
 
-| 파일 | 용도 | 라이선스 | 크레딧 |
-|---|---|---|---|
-| US3655201 도면 (patentimages) → 크롭·반전 | 1·3·4·5·6·7·8·9·11·14 | Public domain | — |
-| 2X2 Rubiks Cube from eBay | 12 (그가 이긴 포켓 큐브) | **CC BY-SA 4.0** | ✅ 설명란 |
-| Rubik's cube, CN II | 10 | **CC BY-SA 3.0** | ✅ 설명란 | 루빅스 큐브 실물 3×3 | 코드 렌더 청구항 카드 ('eight' 강조) | 13 | 자체 제작 | — |
+| 파일 | 비트 | 라이선스 | 크레딧 | 출처 |
+|---|---|---|---|---|
+| Speedcube MoYu 2022 (주황 단색면) | 1 | **CC BY 4.0** | ✅ 설명란 | [Commons](https://commons.wikimedia.org/wiki/File:Speedcube_MoYu_2022.jpg) |
+| US3655201 Fig.1 → 크롭·반전 | 2 | Public domain | — | patentimages |
+| US3655201 Fig.2a (자석) → 크롭·반전 | 3 | Public domain | — | patentimages |
+| US3655201 Fig.2b → 크롭·반전 (`16`) | 4 | Public domain | — | patentimages |
+| US3655201 Fig.2c → 크롭·반전 (`17`) | 5 | Public domain | — | patentimages |
+| 2X2 Rubiks Cube from eBay | 6·7 | **CC BY-SA 4.0** | ✅ 설명란 | Commons |
+| US3655201 Fig.3·Fig.4 → 크롭·반전 | 8·9 | Public domain | — | patentimages |
+| Erno Rubik, Genius Gala 2014 → 얼굴 크롭 | 10·11·12 | Public domain | — | [Commons](https://commons.wikimedia.org/wiki/File:Erno_Rubik_Genius_Gala_2014.jpg) |
+| Rubik's cube, CN II (실물 3×3) | **13 (반전)** | **CC BY-SA 3.0** | ✅ 설명란 | Commons |
 
-니콜스 본인 사진은 존재하지 않음(검색 확인). 도면의 'INVENTOR LARRY D. NICHOLS' 블록으로 대체.
+"글자만 있는 그림"은 몰입을 깬다는 피드백으로 2026-08-28에 특허 헤더·발명자란·본문 스캔·코드 렌더
+카드를 전부 뺐다. 그러자 도면만 열 비트가 이어져 **화면이 전부 똑같아 보이는 문제**가 생겨, 실제 사진을
+사이사이 넣었다. 컬러 3×3 큐브 사진은 13비트에서 처음 나온다 — 1비트의 주황 단색면과 6~7비트의
+2×2 는 '루빅스 큐브'로 읽히지 않으므로 반전이 새지 않는다.
+
+니콜스 본인 사진은 존재하지 않음(검색 확인). 그의 큐브 실물 사진도 없다 — 그래서 이 편은 도면 비중이
+다른 편보다 높다.
 
 ## 오디오
 

@@ -47,21 +47,28 @@
 
 게이트: 14비트 전부 OK, 인물 9/14(64%), 문서 1비트·62% 지점, 훅 통념+반박, 페이오프 인용 — 통과.
 
-## 아카이브 스틸 (전부 Wikimedia Commons)
+## 아카이브 스틸 (v5 — 실제 사진·물건 도면만)
 
-| 파일 | 용도 | 라이선스 | 크레딧 필요 |
-|---|---|---|---|
-| Elizabeth Magie, Washington Times (1906) | 1·13, 커버 | Public domain | — |
-| Elizabeth Magie, Evening World (1906) | 10 | Public domain | — |
-| Lizzie Magie - My Betrothed, and Other Poems | 5·11 | Public domain | — |
-| Charles Darrow (51689999467) | 2·3·8 | **CC BY 2.0** | ✅ 설명란 크레딧 |
-| Landlords board game cover | 7·14 | Public domain | — |
-| Landlords Game board based on 1924 patent | 4·6 | **CC BY 2.5** | ✅ 설명란 크레딧 |
-| BoardGamePatentMagie.png (US748626 도면) | 9 | Public domain | — |
-| Grave of Elizabeth Magie Phillips | 12 | **CC BY 2.0** | ✅ 설명란 크레딧 |
+"글자만 있는 그림"은 몰입을 깬다는 피드백으로 2026-08-28에 특허 본문 스캔·코드 렌더 카드를 뺐고,
+**1924년 보드 벡터 재현본도 뺐다** — 가운데가 흰 글자판이라 9:16으로 자르면 글자 덩어리로만 보인다.
+보드 사진은 색색의 칸이 보이는 가장자리로 미리 잘라 쓴다(`10b_board_1906_edge.jpg`).
 
-CC BY 3건은 유튜브 설명란에 "사진: [작가명], CC BY x.x, Wikimedia Commons" 형식으로 표기하면 조건 충족.
-파생 크롭 2종은 로컬 생성: `04b_darrow_500.jpg`(지폐 교환 클로즈업), `08b_grave_vert.jpg`(묘비 세로).
+| 파일 | 비트 | 라이선스 | 크레딧 | 출처 |
+|---|---|---|---|---|
+| US748626 도면 → 주사위·주사위통 크롭·반전 (`12b`) | 1 | Public domain | — | patentimages |
+| Charles Darrow (51689999467) → 로고 안 보이게 크롭 | 2·3 | **CC BY 2.0** | ✅ 설명란 | Commons |
+| Landlords board game cover | 4 | Public domain | — | Commons |
+| Lizzie Magie — My Betrothed, and Other Poems (초상) | 5 | Public domain | — | Commons |
+| Landlords Game 1906 실물 보드 → 가장자리 크롭 (`10b`) | 6 | Public domain | — | [Commons](https://commons.wikimedia.org/wiki/File:Landlords_Game_1906_image_courtesy_of_T_Forsyth_owner_of_the_registered_trademark_20151119.jpg) |
+| US748626 도면 → BANK 상자 크롭·반전 (`11`) | 7 | Public domain | — | patentimages |
+| Elizabeth Magie, Washington Times (1906) | 8·9 | Public domain | — | Commons |
+| Elizabeth Magie, Evening World (1906) | 10·11 | Public domain | — | Commons |
+| Grave of Elizabeth Magie Phillips | 12·13 | **CC BY 2.0** | ✅ 설명란 | Commons |
+| 모노폴리 실물 보드 (로고) | **14 (반전)** | Public domain | — | Commons |
+
+CC BY 2건은 설명란에 "사진: [작가명], CC BY 2.0, Wikimedia Commons" 형식으로 표기하면 조건 충족.
+**대로우 사진은 원본에 MONOPOLY 글자가 보여** 위쪽만 잘라 쓴다 — 반전이 14비트 전에 새지 않게.
+`04b_darrow_500_crop.jpg`는 04와 같은 사진이라 쓰지 않는다(같은 사진 두 번 금지).
 
 ## 생성 자산
 

@@ -44,16 +44,24 @@
 
 **TTS 풀어쓰기**: 1891년→천팔백구십일 년.
 
-## 아카이브 스틸 (확보 완료)
+## 아카이브 스틸 (v4 — 실제 사진·판화만)
 
-| 파일 | 용도 | 라이선스 | 크레딧 |
-|---|---|---|---|
-| Ouija board - Kennard Novelty Company | 1·3·12, 커버 | Public domain | — |
-| Elijah Jefferson Bond Gravestone Rear Detail | 10 (발명자의 무덤) | **CC BY-SA 3.0** | ✅ 설명란 |
-| Patent Case File No. 1,125,833 (William Fuld) — NARA | 11 | Public domain | — | 윌리엄 풀드의 특허(NARA) | US446054 도면 (patentimages) → 블루프린트 반전 | 2·4·5·13 | Public domain | — |
-| 코드 렌더 카드 (인용·TOY OR GAME·OUIJA·OUIDA) | 6·7·8·9·14 | 자체 제작 | — |
+"글자만 있는 그림"(특허 헤더·본문 스캔·알파벳판 도면·코드 렌더 카드)은 몰입을 깬다는 피드백으로
+2026-08-28에 전부 뺐다. 남은 것은 실제 사진과 실제 판화·물건 도면뿐이다.
 
-인물 사진(본드·풀드·피터스)은 Wikimedia에 존재하지 않음을 검색으로 확인. 무덤·특허 문서로 대체.
+| 파일 | 비트 | 라이선스 | 크레딧 | 출처 |
+|---|---|---|---|---|
+| Séance with the Medium Eusapia Palladino (MET) | 1·2 | CC0 | — | [Commons](https://commons.wikimedia.org/wiki/File:-S%C3%A9ance_with_the_Medium_Eusapia_Palladino-_MET_DP71267.jpg) |
+| US446054 Fig.2 플랜쳇 도면 → 블루프린트 반전 | 3·4 | Public domain | — | patentimages |
+| Tables Tournantes — L'Illustration, Paris, 1853-05-14 | 5·6 | Public domain | — | [Commons](https://commons.wikimedia.org/wiki/File:Tables_Tournantes_-_L%27Illustration,_Paris,_14_May_1853_(page_1_crop).jpg) |
+| Spirit photograph of a woman… (1865) | 7·8 | Public domain | — | [Commons](https://commons.wikimedia.org/wiki/File:Spirit_photograph_of_a_woman_with_a_hand_on_her_face_with_an_image_of_a_man_in_the_background_(1865).jpg) |
+| Seance, Balmain, 1939 (SLNSW) | 9·10 | Public domain | — | [Commons](https://commons.wikimedia.org/wiki/File:Seance,_Balmain,_1939_slnsw.jpg) |
+| Elijah Bond 묘비 (위저보드가 새겨진 뒷면) | 11·12 | **CC BY-SA 3.0** | ✅ 설명란 | Commons |
+| Mumler 심령사진 (Lincoln) | 13 | Public domain | — | [Commons](https://commons.wikimedia.org/wiki/File:Mumler_(Lincoln).jpg) |
+| Ouija board — Kennard Novelty Company | **14 (반전)** | Public domain | — | Commons |
+
+**14비트 전에는 알아볼 수 있는 위저보드 실물을 쓰지 않는다** — 이름을 밝히는 마지막 컷이 반전이기 때문이다.
+인물 사진(본드·풀드·피터스)은 Wikimedia에 존재하지 않음을 검색으로 확인했다.
 
 ## 오디오
 
