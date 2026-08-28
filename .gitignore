@@ -48,3 +48,6 @@ docs/shorts/*_output/_build/
 
 # 드라이런 자리표시(무음) 나레이션과 조립 중간산출물
 docs/shorts/*_output/_build/
+
+# 쇼츠 파이프라인 실행 로그 (run_daily.sh)
+/logs

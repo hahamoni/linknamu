@@ -81,6 +81,8 @@ python3 scripts/shorts/placeholder_wavs.py docs/shorts/ep-pNN-beats.json --lang 
 | `placeholder_wavs.py` | 무음 자리표시(드라이런) |
 | `patient_tts.py` | 쿼터가 열릴 때마다 자리표시 청크만 골라 채우는 인내형 러너 |
 | `finish_episodes.py` | 나레이션이 다 찬 편을 감지해 **무음압축→조립까지 무인 실행** |
+| `run_daily.sh` | 위 둘을 한 번에 띄우는 실행 스크립트 (**하루 한 번 이것만**) |
+| `status.py` | 편별 나레이션·완성본 진행률 한 화면 |
 | `render_diagram.py` | 88채널 도약 다이어그램 (정확히 88선) |
 | `render_card.py` | 특허 원문 인용 카드 (핵심 단어 금색 강조) |
 | `invert_drawing.py` | 특허 도면 → 블루프린트 반전 (자막 대비 확보) |
@@ -88,5 +90,13 @@ python3 scripts/shorts/placeholder_wavs.py docs/shorts/ep-pNN-beats.json --lang 
 
 ## 사람 손이 필요한 것
 
-`USER-ACTIONS.md` 참조. 요약: **Google AI Studio 결제(tier 1)** 를 켜면 TTS 쿼터와
-생성 이미지·영상이 모두 풀려 자동화가 완성됩니다.
+무료 티어로 갑니다(2026-08-27 결정). **쿼터가 열리는 한국시간 오후 4시 이후 하루 한 번**
+아래 한 줄만 실행하면 됩니다. 나머지는 자동입니다.
+
+```bash
+bash scripts/shorts/run_daily.sh          # 나레이션 채우기 + 완성본 조립
+python3 scripts/shorts/status.py          # 진행 상황
+```
+
+자막 폰트는 `assets/fonts/Pretendard-Bold.ttf` 를 저장소에 동봉했고 `assemble.py` 기본값입니다.
+자세한 내용은 `USER-ACTIONS.md`.

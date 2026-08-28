@@ -18,6 +18,10 @@ from pathlib import Path
 
 FF = os.environ.get("FFMPEG", "/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2")
 W, H, FPS = 720, 1280, 24
+
+# 자막 폰트 기본값 — 저장소에 동봉(assets/fonts/README.md 참조).
+# --font 로 덮어쓸 수 있지만, 지정하지 않아도 항상 같은 화면이 나오게 한다.
+DEFAULT_FONT = Path(__file__).resolve().parents[2] / "assets" / "fonts" / "Pretendard-Bold.ttf"
 OW, OH = W * 2, H * 2  # 줌 여유용 오버스캔
 GRADE = "eq=saturation=0.55:contrast=1.06,colorbalance=bs=0.06:bm=0.03:bh=-0.02"
 GRAIN = "noise=alls=7:allf=t+u"
@@ -136,7 +140,12 @@ def main():
     args = sys.argv[1:]
     ep_path = Path(args[0])
     lang = args[args.index("--lang") + 1] if "--lang" in args else "ko"
-    font = args[args.index("--font") + 1] if "--font" in args else None
+    font = args[args.index("--font") + 1] if "--font" in args else str(DEFAULT_FONT)
+    if not Path(font).exists():
+        print(f"⚠ 자막 폰트를 찾지 못했습니다: {font}\n"
+              f"  기본 폰트로 떨어지면 한글이 깨질 수 있습니다. "
+              f"assets/fonts/Pretendard-Bold.ttf 를 확인하세요.")
+        font = None
     music = args[args.index("--music") + 1] if "--music" in args else None
     if "--edit" in args:
         EDIT, SUBS, SUBS_EN, BOTTOM, AMBIENT = load_spec(args[args.index("--edit") + 1])
