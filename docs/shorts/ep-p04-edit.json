@@ -1,5 +1,5 @@
 {
- "_note": "P04 편집 스펙. 니콜스 인물 사진 미존재 — 특허 도면 'INVENTOR LARRY D. NICHOLS' 블록을 인물 대체 카드로 사용(P01 서명 카드와 동일 문법). 13비트 청구항 카드가 9비트 도면(3x3)과 짝을 이뤄 반전을 회수.",
+ "_note": "P04 편집 스펙 v2. 13비트. 새 구조 — 가장 유명한 루빅스 큐브를 끝까지 숨겼다가 13비트에서 처음 공개. 03_cube_3x3.jpg 는 반드시 13비트에서만 쓴다. 그 전에는 니콜스 특허 도면만 쓴다.",
  "edit": [
   {
    "kind": "pad",
@@ -56,28 +56,14 @@
   },
   {
    "kind": "pad",
-   "src": "stills/03_cube_3x3.jpg",
+   "src": "stills/10_patent_drawing_p2_inv.png",
    "opts": {}
   },
   {
    "kind": "pad",
-   "src": "stills/13_fig1_cube_inv.png",
-   "opts": {
-    "bright": true
-   }
-  },
-  {
-   "kind": "pad",
-   "src": "stills/02_cube_2x2.jpg",
+   "src": "stills/14_fig2_magnets_inv.png",
    "opts": {
     "dark": true
-   }
-  },
-  {
-   "kind": "still",
-   "src": "stills/20_claim_card.png",
-   "opts": {
-    "focus": "center"
    }
   },
   {
@@ -86,46 +72,53 @@
    "opts": {
     "bright": true
    }
+  },
+  {
+   "kind": "still",
+   "src": "stills/03_cube_3x3.jpg",
+   "opts": {
+    "bright": true
+   }
   }
  ],
  "subs_ko": [
-  "루빅스 큐브,\n먼저 나온 게 있었다면요?",
-  "1957년, 화학자 한 명이\n큐브를 만듭니다.",
-  "여덟 조각을 자석으로\n붙인 이 큐브",
-  "세 방향으로\n돌아가는 구조였죠.",
-  "1972년,\n미국 특허가 나옵니다.",
-  "루빅의 큐브보다\n2년 빨랐습니다.",
+  "니콜스 큐브라는 걸\n아시나요?",
+  "1957년,\n화학자가 만든 장난감입니다.",
+  "여덟 조각을 자석으로\n붙인 큐브였고요.",
+  "세 방향으로 돌아갔습니다.",
+  "1972년,\n미국에서 등록됩니다.",
   "그는 완구회사\n50여 곳에 보냈습니다.",
-  "전부 거절당했고,\n그중엔 아이디얼도 있었죠.",
-  "도면엔 세 줄짜리 큐브도\n그려져 있었죠.",
-  "8년 뒤, 그 아이디얼이\n루빅스 큐브를 팝니다.",
-  "그해 미국에서만\n840만 개가 팔립니다.",
-  "1심에선 이겼지만,\n항소심에서 뒤집힙니다.",
-  "청구항 첫 줄이,\n'여덟 개의 조각'이었거든요.",
-  "그의 한마디.\n'니콜스 큐브가 될 수도 있었다.'"
+  "전부 거절당했습니다.",
+  "그중엔 아이디얼이라는\n회사도 있었죠.",
+  "8년 뒤, 그 아이디얼이\n비슷한 걸 팝니다.",
+  "그해 미국에서만\n840만 개가 나갔습니다.",
+  "니콜스는 소송을 걸었지만\n항소심에서 뒤집혔죠.",
+  "두 사람은 각자 따로\n같은 걸 떠올린 거였습니다.",
+  "그 회사가 판 건,\n루빅스 큐브였습니다."
  ],
  "subs_en": [
-  "What if a cube came\nbefore Rubik's?",
-  "In 1957, a chemist\nfolded one from paper.",
-  "Eight small cubes,\nheld by magnets.",
+  "Have you heard of\nthe Nichols Cube?",
+  "In 1957,\na chemist built this toy.",
+  "Eight pieces held\ntogether by magnets.",
   "It turned on three axes.",
-  "In 1972,\nthe US patent issued.",
-  "Two years before\nRubik's cube.",
-  "He mailed it to\nfifty toy companies.",
-  "All refused.\nOne of them was Ideal.",
-  "The drawings even showed\na three-by-three cube.",
-  "Eight years later,\nIdeal sold Rubik's Cube.",
-  "That year: 8.4 million\nin the US alone.",
-  "He won at trial,\nthen lost on appeal.",
-  "His claim began with\n\"eight cube pieces.\"",
-  "His line: \"It could have been\nthe Nichols Cube.\""
+  "In 1972, it was\nregistered in America.",
+  "He sent it to some\nfifty toy companies.",
+  "Every one of them said no.",
+  "One of them was a\ncompany called Ideal.",
+  "Eight years later, Ideal\nsold something similar.",
+  "Eight million sold in\nAmerica that year alone.",
+  "Nichols sued,\nbut lost on appeal.",
+  "The two men had the\nsame idea separately.",
+  "What that company sold\nwas the Rubik's Cube."
  ],
  "bottom_beats": [
-  2,
-  6,
+  4,
+  7,
+  9,
+  10,
+  11,
   12,
-  13,
-  14
+  13
  ],
  "ambient": []
 }

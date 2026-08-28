@@ -1,6 +1,31 @@
 {
- "_note": "P02 편집 스펙 — assemble.py --edit 로 사용. 생성 클립 없음(전부 아카이브 스틸, 0크레딧).",
+ "_note": "P02 편집 스펙 v2. 새 구조 — 유명한 것(모노폴리)의 이름도 사진도 끝까지 숨기고 14비트에서 한 번에 공개. 09b_monopoly_logo.jpg 는 반드시 14비트에서만 쓴다.",
  "edit": [
+  {
+   "kind": "still",
+   "src": "stills/06_board_1924.png",
+   "opts": {}
+  },
+  {
+   "kind": "still",
+   "src": "stills/04_darrow.jpg",
+   "opts": {
+    "focus": "top"
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/04b_darrow_500.jpg",
+   "opts": {
+    "focus": "top",
+    "fast": true
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/05_board_cover.jpg",
+   "opts": {}
+  },
   {
    "kind": "still",
    "src": "stills/01_magie_1906_wt.jpg",
@@ -10,64 +35,30 @@
   },
   {
    "kind": "still",
-   "src": "stills/04_darrow.jpg",
-   "opts": {
-    "focus": "top"
-   }
-  },
-  {
-   "kind": "still",
-   "src": "stills/04_darrow.jpg",
-   "opts": {
-    "focus": "mid",
-    "fast": true
-   }
-  },
-  {
-   "kind": "pad",
-   "src": "stills/06_board_1924.png",
-   "opts": {}
-  },
-  {
-   "kind": "still",
-   "src": "stills/03_magie_poems.jpg",
-   "opts": {
-    "focus": "top"
-   }
-  },
-  {
-   "kind": "pad",
    "src": "stills/06_board_1924.png",
    "opts": {
     "fast": true
    }
   },
   {
-   "kind": "pad",
+   "kind": "still",
    "src": "stills/05_board_cover.jpg",
-   "opts": {}
+   "opts": {
+    "fast": true
+   }
   },
   {
    "kind": "still",
    "src": "stills/04b_darrow_500.jpg",
    "opts": {
-    "focus": "top"
+    "focus": "top",
+    "dark": true
    }
   },
   {
-   "kind": "still",
+   "kind": "pad",
    "src": "stills/07_patent_drawing_inv.png",
-   "opts": {
-    "focus": "mid",
-    "fast": true
-   }
-  },
-  {
-   "kind": "still",
-   "src": "stills/02_magie_1906_ew.jpg",
-   "opts": {
-    "focus": "top"
-   }
+   "opts": {}
   },
   {
    "kind": "still",
@@ -75,6 +66,13 @@
    "opts": {
     "focus": "top",
     "dark": true
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/02_magie_1906_ew.jpg",
+   "opts": {
+    "focus": "top"
    }
   },
   {
@@ -93,19 +91,19 @@
    }
   },
   {
-   "kind": "pad",
-   "src": "stills/05_board_cover.jpg",
+   "kind": "still",
+   "src": "stills/09b_monopoly_logo.jpg",
    "opts": {
     "bright": true
    }
   }
  ],
  "subs_ko": [
-  "이 게임을 만든 건,\n우리가 아는 그 남자가\n아니었죠.",
-  "대공황 때 실직자가\n만들었다고 알려졌죠.",
-  "그는 이 게임으로\n백만장자가 됐습니다.",
+  "가장 많이 팔린 보드게임,\n누가 만들었을까요?",
+  "대공황 때, 실직자가\n만들었다고 알려졌죠.",
+  "그는 이 게임 하나로\n백만장자가 됐습니다.",
   "그런데 31년 먼저 나온\n원본이 있었습니다.",
-  "만든 사람은 리지 매기라는\n여성이었습니다.",
+  "만든 사람은\n리지 매기라는 여성이었습니다.",
   "감옥, 철도, 임대료,\n한 바퀴 돌면 월급.",
   "우리가 아는 규칙이\n이미 다 있었죠.",
   "회사는 500달러에\n권리를 사갔습니다.",
@@ -113,24 +111,24 @@
   "그게 전부였습니다.\n로열티는 없었죠.",
   "진실은 1973년\n법정에서 드러났습니다.",
   "그녀는 이미\n세상을 떠난 뒤였고요.",
-  "매기가 이 게임을 만든 이유는\n돈이 아니었습니다.",
-  "독점이 나쁘다고 가르치려던\n게임, '지주 게임'이었죠."
+  "그녀는 독점이 나쁘다는 걸\n가르치려 했습니다.",
+  "그 게임의 지금 이름은,\n모노폴리입니다."
  ],
  "subs_en": [
-  "The man who made this game?\nNot who you think.",
-  "A jobless man in the\nDepression, they said.",
-  "That one game made him\na millionaire.",
-  "But an original came\nthirty-one years earlier.",
-  "Its maker was a woman:\nLizzie Magie.",
-  "Jail, railroads, rent,\nwages each lap.",
+  "The best-selling board game\never - who made it?",
+  "A jobless man during\nthe Depression, they say.",
+  "He became a millionaire\nfrom this one game.",
+  "But an original came out\nthirty-one years earlier.",
+  "It was made by a woman\nnamed Lizzie Magie.",
+  "Jail, railroads, rent,\na salary each time around.",
   "Every rule we know\nwas already there.",
-  "A company bought her rights\nfor five hundred dollars.",
-  "The name on the document:\nLizzie J. Magie.",
-  "That was all.\nNo royalties, ever.",
-  "The truth surfaced\nin a 1973 courtroom.",
-  "She had died\ntwenty-five years earlier.",
-  "Magie did not build\nthis game for money.",
-  "She built it to teach\nthat monopoly ruins us."
+  "The company bought the rights\nfor five hundred dollars.",
+  "The name on the papers:\nLizzie J. Magie.",
+  "That was all.\nNo royalties.",
+  "The truth came out in\na courtroom in 1973.",
+  "She had already\ndied by then.",
+  "She built it to teach\nthat monopoly is wrong.",
+  "That game is now\ncalled Monopoly."
  ],
  "bottom_beats": [
   9,
