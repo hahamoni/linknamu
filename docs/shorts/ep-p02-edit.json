@@ -1,9 +1,9 @@
 {
- "_note": "P02 편집 스펙 v2. 새 구조 — 유명한 것(모노폴리)의 이름도 사진도 끝까지 숨기고 14비트에서 한 번에 공개. 09b_monopoly_logo.jpg 는 반드시 14비트에서만 쓴다.",
+ "_note": "P02 편집 스펙 v3. 같은 사진을 두 번 쓰지 않는다(피드백 2026-08-28). 이미지가 비트 수보다 적은 자리는 span 으로 한 장을 여러 비트에 걸쳐 오래 띄운다. 자막 위치·투명도는 assemble.py 가 전 비트 동일하게 처리하므로 bottom_beats 는 쓰지 않는다. 모노폴리 로고는 14비트에서만.",
  "edit": [
   {
    "kind": "still",
-   "src": "stills/06_board_1924.png",
+   "src": "stills/05_board_cover.jpg",
    "opts": {}
   },
   {
@@ -17,13 +17,12 @@
    "kind": "still",
    "src": "stills/04b_darrow_500.jpg",
    "opts": {
-    "focus": "top",
-    "fast": true
+    "focus": "top"
    }
   },
   {
    "kind": "still",
-   "src": "stills/05_board_cover.jpg",
+   "src": "stills/06_board_1924.png",
    "opts": {}
   },
   {
@@ -34,31 +33,30 @@
    }
   },
   {
-   "kind": "still",
-   "src": "stills/06_board_1924.png",
-   "opts": {
-    "fast": true
-   }
-  },
-  {
-   "kind": "still",
-   "src": "stills/05_board_cover.jpg",
-   "opts": {
-    "fast": true
-   }
-  },
-  {
-   "kind": "still",
-   "src": "stills/04b_darrow_500.jpg",
-   "opts": {
-    "focus": "top",
-    "dark": true
-   }
-  },
-  {
    "kind": "pad",
    "src": "stills/07_patent_drawing_inv.png",
+   "opts": {
+    "span": 2
+   }
+  },
+  {
+   "kind": "skip",
+   "src": "",
    "opts": {}
+  },
+  {
+   "kind": "still",
+   "src": "stills/02_magie_1906_ew.jpg",
+   "opts": {
+    "focus": "top"
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/30_card_inventor.png",
+   "opts": {
+    "focus": "center"
+   }
   },
   {
    "kind": "still",
@@ -70,24 +68,21 @@
   },
   {
    "kind": "still",
-   "src": "stills/02_magie_1906_ew.jpg",
+   "src": "stills/08_grave.jpg",
    "opts": {
-    "focus": "top"
+    "span": 2
    }
   },
   {
-   "kind": "still",
-   "src": "stills/08b_grave_vert.jpg",
-   "opts": {
-    "focus": "mid"
-   }
+   "kind": "skip",
+   "src": "",
+   "opts": {}
   },
   {
    "kind": "still",
-   "src": "stills/01_magie_1906_wt.jpg",
+   "src": "stills/31_card_tax.png",
    "opts": {
-    "focus": "top",
-    "bright": true
+    "focus": "center"
    }
   },
   {
@@ -130,10 +125,6 @@
   "She built it to teach\nthat monopoly is wrong.",
   "That game is now\ncalled Monopoly."
  ],
- "bottom_beats": [
-  9,
-  12,
-  14
- ],
+ "bottom_beats": [],
  "ambient": []
 }

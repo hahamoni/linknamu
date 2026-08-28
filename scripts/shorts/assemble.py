@@ -80,7 +80,12 @@ SUBS_EN = [
     "The inventor: 'the most\nbeautiful woman in the world.'",
     "Hollywood legend\nHedy Lamarr.",
 ]
-BOTTOM = {9, 14}      # 서명 카드가 중앙에 오는 비트 — 자막 하단 배치 (겹침 방지)
+BOTTOM = set()        # (폐기) 편별 자막 위치 예외. 이제 전 비트가 같은 자리다.
+
+# 자막은 화면을 5등분했을 때 위에서 세 번째 지점 — 중앙보다 약간 아래로 통일한다.
+# (피드백 2026-08-28) 비트마다 위치가 달라지면 눈이 따라가느라 피로해진다.
+SUB_Y = H * 3 // 5
+SUB_POS = f"{{\\an5\\pos({W // 2},{SUB_Y})}}"
 AMBIENT = [(3, "clipA_radio.mp4", 0.0), (4, "clipA_radio.mp4", 5.85),
            (6, "clipB_pianoroll.mp4", 0.0), (7, "clipB_pianoroll.mp4", 5.2)]
 ENC = ["-c:v", "libx264", "-crf", "19", "-preset", "medium", "-pix_fmt", "yuv420p", "-r", str(FPS), "-an"]
@@ -265,18 +270,18 @@ def main():
             "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, "
             "BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, "
             "BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
-            # 크기 52·중앙 배치(Alignment 5) — 피드백 2026-08-28
-            f"Style: Default,{family},52,&H00FFFFFF,&H00FFFFFF,&HD0000000,&H80000000,"
-            "-1,0,0,0,100,100,0,0,1,3,1,5,25,25,0,1", "",
+            # 피드백 2026-08-28: 자막에 투명도를 두지 않는다 — 가독성이 최우선.
+            # 외곽선·그림자 알파를 00(완전 불투명)으로, 외곽선을 두껍게(4).
+            # 이전 값 D0/80 은 거의 투명해서 밝은 배경에서 흰 글씨가 묻혔다.
+            f"Style: Default,{family},52,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,"
+            "-1,0,0,0,100,100,0,0,1,4,2,5,25,25,0,1", "",
             "[Events]",
             "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
         ]
         subs = SUBS if lang == "ko" else SUBS_EN
         for i, t in enumerate(subs):
-            bottom = (i + 1) in BOTTOM
-            mv, tag = (250, "{\\an2}") if bottom else (0, "")
-            lines.append(f"Dialogue: 0,{ts(starts[i])},{ts(starts[i]+fdurs[i])},Default,,0,0,{mv},,"
-                         + tag + t.replace("\n", "\\N"))
+            lines.append(f"Dialogue: 0,{ts(starts[i])},{ts(starts[i]+fdurs[i])},Default,,0,0,0,,"
+                         + SUB_POS + t.replace("\n", "\\N"))
         ass.write_text("\n".join(lines))
         run(["-i", silent, "-i", audio,
              "-vf", f"subtitles=filename='{ass}':fontsdir='{Path(font).parent}'",

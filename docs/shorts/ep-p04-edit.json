@@ -1,5 +1,5 @@
 {
- "_note": "P04 편집 스펙 v2. 13비트. 새 구조 — 가장 유명한 루빅스 큐브를 끝까지 숨겼다가 13비트에서 처음 공개. 03_cube_3x3.jpg 는 반드시 13비트에서만 쓴다. 그 전에는 니콜스 특허 도면만 쓴다.",
+ "_note": "P04 편집 스펙 v3. 13비트. 같은 사진을 두 번 쓰지 않는다(피드백 2026-08-28). 이미지가 비트 수보다 적은 자리는 span 으로 한 장을 여러 비트에 걸쳐 오래 띄운다. 자막 위치·투명도는 assemble.py 가 전 비트 동일하게 처리하므로 bottom_beats 는 쓰지 않는다. 루빅스 큐브는 13비트에서만. 02_cube_2x2.jpg 는 루빅 브랜드 제품이라 반전이 새므로 쓰지 않는다.",
  "edit": [
   {
    "kind": "pad",
@@ -14,14 +14,14 @@
   {
    "kind": "pad",
    "src": "stills/14_fig2_magnets_inv.png",
-   "opts": {}
+   "opts": {
+    "span": 2
+   }
   },
   {
-   "kind": "pad",
-   "src": "stills/13_fig1_cube_inv.png",
-   "opts": {
-    "fast": true
-   }
+   "kind": "skip",
+   "src": "",
+   "opts": {}
   },
   {
    "kind": "pad",
@@ -29,29 +29,16 @@
    "opts": {}
   },
   {
-   "kind": "pad",
-   "src": "stills/11_inventor_block_inv.png",
+   "kind": "still",
+   "src": "stills/30_card_rejected.png",
    "opts": {
-    "fast": true
+    "focus": "center",
+    "span": 2
    }
   },
   {
-   "kind": "pad",
-   "src": "stills/13_fig1_cube_inv.png",
-   "opts": {
-    "dark": true
-   }
-  },
-  {
-   "kind": "pad",
-   "src": "stills/12_header_1972_inv.png",
-   "opts": {
-    "dark": true
-   }
-  },
-  {
-   "kind": "pad",
-   "src": "stills/15_fig3_3x3_inv.png",
+   "kind": "skip",
+   "src": "",
    "opts": {}
   },
   {
@@ -61,17 +48,27 @@
   },
   {
    "kind": "pad",
-   "src": "stills/14_fig2_magnets_inv.png",
+   "src": "stills/15_fig3_3x3_inv.png",
+   "opts": {}
+  },
+  {
+   "kind": "still",
+   "src": "stills/31_card_84.png",
    "opts": {
-    "dark": true
+    "focus": "center"
    }
   },
   {
    "kind": "pad",
-   "src": "stills/11_inventor_block_inv.png",
+   "src": "stills/20_claim_card.png",
    "opts": {
-    "bright": true
+    "span": 2
    }
+  },
+  {
+   "kind": "skip",
+   "src": "",
+   "opts": {}
   },
   {
    "kind": "still",
@@ -111,14 +108,6 @@
   "The two men had the\nsame idea separately.",
   "What that company sold\nwas the Rubik's Cube."
  ],
- "bottom_beats": [
-  4,
-  7,
-  9,
-  10,
-  11,
-  12,
-  13
- ],
+ "bottom_beats": [],
  "ambient": []
 }
