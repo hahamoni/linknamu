@@ -25,6 +25,11 @@ OUT = Path(__file__).resolve().parents[2] / "docs" / "shorts" / "_voice_samples"
 # 다큐 나레이션에 쓸 만한 결이 다른 것들로 골랐다. 전체 30종은 Gemini 문서 참조.
 DEFAULT = ["Charon", "Kore", "Orus", "Rasalgethi", "Gacrux", "Algieba"]
 
+# 쿼터가 닫혀 있으면 열릴 때까지 버틴다(무료 티어 리셋 07:00 UTC).
+# 밤에 걸어두고 자도 아침에 샘플이 나와 있게 하려는 것.
+WAIT_TRIES = 40
+WAIT_SECS = 600
+
 # 실제 대본에서 가져온 문장 — 훅 하나, 설명 하나, 반전 하나.
 LINES = {
     "ko": ("그네 타는 법, 특허가 될 수 있을까요? "
@@ -53,14 +58,25 @@ def main():
             made.append((v, dst))
             continue
         print(f"· {v} 합성 중…", flush=True)
-        try:
-            pcm, rate = tts(key, model, v, text)
-        except Exception as e:
-            print(f"  ✗ {v}: {str(e)[:120]}")
+        pcm = rate = None
+        for attempt in range(1, WAIT_TRIES + 1):
+            try:
+                pcm, rate = tts(key, model, v, text)
+                break
+            except Exception as e:
+                msg = str(e)
+                if "429" not in msg or attempt == WAIT_TRIES:
+                    print(f"  ✗ {v}: {msg[:120]}")
+                    break
+                # 쿼터가 닫혀 있으면 열릴 때까지 기다린다 — 무료 티어는 07:00 UTC 리셋.
+                print(f"  · 쿼터 대기 {attempt}/{WAIT_TRIES} "
+                      f"({WAIT_SECS // 60}분 후 재시도)", flush=True)
+                time.sleep(WAIT_SECS)
+        if pcm is None:
             continue
         save_wav(dst, pcm, rate)
         made.append((v, dst))
-        print(f"  ✓ {dst.name}")
+        print(f"  ✓ {dst.name}", flush=True)
         time.sleep(20)          # 무료 티어 분당 제한 완화
 
     if len(made) < 2:

@@ -21,8 +21,9 @@ LOGDIR=logs
 mkdir -p "$LOGDIR"
 
 if [ "${1:-}" = "stop" ]; then
-    pkill -f patient_tts.py && echo "· patient_tts 중단"
-    pkill -f finish_episodes.py && echo "· finish_episodes 중단"
+    pkill -f "python3 .*patient_tts\.py" && echo "· patient_tts 중단"
+    pkill -f "python3 .*finish_episodes\.py" && echo "· finish_episodes 중단"
+    pkill -f "python3 .*voice_samples\.py" && echo "· voice_samples 중단"
     exit 0
 fi
 
@@ -31,16 +32,18 @@ if [ -z "${GEMINI_API_KEY:-}" ]; then
     exit 1
 fi
 
-if pgrep -f patient_tts.py > /dev/null; then
+if pgrep -f "python3 .*patient_tts\.py" > /dev/null; then
     echo "· 이미 돌고 있습니다. 로그: $LOGDIR/tts.log"
     exit 0
 fi
 
-# 목소리 비교 샘플이 아직 없으면 그것부터 만든다. 화자를 바꾸면 이미 만든
-# 나레이션을 전부 다시 뽑아야 하므로, 대량 생성에 쿼터를 쓰기 전에 정하는 게 싸다.
+# 목소리 비교 샘플이 아직 없으면 같이 띄운다. 화자를 바꾸면 이미 만든 나레이션을
+# 전부 다시 뽑아야 하므로, 짧은 샘플 여섯 개는 먼저 확보해 두는 게 싸다.
+# 쿼터가 닫혀 있어도 열릴 때까지 버티므로 밤에 걸어둬도 된다.
 if [ ! -f docs/shorts/_voice_samples/compare_ko.wav ]; then
-    echo "· 목소리 비교 샘플부터 만듭니다 (화자 결정이 먼저)"
-    python3 scripts/shorts/voice_samples.py --lang ko 2>&1 | tail -4
+    echo "· 목소리 비교 샘플도 함께 만듭니다 (화자 결정용)"
+    nohup python3 -u scripts/shorts/voice_samples.py --lang ko \
+        > "$LOGDIR/voices.log" 2>&1 &
 fi
 
 MINUTES="${MINUTES:-720}"
@@ -54,6 +57,7 @@ nohup python3 -u scripts/shorts/finish_episodes.py \
 sleep 2
 echo "✓ 시작했습니다 (최대 ${MINUTES}분)"
 echo "  나레이션 진행:  tail -f $LOGDIR/tts.log"
+[ -f "$LOGDIR/voices.log" ] && echo "  목소리 샘플:    tail -f $LOGDIR/voices.log"
 echo "  완성본 생성:    tail -f $LOGDIR/finish.log"
 echo "  현재 상태:      python3 scripts/shorts/status.py"
 echo "  중단:           bash scripts/shorts/run_daily.sh stop"
