@@ -5,9 +5,16 @@
     python3 scripts/shorts/status.py --lang en
 """
 import json
+import signal
 import sys
 import wave
 from pathlib import Path
+
+# `| head` 로 잘라 볼 때 BrokenPipeError 역추적이 뜨지 않게 한다.
+try:
+    signal.signal(signal.SIGPIPE, signal.SIG_DFL)
+except (AttributeError, ValueError):
+    pass
 
 DOCS = Path(__file__).resolve().parents[2] / "docs" / "shorts"
 
