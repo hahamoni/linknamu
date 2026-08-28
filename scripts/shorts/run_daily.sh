@@ -36,10 +36,15 @@ if pgrep -f patient_tts.py > /dev/null; then
     exit 0
 fi
 
-# 아직 나레이션이 덜 찬 편만 넘긴다. p01:en:1,2 는 대본이 바뀌어 낡아버린
-# 영어 청크라 자리표시 탐지로는 안 잡히므로 직접 지정한다.
+# 목소리 비교 샘플이 아직 없으면 그것부터 만든다. 화자를 바꾸면 이미 만든
+# 나레이션을 전부 다시 뽑아야 하므로, 대량 생성에 쿼터를 쓰기 전에 정하는 게 싸다.
+if [ ! -f docs/shorts/_voice_samples/compare_ko.wav ]; then
+    echo "· 목소리 비교 샘플부터 만듭니다 (화자 결정이 먼저)"
+    python3 scripts/shorts/voice_samples.py --lang ko 2>&1 | tail -4
+fi
+
 MINUTES="${MINUTES:-720}"
-TARGETS="p01:en:1,2 p02 p03 p04 p05 p06 p07 p08 p09 p10 p11 p12"
+TARGETS="p02 p03 p04 p05 p06 p07 p08 p09 p10 p11 p12"
 
 nohup python3 -u scripts/shorts/patient_tts.py $TARGETS \
     --lang ko --minutes "$MINUTES" > "$LOGDIR/tts.log" 2>&1 &
