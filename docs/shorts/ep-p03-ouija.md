@@ -44,24 +44,28 @@
 
 **TTS 풀어쓰기**: 1891년→천팔백구십일 년.
 
-## 아카이브 스틸 (v4 — 실제 사진·판화만)
+## 아카이브 스틸 (v6 — 비트마다 대본이 말하는 것을 보여준다)
 
-"글자만 있는 그림"(특허 헤더·본문 스캔·알파벳판 도면·코드 렌더 카드)은 몰입을 깬다는 피드백으로
-2026-08-28에 전부 뺐다. 남은 것은 실제 사진과 실제 판화·물건 도면뿐이다.
+규칙은 `PRD.md` §2. v4에서 "글자만 있는 그림"을 뺐고(2-1), v6에서 **대본과 그림을 1:1로 맞췄다**(2-2).
 
-| 파일 | 비트 | 라이선스 | 크레딧 | 출처 |
+| 비트 | 나레이션 | 파일 | 라이선스 | 크레딧 |
 |---|---|---|---|---|
-| Séance with the Medium Eusapia Palladino (MET) | 1·2 | CC0 | — | [Commons](https://commons.wikimedia.org/wiki/File:-S%C3%A9ance_with_the_Medium_Eusapia_Palladino-_MET_DP71267.jpg) |
-| US446054 Fig.2 플랜쳇 도면 → 블루프린트 반전 | 3·4 | Public domain | — | patentimages |
-| Tables Tournantes — L'Illustration, Paris, 1853-05-14 | 5·6 | Public domain | — | [Commons](https://commons.wikimedia.org/wiki/File:Tables_Tournantes_-_L%27Illustration,_Paris,_14_May_1853_(page_1_crop).jpg) |
-| Spirit photograph of a woman… (1865) | 7·8 | Public domain | — | [Commons](https://commons.wikimedia.org/wiki/File:Spirit_photograph_of_a_woman_with_a_hand_on_her_face_with_an_image_of_a_man_in_the_background_(1865).jpg) |
-| Seance, Balmain, 1939 (SLNSW) | 9·10 | Public domain | — | [Commons](https://commons.wikimedia.org/wiki/File:Seance,_Balmain,_1939_slnsw.jpg) |
-| Elijah Bond 묘비 (위저보드가 새겨진 뒷면) | 11·12 | **CC BY-SA 3.0** | ✅ 설명란 | Commons |
-| Mumler 심령사진 (Lincoln) | 13 | Public domain | — | [Commons](https://commons.wikimedia.org/wiki/File:Mumler_(Lincoln).jpg) |
-| Ouija board — Kennard Novelty Company | **14 (반전)** | Public domain | — | Commons |
+| 1 | 손을 올리면 저절로 움직인다는 판 | [Séance with the Medium Eusapia Palladino (MET)](https://commons.wikimedia.org/wiki/File:-S%C3%A9ance_with_the_Medium_Eusapia_Palladino-_MET_DP71267.jpg) | CC0 | — |
+| 2 | **미국에서 정식으로 등록된 물건** | [Old Patent Office Building, Washington D.C.](https://commons.wikimedia.org/wiki/File:Old_Patent_Office_Building,_Washington,_D.C.jpg) — 1891년 당시 실제 특허청 청사 | Public domain | — |
+| 3·4 | 나무판과 삼각대 / 글자를 짚는다 | US446054 Fig.2 플랜쳇 도면 → 블루프린트 반전 | Public domain | — |
+| 5·6 | 서류엔 이렇게 / "판이 움직여 문장을 만든다" | [Tables Tournantes — L'Illustration, Paris, 1853-05-14](https://commons.wikimedia.org/wiki/File:Tables_Tournantes_-_L%27Illustration,_Paris,_14_May_1853_(page_1_crop).jpg) | Public domain | — |
+| 7 | 누가 움직이는지는 쓰지 않았다 | [Spirit photograph of a woman… (1865)](https://commons.wikimedia.org/wiki/File:Spirit_photograph_of_a_woman_with_a_hand_on_her_face_with_an_image_of_a_man_in_the_background_(1865).jpg) | Public domain | — |
+| 8 | 한 여자가 물어서 정했다 | [Seance, Balmain, 1939 (SLNSW)](https://commons.wikimedia.org/wiki/File:Seance,_Balmain,_1939_slnsw.jpg) — 눈을 가린 여성 영매 | Public domain | — |
+| 9 | **제목은 '장난감 또는 게임'** | [Window shoppers outside a toy store, Seattle 1917](https://commons.wikimedia.org/wiki/File:Window_shoppers_outside_a_toy_store,_Seattle,_ca_1917-ca_1920_(SEATTLE_4397).jpg) — 진열창에 TOYS 간판 | Public domain | — |
+| 10·11 | 큰돈 번 건 만든 사람이 아니다 / **공장 도장공** | [Mauléon — Groupe d'Ouvriers Sandaliers](https://commons.wikimedia.org/wiki/File:Maul%C3%A9on-Groupe_d%27Ouvriers_Sandaliers.jpg) → 캡션·우표 잘라냄 | Public domain | — |
+| 12 | 기록에서 지워졌다 | Elijah Bond 묘비 (위저보드가 새겨진 뒷면) | **CC BY-SA 3.0** | ✅ 설명란 |
+| 13 | **소설가 '위다'의 초상** | [Ouida photo](https://commons.wikimedia.org/wiki/File:Ouida_photo.jpg) — 목에 로켓을 걸고 있다 | Public domain | — |
+| 14 | **(반전)** 이 판의 이름은 위저보드 | Ouija board — Kennard Novelty Company | Public domain | — |
 
 **14비트 전에는 알아볼 수 있는 위저보드 실물을 쓰지 않는다** — 이름을 밝히는 마지막 컷이 반전이기 때문이다.
-인물 사진(본드·풀드·피터스)은 Wikimedia에 존재하지 않음을 검색으로 확인했다.
+인물 사진(본드·풀드·피터스)은 Wikimedia에 존재하지 않음을 검색으로 확인했다. 11비트의 "공장 도장공"은
+풀드 본인 사진이 없어 **같은 시기 공장 노동자 사진**으로 대신한다.
+`44_mumler.jpg`는 대응 비트가 없어져 쓰지 않는다.
 
 ## 오디오
 

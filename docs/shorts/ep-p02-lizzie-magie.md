@@ -47,28 +47,30 @@
 
 게이트: 14비트 전부 OK, 인물 9/14(64%), 문서 1비트·62% 지점, 훅 통념+반박, 페이오프 인용 — 통과.
 
-## 아카이브 스틸 (v5 — 실제 사진·물건 도면만)
+## 아카이브 스틸 (v6 — 비트마다 대본이 말하는 것을 보여준다)
 
-"글자만 있는 그림"은 몰입을 깬다는 피드백으로 2026-08-28에 특허 본문 스캔·코드 렌더 카드를 뺐고,
-**1924년 보드 벡터 재현본도 뺐다** — 가운데가 흰 글자판이라 9:16으로 자르면 글자 덩어리로만 보인다.
+규칙은 `PRD.md` §2. v5에서 "글자만 있는 그림"을 뺐고(2-1), v6에서 **대본과 그림을 1:1로 맞췄다**(2-2).
+1924년 보드 벡터 재현본은 가운데가 흰 글자판이라 9:16으로 자르면 글자 덩어리로만 보여서 뺐다.
 보드 사진은 색색의 칸이 보이는 가장자리로 미리 잘라 쓴다(`10b_board_1906_edge.jpg`).
 
-| 파일 | 비트 | 라이선스 | 크레딧 | 출처 |
+| 비트 | 나레이션 | 파일 | 라이선스 | 크레딧 |
 |---|---|---|---|---|
-| US748626 도면 → 주사위·주사위통 크롭·반전 (`12b`) | 1 | Public domain | — | patentimages |
-| Charles Darrow (51689999467) → 로고 안 보이게 크롭 | 2·3 | **CC BY 2.0** | ✅ 설명란 | Commons |
-| Landlords board game cover | 4 | Public domain | — | Commons |
-| Lizzie Magie — My Betrothed, and Other Poems (초상) | 5 | Public domain | — | Commons |
-| Landlords Game 1906 실물 보드 → 가장자리 크롭 (`10b`) | 6 | Public domain | — | [Commons](https://commons.wikimedia.org/wiki/File:Landlords_Game_1906_image_courtesy_of_T_Forsyth_owner_of_the_registered_trademark_20151119.jpg) |
-| US748626 도면 → BANK 상자 크롭·반전 (`11`) | 7 | Public domain | — | patentimages |
-| Elizabeth Magie, Washington Times (1906) | 8·9 | Public domain | — | Commons |
-| Elizabeth Magie, Evening World (1906) | 10·11 | Public domain | — | Commons |
-| Grave of Elizabeth Magie Phillips | 12·13 | **CC BY 2.0** | ✅ 설명란 | Commons |
-| 모노폴리 실물 보드 (로고) | **14 (반전)** | Public domain | — | Commons |
+| 1 | 가장 많이 팔린 보드게임 | US748626 도면 → 주사위·주사위통 크롭·반전 (`12b`) | Public domain | — |
+| 2·3 | 실직자가 만들었다 / 백만장자가 됐다 | Charles Darrow (51689999467) → MONOPOLY 글자 안 보이게 크롭 | **CC BY 2.0** | ✅ 설명란 |
+| 4 | 31년 먼저 나온 원본 | Landlords board game cover | Public domain | — |
+| 5 | 리지 매기라는 여성 | Lizzie Magie — My Betrothed, and Other Poems (초상) | Public domain | — |
+| 6 | 감옥·철도·임대료·월급 | [Landlords Game 1906 실물 보드](https://commons.wikimedia.org/wiki/File:Landlords_Game_1906_image_courtesy_of_T_Forsyth_owner_of_the_registered_trademark_20151119.jpg) → 가장자리 크롭 (`10b`) | Public domain | — |
+| 7 | 우리가 아는 규칙이 다 있었다 | US748626 도면 → BANK 상자 크롭·반전 (`11`) | Public domain | — |
+| 8 | **500달러에 권리를 사갔다** | [500 USD note, series of 1934](https://commons.wikimedia.org/wiki/File:500_USD_note;_series_of_1934;_obverse.jpg) — 실제 500달러 지폐 | Public domain | — |
+| 9·10 | 서류에 적힌 이름 / 그게 전부 | Elizabeth Magie, Washington Times (1906) | Public domain | — |
+| 11 | **1973년 법정에서 드러났다** | [Courtroom of Cleburne County Courthouse](https://commons.wikimedia.org/wiki/File:Courtroom_of_Cleburne_County_Courthouse_in_Heber_Springs,_Arkansas.jpg) | CC0 | — |
+| 12 | 이미 세상을 떠난 뒤 | Grave of Elizabeth Magie Phillips | **CC BY 2.0** | ✅ 설명란 |
+| 13 | **독점이 나쁘다는 걸 가르치려 했다** | [The Bosses of the Senate, Joseph Keppler 1889](https://commons.wikimedia.org/wiki/File:The_Bosses_of_the_Senate_by_Joseph_Keppler_(cropped).jpg) — 당대 독점 풍자화 | Public domain | — |
+| 14 | **(반전)** 이름은 모노폴리 | 모노폴리 실물 보드 (로고) | Public domain | — |
 
 CC BY 2건은 설명란에 "사진: [작가명], CC BY 2.0, Wikimedia Commons" 형식으로 표기하면 조건 충족.
 **대로우 사진은 원본에 MONOPOLY 글자가 보여** 위쪽만 잘라 쓴다 — 반전이 14비트 전에 새지 않게.
-`04b_darrow_500_crop.jpg`는 04와 같은 사진이라 쓰지 않는다(같은 사진 두 번 금지).
+`04b_darrow_500_crop.jpg`(04와 같은 사진)와 `02_magie_1906_ew.jpg`(대응 비트 없음)는 쓰지 않는다.
 
 ## 생성 자산
 

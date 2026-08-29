@@ -1,18 +1,20 @@
 {
- "_note": "P03 편집 스펙 v4. 14비트. 글자만 있는 그림(특허 헤더·본문 스캔·알파벳판 도면·코드로 그린 카드)은 전부 뺐다(피드백 2026-08-28). 남은 것은 실제 사진과 실제 판화·도면뿐. 같은 사진을 두 번 쓰지 않고, 모자란 자리는 span 으로 한 장을 두 비트에 걸쳐 띄운다. 알아볼 수 있는 위저보드 실물은 14비트에서만 — 그 전에는 강신회·심령사진·판화로만 끌고 간다.",
+ "_note": "P03 편집 스펙 v6. 비트마다 나레이션이 말하는 그 대상이 화면에 있어야 한다(PRD 2-2, 피드백 2026-08-28). 글자만 있는 그림은 쓰지 않고(2-1), 같은 사진을 두 번 쓰지 않으며(2-3), 위저보드 실물은 14비트에서만 나온다(2-4). 2비트 옛 미국 특허청 건물(1891년 당시 실제 청사)·9비트 1917년 장난감 가게·10~11비트 공장 노동자·13비트 소설가 위다의 초상(목걸이를 하고 있다)을 새로 넣어 대본과 맞췄다. 44_mumler 는 대응 비트가 없어져 쓰지 않는다.",
  "edit": [
   {
    "kind": "still",
    "src": "stills/41_seance_palladino.jpg",
    "opts": {
-    "focus": "center",
-    "span": 2
+    "focus": "center"
    }
   },
   {
-   "kind": "skip",
-   "src": "",
-   "opts": {}
+   "kind": "still",
+   "src": "stills/45_patent_office.jpg",
+   "opts": {
+    "focus": "center",
+    "dark": true
+   }
   },
   {
    "kind": "pad",
@@ -44,18 +46,27 @@
    "kind": "still",
    "src": "stills/42_spirit_1865.jpg",
    "opts": {
-    "focus": "center",
-    "span": 2
+    "focus": "center"
    }
-  },
-  {
-   "kind": "skip",
-   "src": "",
-   "opts": {}
   },
   {
    "kind": "still",
    "src": "stills/43_seance_1939.jpg",
+   "opts": {
+    "focus": "center",
+    "dark": true
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/48_toystore_1917.jpg",
+   "opts": {
+    "focus": "center"
+   }
+  },
+  {
+   "kind": "still",
+   "src": "stills/46_factory_workers.jpg",
    "opts": {
     "focus": "center",
     "dark": true,
@@ -72,18 +83,12 @@
    "src": "stills/02_bond_grave.jpg",
    "opts": {
     "focus": "center",
-    "dark": true,
-    "span": 2
+    "dark": true
    }
   },
   {
-   "kind": "skip",
-   "src": "",
-   "opts": {}
-  },
-  {
    "kind": "still",
-   "src": "stills/44_mumler.jpg",
+   "src": "stills/47_ouida.jpg",
    "opts": {
     "focus": "center"
    }

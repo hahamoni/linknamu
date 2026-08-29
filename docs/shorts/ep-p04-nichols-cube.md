@@ -45,27 +45,31 @@
 
 **TTS 풀어쓰기**: 1957년→천구백오십칠 년 · 1972년→천구백칠십이 년 · 2년→이 년 · 50여→오십여 · 8년→팔 년 · 840만→팔백사십만 · 1심→일심.
 
-## 아카이브 스틸 (확보 완료)
+## 아카이브 스틸 (v6 — 비트마다 대본이 말하는 것을 보여준다)
 
-| 파일 | 비트 | 라이선스 | 크레딧 | 출처 |
+규칙은 `PRD.md` §2. v5에서 "글자만 있는 그림"을 뺐고(2-1), v6에서 **대본과 그림을 1:1로 맞췄다**(2-2).
+
+| 비트 | 나레이션 | 파일 | 라이선스 | 크레딧 |
 |---|---|---|---|---|
-| Speedcube MoYu 2022 (주황 단색면) | 1 | **CC BY 4.0** | ✅ 설명란 | [Commons](https://commons.wikimedia.org/wiki/File:Speedcube_MoYu_2022.jpg) |
-| US3655201 Fig.1 → 크롭·반전 | 2 | Public domain | — | patentimages |
-| US3655201 Fig.2a (자석) → 크롭·반전 | 3 | Public domain | — | patentimages |
-| US3655201 Fig.2b → 크롭·반전 (`16`) | 4 | Public domain | — | patentimages |
-| US3655201 Fig.2c → 크롭·반전 (`17`) | 5 | Public domain | — | patentimages |
-| 2X2 Rubiks Cube from eBay | 6·7 | **CC BY-SA 4.0** | ✅ 설명란 | Commons |
-| US3655201 Fig.3·Fig.4 → 크롭·반전 | 8·9 | Public domain | — | patentimages |
-| Erno Rubik, Genius Gala 2014 → 얼굴 크롭 | 10·11·12 | Public domain | — | [Commons](https://commons.wikimedia.org/wiki/File:Erno_Rubik_Genius_Gala_2014.jpg) |
-| Rubik's cube, CN II (실물 3×3) | **13 (반전)** | **CC BY-SA 3.0** | ✅ 설명란 | Commons |
+| 1 | 니콜스 큐브라는 걸 아시나요? | 2X2 Rubiks Cube from eBay — 니콜스가 만든 것과 같은 2×2 | **CC BY-SA 4.0** | ✅ 설명란 |
+| 2 | 화학자가 만든 장난감 | US3655201 Fig.1 → 크롭·반전 | Public domain | — |
+| 3 | **여덟 조각을 자석으로** | US3655201 Fig.2a (자석 N/S) → 크롭·반전 | Public domain | — |
+| 4 | **세 방향으로 돌아갔다** | US3655201 Fig.2b (회전 화살표) → 크롭·반전 (`16`) | Public domain | — |
+| 5 | 1972년 미국에서 등록 | US3655201 Fig.3·Fig.4 → 크롭·반전 (`15`) | Public domain | — |
+| 6 | **완구회사 50여 곳에 보냈다** | [Parcel post area of mail room, U.S. Post Office](https://commons.wikimedia.org/wiki/File:Parcel_post_area_of_mail_room_showing_trucks_and_tables_stacked_with_packages,_U.S._Post_Office,_Washington,_D.C.)_-_National_Photo_Co.,_Washington,_D.C_LCCN90709848.jpg) — 소포 더미 | Public domain | — |
+| 7 | **전부 거절당했다** | [Elderly woman showing a thumbs down](https://commons.wikimedia.org/wiki/File:Elderly_woman_showing_a_thumbs_down_in_disagreement_on_a_video_call._(51533293139).jpg) → 손만 크롭 | **CC BY 2.0** | ✅ 설명란 |
+| 8 | **아이디얼이라는 회사** | [Electronic Detective, Ideal Toy Corporation 1979](https://commons.wikimedia.org/wiki/File:Electronic_Detective_by_Ideal_Toy_Corporation,_Copyright_1979_(Electronic_Board_Game)_-_The_Computerized_Who-Done-It_Game.jpg) — 같은 시기 아이디얼 사의 실제 제품 | **CC BY-SA 2.0** | ✅ 설명란 |
+| 9 | 비슷한 걸 판다 | [Speedcube MoYu 2022](https://commons.wikimedia.org/wiki/File:Speedcube_MoYu_2022.jpg) — 주황 단색면 | **CC BY 4.0** | ✅ 설명란 |
+| 10 | **840만 개가 나갔다** | [Shop window with collection of toys, Munich](https://commons.wikimedia.org/wiki/File:Shop_window_with_collection_of_toys,_dolls,_car_models_etc._in_Munich,_Germany_(2023).jpg) — 가득 찬 장난감 가게 | **CC BY 4.0** | ✅ 설명란 |
+| 11 | **소송·항소심** | [Legal Gavel](https://commons.wikimedia.org/wiki/File:Legal_Gavel_(27571702173).jpg) | **CC BY 2.0** | ✅ 설명란 |
+| 12 | 두 사람은 각자 따로 | [Erno Rubik, Genius Gala 2014](https://commons.wikimedia.org/wiki/File:Erno_Rubik_Genius_Gala_2014.jpg) → 얼굴 크롭 | Public domain | — |
+| 13 | **(반전)** 루빅스 큐브 | Rubik's cube, CN II (실물 3×3) | **CC BY-SA 3.0** | ✅ 설명란 |
 
-"글자만 있는 그림"은 몰입을 깬다는 피드백으로 2026-08-28에 특허 헤더·발명자란·본문 스캔·코드 렌더
-카드를 전부 뺐다. 그러자 도면만 열 비트가 이어져 **화면이 전부 똑같아 보이는 문제**가 생겨, 실제 사진을
-사이사이 넣었다. 컬러 3×3 큐브 사진은 13비트에서 처음 나온다 — 1비트의 주황 단색면과 6~7비트의
-2×2 는 '루빅스 큐브'로 읽히지 않으므로 반전이 새지 않는다.
+컬러 3×3 큐브 사진은 13비트에서 처음 나온다 — 1비트의 2×2 와 9비트의 주황 단색면은
+'루빅스 큐브'로 읽히지 않으므로 반전이 새지 않는다. `17_fig2c_inv.png`는 대응 비트가 없어져 쓰지 않는다.
 
-니콜스 본인 사진은 존재하지 않음(검색 확인). 그의 큐브 실물 사진도 없다 — 그래서 이 편은 도면 비중이
-다른 편보다 높다.
+니콜스 본인 사진은 존재하지 않음(검색 확인). 그의 큐브 실물 사진도 없다 — 그래서 1비트의 2×2 큐브와
+8비트의 아이디얼 제품은 **같은 종류·같은 시기의 실물**로 대신한다.
 
 ## 오디오
 
